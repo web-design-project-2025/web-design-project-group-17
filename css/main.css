@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  body {
+    background-color: #ffffff;
+    font-family:
+      "Montserrat",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    color: #000000;
+  }
+
+
+
+
+/*Header*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header-container {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  padding: 29px 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  width: 698px;
+  max-width: 100%;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-family:
+    "Inter",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+}
+
+.logo-highlight {
+  color: #2f0c5a;
+}
+
+.main-nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: stretch;
+  gap: 70px;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 520;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Announcements*/
+
+.container{
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  background-color:beige;
+
+}
+
+.announcements{
+  
+  position: relative;
+  background-image:url('img/solo-leveling.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.solo-leveling-announcement{
+
+  max-width: 600px;
+  background: rgba(253, 252, 252, 0.6); /* Optional: better text visibility */
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.solo-leveling-announcement h1 {
+
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.solo-leveling-announcement p {
+
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  color: black;
+
+}
+
+.rating{
+
+  color: #f5b50a;
+
+}
+
+.announcements-actions{
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+
+.announcements-button{
+
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 0.25rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 20%;
+
+}
+
+.announcements-button:hover {
+
+  opacity: 0.4;
+  background-color: black;
+
+}
+
+.add-to-list{
+
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+.add-to-watchlist{
+
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+
+}
+
+
+
+.anime-image img {
+  width: 100%;
+}
+
+/*Most popular anime section (carrousel) */
+
+.most-popular-container{
+  
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem;
+}
+
+.most-popular-container h2{
+
+  font-size: 1.5rem;
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+.popular-anime{
+
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+
+}
+
+.anime-cover{
+  flex: 0 0 auto;
+  width: 160px;
+  text-align: center;
+}
+
+.anime-cover img{
+
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.anime-cover h3 {
+
+  font-size: 1rem;
+  color: black;
+  
+}
+
+.carrousel-next{ /*arrow */
+
+  cursor: pointer;
+
+} 
+
+.carrousel-next:hover{ /*arrow */
+
+  cursor: pointer;
+  color: blueviolet;
+
+} 
+
+.new-anime-container {
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem;
+
+}
+
+.new-anime-container h2{
+
+  font-size: 1.5rem;
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+.new-anime{
+  
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+
+}
