@@ -1,3 +1,17 @@
+//js for loading data from JSON files
+let animes = [];
+
+async function loadData() {
+    const animeDetails = await fetch("data/anime.json");
+    const animeJSON = await animeDetails.json();
+    animes = animeJSON.animes;
+    
+    console.log(animeJSON);
+}
+
+loadData();
+
+//js for carousel on home_page
 document.addEventListener('DOMContentLoaded', () => {
   const carousels = document.querySelectorAll('.carousel-container');
 
