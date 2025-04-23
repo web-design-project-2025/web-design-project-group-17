@@ -86,14 +86,14 @@
 .container{
   width: min(90%, 1200px);
   margin: 0 auto;
-  background-color:beige;
+  background-color: #2f0c5a;
 
 }
 
 .announcements{
   
   position: relative;
-  background-image:url('img/wallpapers/solo-leveling.jpg');
+  background-image:url(img/wallpapers/solo-leveling.jpg);
   background-size: cover;
   background-position: center;
   color: rgb(0, 0, 0);
@@ -107,7 +107,7 @@
 .solo-leveling-announcement{
 
   max-width: 500px;
-  background: rgba(253, 252, 252, 0.9); /* Optional: better text visibility */
+  background: rgba(253, 252, 252, 0.9);
   font-weight: 500;
   padding: 2rem;
   border-radius: 1rem;
