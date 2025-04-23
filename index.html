@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="/css/main.css">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -15,12 +16,17 @@
     <div class="header-container">
       <div class="header-content">
         <h1 class="logo">
-          RE<br />:<span class="logo-highlight">VIEW</span>
+          RE
+          <br />
+          :
+          <span class="logo-highlight">VIEW</span>
         </h1>
         <nav class="main-nav">
           <ul class="nav-list">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="discover.html" class="nav-link nav-link-active">Discover</a></li>
+            <li>
+              <a href="discover.html" class="nav-link nav-link-active">Discover</a>
+            </li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="profile.html" class="nav-link">My Profile</a></li>
           </ul>
@@ -31,16 +37,16 @@
 
   <main>
 
-    <section class="announcements container">  
-      <div class="solo-leveling-announcement">
-        <h1>Solo Leveling Season 2: Arise from the shadow</h1>
-        <div class="rating"></div>
-        <p>Sung Jin-Woo, dubbed the weakest hunter of all mankind, 
+    <section class="announcements container">
+        <div class="solo-leveling-announcement">
+          <h1>Solo Leveling Season 2: Arise from the shadow</h1>
+          <div class="rating"></div>
+          <p>Sung Jin-Woo, dubbed the weakest hunter of all mankind, 
           grows stronger by the day with the supernatural powers he 
           has gained. However, keeping his skills hidden becomes more 
           difficult as dungeon-related incidents pile up around him.</p>
           
-        <p> When Jin-Woo and a few other low-ranked hunters are the only 
+          <p> When Jin-Woo and a few other low-ranked hunters are the only 
           survivors of a dungeon that turns out to be a bigger challenge 
           than initially expected, he draws attention once again, and hunter 
           guilds take an increased interest in him. Meanwhile, a strange hunter 
@@ -49,61 +55,119 @@
           must continue leveling up to make sure nothing stops him from reaching 
           his ultimate goal—saving the life of his mother.</p>
           
-        <div class="announcements-actions">
-          <button class="announcements-button">Write Review</button>
-          <button class="add-to-list">plus</button>
-          <button class="add-to-watchlist">save</button>
+          <div class="announcements-actions">
+            <button class="announcements-button">Write Review</button>
+            <svg class="add-to-list" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+            </svg>
+            <svg class="watchlist" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/>
+            </svg>
+            
+          </div>
         </div>
-      </div>
+      
     </section>
 
-    <section class="most-popular-container container">
-      <h2>Most popular</h2>
-      <div class="popular-anime">
-        <div class="anime-cover">
-          <img src="" alt="One Piece image cover">
-          <h3>One Piece</h3>
-        </div>
-        <div class="anime-cover">
-          <img src="" alt="Solo Leveling image cover">
-          <h3>Solo Leveling</h3>
-        </div>
-        <div class="anime-cover">
-          <img src="" alt="Attack on Titan image cover">
-          <h3>Attack on Titan</h3>
-        </div>
-        <div class="anime-cover">
-          <img src="" alt="Jujutsu Kaisen image cover">
-          <h3>Jujutsu Kaisen</h3>
-        </div>
-      </div>
-      <button class="carrousel-next">Next</button>
-    </section>
+    
 
-    <section class="new-anime-container container">
-      <h2>Most popular</h2>
-      <div class="new-anime">
-        <div class="anime-cover">
-          <img src="" alt="One Piece image cover">
-          <h3>One Piece</h3>
+  <section>
+  <h2 class="header-in-section">Most Popular</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">
+      <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="Left arrow">
+    </button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          
+          <img src="img/covers/one piece.jpg" alt="One Piece">
+          <p>One Piece</p>
+
         </div>
-        <div class="anime-cover">
-          <img src="" alt="Solo Leveling image cover">
-          <h3>Solo Leveling</h3>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/fireforce_cover.jpg" alt="Fire Force">
+          <p>Fire Force</p>
         </div>
-        <div class="anime-cover">
-          <img src="" alt="Attack on Titan image cover">
-          <h3>Attack on Titan</h3>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/attack on titan.jpg" alt="SNK">
+          <p>Attack On Titan</p>
         </div>
-        <div class="anime-cover">
-          <img src="" alt="Jujutsu Kaisen image cover">
-          <h3>Jujutsu Kaisen</h3>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/demon slayer.jpg" alt="KNY">
+          <p>Demon Slayer</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/jujutsu kaisen.jpg" alt="jjk">
+          <p>Jujutsu Kaisen</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/haikyu.jpg" alt="Haikyu!!">
+          <p>Haikyu!!</p>
         </div>
       </div>
-      <button class="carrousel-next">Next</button>
-    </section>
+    </div>
+    <button class="carousel-btn right">
+      <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="Right arrow">
+    </button>
+  </div>
+</section>
+
+
+<section>
+  <h2 class="header-in-section">New Episodes</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">
+      <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="Left arrow">
+    </button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          
+          <img src="img/covers/wind breaker.jpg alt="Wind Breaker">
+          <p>Wind Breaker</p>
+
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/shoshimin.jpg" alt="Shoshimin">
+          <p>Shoshimin</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/attack on titan.jpg" alt="SNK">
+          <p>Attack On Titan</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/demon slayer.jpg" alt="KNY">
+          <p>Demon Slayer</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/jujutsu kaisen.jpg" alt="jjk">
+          <p>Jujutsu Kaisen</p>
+        </div>
+        <div class="carousel-slide">
+          
+          <img src="img/covers/haikyu.jpg" alt="Haikyu!!">
+          <p>Haikyu!!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn right">
+      <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="Right arrow">
+    </button>
+  </div>
+</section>
 
   </main>
+
 
 </body>
 

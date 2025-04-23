@@ -93,21 +93,22 @@
 .announcements{
   
   position: relative;
-  background-image:url('img/solo-leveling.jpg');
+  background-image:url('img/wallpapers/solo-leveling.jpg');
   background-size: cover;
   background-position: center;
   color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
-  min-height: 90vh;
+  min-height: 50vh;
   padding: 3rem;
   border-radius: 10px;
 }
 
 .solo-leveling-announcement{
 
-  max-width: 600px;
-  background: rgba(253, 252, 252, 0.6); /* Optional: better text visibility */
+  max-width: 500px;
+  background: rgba(253, 252, 252, 0.9); /* Optional: better text visibility */
+  font-weight: 500;
   padding: 2rem;
   border-radius: 1rem;
 
@@ -148,11 +149,11 @@
   background-color: blueviolet;
   color: white;
   border: none;
-  padding: 0.25rem 1.25rem;
+  padding: 0.8rem 1.25rem;
   border-radius: 10px;
   cursor: pointer;
   font-size: 0.8rem;
-  margin-right: 20%;
+  margin-right: 40%;
 
 }
 
@@ -164,26 +165,24 @@
 }
 
 .add-to-list{
+  margin-right: 10%;
+  
+}
 
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.25rem;
-  border-radius: 20px;
+.add-to-list:hover{
+
+  background-color: #540b6478;
+  border-radius: 100%;
   cursor: pointer;
-  font-size: 1rem;
 
 }
 
-.add-to-watchlist{
-
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.25rem;
-  border-radius: 20px;
+.watchlist:hover{
+  
+  background-color: #540b6478;
+  border-radius: 100%;
   cursor: pointer;
-  font-size: 1rem;
+
 
 }
 
@@ -193,89 +192,62 @@
   width: 100%;
 }
 
-/*Most popular anime section (carrousel) */
 
-.most-popular-container{
-  
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem;
+/* carousel structure */
+
+.header-in-section{
+  margin: 2rem 10% 1rem;
 }
-
-.most-popular-container h2{
-
-  font-size: 1.5rem;
-  grid-column: 1/-1;
-  margin-bottom: 1rem;
-}
-
-.popular-anime{
-
+.carousel-container {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 900px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem;
-
+  overflow: hidden;
+  background-color: #3704457a;
 }
 
-.anime-cover{
-  flex: 0 0 auto;
-  width: 160px;
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 33.333%;
+  padding: 2rem 1rem 0rem;
   text-align: center;
 }
 
-.anime-cover img{
-
+.carousel-slide img {
   width: 100%;
-  margin-bottom: 0.5rem;
+  height: 80%;
+  object-fit: cover;
 }
 
-.anime-cover h3 {
-
-  font-size: 1rem;
-  color: black;
-  
+.carousel-slide p {
+  color: #1d022c;
+  font-size: 1.2rem;
+  margin:1rem auto;
+  font-weight: 500;
 }
 
-.carrousel-next{ /*arrow */
-
+.carousel-btn {
+  background: none;
+  border: none;
   cursor: pointer;
-
-} 
-
-.carrousel-next:hover{ /*arrow */
-
-  cursor: pointer;
-  color: blueviolet;
-
-} 
-
-.new-anime-container {
-
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem;
-
-}
-
-.new-anime-container h2{
-
-  font-size: 1.5rem;
-  grid-column: 1/-1;
-  margin-bottom: 1rem;
-}
-
-.new-anime{
-  
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  overflow-x: auto;
   padding: 1rem;
+}
 
+.carousel-btn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%)
+  
 }
