@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="css/sign-up.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="signup-container">
+      <section class="image-column">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9701a39f17d49f3a9e85e858956f2cf296fc618?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Signup illustration" class="hero-image" />
+      </section>
+
+      <section class="form-column">
+        <div class="form-wrapper">
+          <div class="form-content">
+            <header class="form-header">
+              <h1 class="title">Create an account</h1>
+              <p class="login-link">
+                Already have an ccount? <a href="#">Log in</a>
+              </p>
+            </header>
+
+            <form class="signup-form">
+              <div class="form-field">
+                <label for="username" class="field-label">User name</label>
+                <input type="text" id="username" class="input-field" />
+              </div>
+
+              <div class="form-field">
+                <label for="email" class="field-label">Email address</label>
+                <input type="email" id="email" class="input-field" />
+              </div>
+
+              <div class="form-field">
+                <div class="password-header">
+                  <label for="password" class="field-label">Password</label>
+                  <button type="button" class="toggle-password">Hide</button>
+                </div>
+                <input type="password" id="password" class="input-field" />
+                <p class="error-message">
+                  Use 8 or more characters with a mix of letters, numbers &amp;
+                  symbols
+                </p>
+              </div>
+            </form>
+
+            <p class="terms-text">
+              By creating an account, you agree to our<br />
+              <a href="#" class="terms-link">Terms of use</a> and
+              <a href="#" class="terms-link">Privacy Policy</a>
+            </p>
+
+            <div class="captcha-box">
+              <div class="captcha-content">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b257a641f3f495ba5cd9316e0cd783cf54bb33a1?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Checkbox" class="checkbox-icon" />
+                <p class="captcha-text">I'm not a robot</p>
+              </div>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/913813a09e707762ed2d67bee9b4cea69209dd59?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="reCAPTCHA logo" class="captcha-logo" />
+            </div>
+
+            <div class="action-container">
+              <button type="submit" class="signup-button">
+                Create an accrount
+              </button>
+              <p class="login-link-mobile">
+                Already have an ccount? <a href="#">Log in</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="brand-logo"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
