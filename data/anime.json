@@ -4,17 +4,20 @@
 
             "wallpaper": "",
             "title": "Solo Leveling Season 2: Arise from the Shadow",
-            "rating": "8.27",
-            "reviews": "5",
+            "cover": "img/covers/solo leveling banner",
+            "rating": 8.27,
+            "reviews": 5,
             "star_count_or_container": "",
-            "episodes": "13",
+            "episodes": 13,
             "dates": "Jan 5, 2025 to Mar 30,",
             "plot": "Humanity was caught at a precipice a decade ago when the first gates—portals linked with other dimensions that harbor monsters immune to conventional weaponry—emerged around the world. Alongside the appearance of the gates, various humans were transformed into hunters and bestowed superhuman abilities. Responsible for entering the gates and clearing the dungeons within, many hunters chose to form guilds to secure their livelihoods. Sung Jin-Woo is an E-rank hunter dubbed as the weakest hunter of all mankind. While exploring a supposedly safe dungeon, he and his party encounter an unusual tunnel leading to a deeper area. Enticed by the prospect of treasure, the group presses forward, only to be confronted with horrors beyond their imagination. Miraculously, Jin-Woo survives the incident and soon finds that he now has access to an interface visible only to him. This mysterious system promises him the power he has long dreamed of—but everything comes at a price.",
-            "trailer_url": ""
+            "trailer_url": "",
+            "liked_by_user": ""
         },
         {
             "wallpaper": "",
             "title": "Naruto",
+            "cover": "img/covers/",
             "rating": "8.01",
             "reviews": "",
             "star_count_or_container": "",
@@ -26,6 +29,7 @@
         {
             "wallpaper": "",
             "title": "Attack on Titan",
+            "cover": "img/covers/attack on titan.jpg",
             "rating": "8.56",
             "reviews": "",
             "star_count_or_container": "",
@@ -37,6 +41,7 @@
         {
             "wallpaper": "",
             "title": "One Piece",
+            "cover": "img/covers/",
             "rating": "8.73",
             "reviews": "",
             "star_count_or_container": "",
@@ -48,6 +53,7 @@
         {
             "wallpaper": "",
             "title": "Haikyuu!!",
+            "cover": "img/covers/haikyu.jpg",
             "rating": "8.44",
             "reviews": "",
             "star_count_or_container": "",
@@ -59,6 +65,7 @@
         {
             "wallpaper": "",
             "title": "Shoshimin: How to Become Ordinary",
+            "cover": "img/covers/",
             "rating": "7.31",
             "reviews": "",
             "star_count_or_container": "",
@@ -70,6 +77,7 @@
         {
             "wallpaper": "",
             "title": "Wind Breaker",
+            "cover": "img/covers/",
             "rating": "7.74",
             "reviews": "",
             "star_count_or_container": "",
@@ -81,6 +89,7 @@
         {
             "wallpaper": "",
             "title": "Demon Slayer",
+            "cover": "img/covers/",
             "rating": "8.43",
             "reviews": "",
             "star_count_or_container": "",
@@ -92,6 +101,7 @@
         {
             "wallpaper": "",
             "title": "Jujutsu Kaisen",
+            "cover": "img/covers/",
             "rating": "8.55",
             "reviews": "",
             "star_count_or_container": "",
@@ -103,6 +113,7 @@
         {
             "wallpaper": "",
             "title": "Fire Force",
+            "cover": "img/covers/",
             "rating": "7.72",
             "reviews": "",
             "star_count_or_container": "",
@@ -114,6 +125,7 @@
         {
             "wallpaper": "",
             "title": "",
+            "cover": "img/covers/",
             "rating": "",
             "reviews": "",
             "star_count_or_container": "",
