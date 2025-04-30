@@ -1,38 +1,42 @@
-//js for loading data from JSON files
-let animes = [];
-const contentElement = document.getElementById("content");
+// //js for loading data from JSON files
+// let animes = [];
+// const contentElement = document.getElementById("content");
 
-async function loadData() {
-    const animeDetailsResponse = await fetch("data/anime.json");
-    const animeJSON = await animeDetailsResponse.json();
-    animes = animeJSON.animes;
+// async function loadData() {
+//     const animeDetailsResponse = await fetch("data/anime.json");
+//     const animeJSON = await animeDetailsResponse.json();
+//     animes = animeJSON.animes;
     
-    console.log(animeJSON);
-    renderContent();
-}
+//     console.log(animeJSON);
+//     renderContent();
+// }
 
-function createAnimeDetails(anime) {
-    const animeDetailsElement = document.createElement("section");
-    animeDetailsElement.classList.add("detail-page");
+// function createAnimeDetails(anime) {
+//     const animeDetailsElement = document.createElement("section");
+//     animeDetailsElement.classList.add("detail-page");
 
-    const coverElement = document.createElement("img");
-    coverElement.src = animes.cover;
-    animeDetailsElement.appendChild(coverElement);
+//     const coverElement = document.createElement("img");
+//     coverElement.src = animes.cover;
+//     animeDetailsElement.appendChild(coverElement);
     
-    return animeDetailsElement;
-}
+//     return animeDetailsElement;
+// }
 
-function renderContent() {
-    contentElement.innerHTML = "";
+// function renderContent() {
+//     contentElement.innerHTML = "";
 
-    //chatGPT
-    animes.forEach(anime => {
-        const animeDetailsElement = createAnimeDetails(anime);
-        contentElement.appendChild(animeDetailsElement);
-    });
-}
+//     //chatGPT
+//     animes.forEach(anime => {
+//         const animeDetailsElement = createAnimeDetails(anime);
+//         contentElement.appendChild(animeDetailsElement);
+//     });
+// }
 
-loadData();
+// loadData();
+
+
+
+
 
 
 
