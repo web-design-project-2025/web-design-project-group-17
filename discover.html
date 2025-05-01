@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a11b149cad.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -23,11 +24,18 @@
             <a href="profile.html" class="nav-link">My Profile</a>
           </nav>
           <div class="user-actions">
+            <!-- SEARCH BAR -->
             <div class="search-bar">
               <div class="search-input">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c1cf0c8fd7371789188a6bde3a5d782fb9ce811?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Search icon" class="search-icon" />
-                <span class="search-placeholder">Search</span>
+                <input type="text" id="input-box" placeholder="Search Anime"
+                autocomplete="off">
+                <button> <i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
+              <!-- <div class="result-box">
+                <ul>
+                  <li></li>
+                </ul>
+              </div> -->
             </div>
             <div class="language-selector">
               <span class="language-text">English (united States)</span>
