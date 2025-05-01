@@ -1,43 +1,137 @@
 {
     "animes": [
         {
+
+            "wallpaper": "",
             "title": "Solo Leveling Season 2: Arise from the Shadow",
-            "id": "1",
-            "rating": "#",
-            "description": "Sung Jin-Woo, dubbed the weakest hunter of all mankind, grows stronger by the day with the supernatural powers he has gained. However, keeping his skills hidden becomes more difficult as dungeon-related incidents pile up around him.When Jin-Woo and a few other low-ranked hunters are the only survivors of a dungeon that turns out to be a bigger challenge than initially expected, he draws attention once again, and hunter guilds take an increased interest in him. Meanwhile, a strange hunter who has been lost for ten years returns with a dire warning about an upcoming catastrophic event. As the calamity looms closer, Jin-Woo must continue leveling up to make sure nothing stops him from reaching his ultimate goal—saving the life of his mother.",
-            "trailer": "url",
-            "main_character": "img/src"
+            "cover": "img/covers/solo leveling banner",
+            "rating": 8.27,
+            "reviews": 5,
+            "star_count_or_container": "",
+            "episodes": 13,
+            "dates": "Jan 5, 2025 to Mar 30,",
+            "plot": "Humanity was caught at a precipice a decade ago when the first gates—portals linked with other dimensions that harbor monsters immune to conventional weaponry—emerged around the world. Alongside the appearance of the gates, various humans were transformed into hunters and bestowed superhuman abilities. Responsible for entering the gates and clearing the dungeons within, many hunters chose to form guilds to secure their livelihoods. Sung Jin-Woo is an E-rank hunter dubbed as the weakest hunter of all mankind. While exploring a supposedly safe dungeon, he and his party encounter an unusual tunnel leading to a deeper area. Enticed by the prospect of treasure, the group presses forward, only to be confronted with horrors beyond their imagination. Miraculously, Jin-Woo survives the incident and soon finds that he now has access to an interface visible only to him. This mysterious system promises him the power he has long dreamed of—but everything comes at a price.",
+            "trailer_url": "",
+            "liked_by_user": ""
         },
         {
+            "wallpaper": "",
+            "title": "Naruto",
+            "cover": "img/covers/",
+            "rating": "8.01",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "220",
+            "dates": "Oct 3, 2002 to Feb 8, 2007",
+            "plot": "Moments before Naruto Uzumaki's birth, a huge demon known as the  Nine-Tailed Fox attacked Konohagakure, the Hidden Leaf Village, and  wreaked havoc. In order to put an end to the demon's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the  monstrous beast inside the newborn Naruto. In the present, Naruto is a hyperactive and knuckle-headed ninja growing up within Konohagakure. Shunned because of the demon inside him, Naruto struggles to find his place in the village. His one burning desire to  become the Hokage and be acknowledged by the villagers who despise him.  However, while his goal leads him to unbreakable bonds with lifelong  friends, it also lands him in the crosshairs of many deadly foes.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Attack on Titan",
+            "cover": "img/covers/attack on titan.jpg",
+            "rating": "8.56",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "25",
+            "dates": "Apr 7, 2013 to Sep 29, 2013",
+            "plot": "Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "One Piece",
+            "cover": "img/covers/",
+            "rating": "8.73",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "Unknown",
+            "dates": "Oct 20, 1919 to unkown",
+            "plot": "Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsome pirates. Despite being a naive-looking teenager, he is not to be underestimated. Unmatched in battle, Luffy is a pirate himself who resolutely pursues the coveted One Piece treasure and the King of the Pirates title that comes with it. The late King of the Pirates, Gol D. Roger, stirred up the world before his death by disclosing the whereabouts of his hoard of riches and daring everyone to obtain it. Ever since then, countless powerful pirates have sailed dangerous seas for the prized One Piece only to never return. Although Luffy lacks a crew and a proper ship, he is endowed with a superhuman ability and an unbreakable spirit that make him not only a formidable adversary but also an inspiration to many. As he faces numerous challenges with a big smile on his face, Luffy gathers one-of-a-kind companions to join him in his ambitious endeavor, together embracing perils and wonders on their once-in-a-lifetime adventure.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Haikyuu!!",
+            "cover": "img/covers/haikyu.jpg",
+            "rating": "8.44",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "25",
+            "dates": "Apr 6, 2014 to Sep 21, 2014",
+            "plot": "Ever since having witnessed the \"Little Giant\" and his astonishing skills on the volleyball court, Shouyou Hinata has been bewitched by the dynamic nature of the sport. Even though his attempt to make his debut as a volleyball regular during a middle school tournament went up in flames, he longs to prove that his less-than-impressive height ceases to be a hindrance in the face of his sheer will and perseverance. When Hinata enrolls in Karasuno High School, the Little Giant's alma mater, he believes that he is one step closer to his goal of becoming a professional volleyball player. Although the school only retains a shadow of its former glory, Hinata's conviction isn't shaken until he learns that Tobio Kageyama—the prodigy who humiliated Hinata's middle school volleyball team in a crushing defeat—is now his teammate. To fulfill his desire of leaving a mark on the realm of volleyball—so often regarded as the domain of the tall and the strong—Hinata must smooth out his differences with Kageyama. Only when Hinata learns what it takes to be a part of a team will he be able to join the race to the top in earnest.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Shoshimin: How to Become Ordinary",
+            "cover": "img/covers/",
+            "rating": "7.31",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "10",
+            "dates": "Jul 7, 2024 to Sep 15, 2024",
+            "plot": "Jougorou Kobato has a habit of inserting himself into other people's problems. After realizing his detective skills are neither wanted nor appreciated, he makes an agreement with his shy friend Yuki Osanai to become ordinary together. Now entering high school, they aim to be perceived as regular people, yet Kobato cannot help but fall back into his deductive ways when faced with everyday mysteries. Unfortunately, mundane occurrences are not all the duo stumbles across. As they go through their school days trying to avoid drawing attention to themselves, Kobato and Osanai at times get caught up in incidents that put their plan of a peaceful, average life at risk.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Wind Breaker",
+            "cover": "img/covers/",
+            "rating": "7.74",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "13",
+            "dates": "",
+            "plot": "From an early age, Haruka Sakura was made an outcast due to his unconventional appearance and lack of social skills. However, the rough treatment turned him into a proficient fighter, which is now the only thing he prides himself on. Starting at Furin High School, where it is rumored that strength is valued over academics, Sakura has only one goal—taking the top spot. Involved in a street brawl the day before his enrollment, Sakura happens to meet a group of his future schoolmates. Instead of the usual rejection, they fight alongside him, demonstrating that what the school actually cares about is protecting the town of Makochi from any harm—hence why the students call themselves \"Bofurin.\" Surprised by the support and appreciation of the townspeople, Sakura has a hard time accepting their goodwill. Though unfamiliar with kindness being shown to him, Sakura must learn to push past his discomfort when Bofurin is pitted against formidable enemies. After experiencing the feeling of acceptance, he finds himself fighting for the sake of others for the first time.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Demon Slayer",
+            "cover": "img/covers/",
+            "rating": "8.43",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "26",
+            "dates": "Apr 6, 2019 to Sep 28, 2019",
+            "plot": "Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man, who warns him of the existence of flesh-eating demons that lurk in the woods at night. When he finally arrives back home the next day, he is met with a horrifying sight—his whole family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants of his beloved sister's humanity.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Jujutsu Kaisen",
+            "cover": "img/covers/",
+            "rating": "8.55",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "24",
+            "dates": "Oct 3, 2020 to Mar 27, 2021",
+            "plot": "Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the King of Curses. Yuuji experiences first-hand the threat these Curses pose to society as he discovers his own newfound powers. Introduced to the Tokyo Prefectural Jujutsu High School, he begins to walk down a path from which he cannot return—the path of a Jujutsu sorcerer.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
+            "title": "Fire Force",
+            "cover": "img/covers/",
+            "rating": "7.72",
+            "reviews": "",
+            "star_count_or_container": "",
+            "episodes": "24",
+            "dates": "Jul 6, 2019 to Dec 28, 2019",
+            "plot": "Spontaneous Human Combustion: a chaotic phenomenon that has plagued humanity for years, randomly transforming ordinary people into flaming, violent creatures known as Infernals. While Infernals make up the first-generation accounts of Human Combustion, the second and third generations became known as pyrokinetics—people gifted with the ability to manipulate and control their flames while remaining human. To combat the Infernal threat and discover the cause, the Tokyo Armed Forces, Fire Defense Agency, and Holy Church of Sol produced their answer: the Special Fire Force. Young and eager third-generation pyrokinetic Shinra Kusakabe, nicknamed Devil's Footprints for his explosive ability to ignite his feet at will, becomes a member of the lively Special Fire Force Company 8. Upholding the brigade's duty to extinguish the blazing Infernals and lay their souls to rest, Shinra is determined to become a hero who will save the lives of those threatened by the flame terror. However, this is not the hero's game Shinra imagined. The Fire Force is a fractured mess of feuding brigades, abnormal Infernal sightings are increasing all over Tokyo, and a shadowy group is claiming to have answers to the strange fire that caused the death of Shinra's family 12 years ago. Faced with many obstacles within and outside the Fire Force, Shinra fights to uncover the truth behind the burning mysteries that have kept him in the dark.",
+            "trailer_url": ""
+        },
+        {
+            "wallpaper": "",
             "title": "",
-            "id": "",
+            "cover": "img/covers/",
             "rating": "",
-            "description": "",
-            "trailer": "url",
-            "main_character": "img/src"
-        },
-        {
-            "page_title": "Solo Leveling",
-            "anime_wallpaper": "",
-            "anime_title": "Solo Leveling Season 2: Arise from the Shadow",
-            "score_value": "4.5",
-            "reviews_count": "5",
+            "reviews": "",
             "star_count_or_container": "",
-            "episode_length": "13",
-            "airing_dates": "Jan 5, 2025 to Mar 30,",
-            "plot_text": "Sung Jin-Woo, dubbed the weakest hunter of all mankind, grows stronger by the day with the supernatural powers he has gained. However, keeping his skills hidden becomes more difficult as dungeon-related incidents pile up around him.When Jin-Woo and a few other low-ranked hunters are the only survivors of a dungeon that turns out to be a bigger challenge than initially expected, he draws attention once again, and hunter guilds take an increased interest in him. Meanwhile, a strange hunter who has been lost for ten years returns with a dire warning about an upcoming catastrophic event. As the calamity looms closer, Jin-Woo must continue leveling up to make sure nothing stops him from reaching his ultimate goal—saving the life of his mother. ",
-            "trailer_url": "img/characters/#"
-        },
-        {
-            "page_title": "",
-            "anime_wallpaper": "",
-            "anime_title": "",
-            "score_value": "",
-            "reviews_count": "",
-            "star_count_or_container": "",
-            "episode_length": "",
-            "airing_dates": "",
-            "plot_text": "",
+            "episodes": "",
+            "dates": "",
+            "plot": "",
             "trailer_url": ""
         }
     ]
