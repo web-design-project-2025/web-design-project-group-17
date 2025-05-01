@@ -1,0 +1,420 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+}
+
+/* Main container */
+.signin-container {
+  background-color: #ffffff;
+  display: flex;
+  padding-right: 48px;
+  padding-top: 48px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header with signup prompt */
+.top-header {
+  align-self: flex-end;
+  font-size: 16px;
+}
+
+.signup-prompt,
+.signup-prompt-bottom {
+  padding: 2px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.text-muted {
+  text-decoration: none;
+  color: #333333;
+}
+
+.text-dark {
+  color: #111111;
+  cursor: pointer;
+}
+
+/* Main content wrapper */
+.content-wrapper {
+  margin-top: 103px;
+  width: 100%;
+  max-width: 1364px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left column with image */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 818px;
+  margin-top: 27px;
+  flex-grow: 1;
+  padding: 0 80px 665px 80px;
+  align-items: flex-start;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #000000;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.headline-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  margin-top: -107px;
+  width: 482px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo-circle {
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  min-height: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.main-heading {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.main-description {
+  font-size: 24px;
+  font-weight: 400;
+  align-self: stretch;
+  margin-top: 16px;
+}
+
+/* Right column with form */
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  margin-left: 20px;
+}
+
+.form-container {
+  width: 100%;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+}
+
+.signin-heading {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* Social login buttons */
+.social-login-container {
+  margin-top: 48px;
+  max-width: 100%;
+  width: 568px;
+  font-family:
+    Avenir,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #333333;
+}
+
+.social-login-options {
+  width: 100%;
+}
+
+.social-login-button {
+  border-radius: 40px;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  display: flex;
+  width: 100%;
+  max-width: 568px;
+  padding: 17px 57px;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 22px;
+  color: #333333;
+  cursor: pointer;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.twitter-button {
+  font-size: 24px;
+  padding: 16px 57px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.twitter-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Divider */
+.divider-container {
+  display: flex;
+  margin-top: 48px;
+  max-width: 100%;
+  width: 568px;
+  align-items: center;
+  gap: 23px;
+  font-family:
+    Avenir,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 18px;
+  color: #666666;
+}
+
+.divider-line {
+  background-color: rgba(102, 102, 102, 0.25);
+  height: 2px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.divider-text {
+  white-space: nowrap;
+}
+
+/* Login form */
+.login-form {
+  margin-top: 48px;
+  max-width: 100%;
+  width: 568px;
+}
+
+.form-field {
+  width: 100%;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  width: 100%;
+  padding: 2px 0;
+  color: #666666;
+  font-size: 16px;
+}
+
+.form-input {
+  border-radius: 12px;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  min-height: 56px;
+  margin-top: 4px;
+  width: 100%;
+  padding: 0 16px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.password-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.password-field {
+  width: 100%;
+}
+
+.password-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hide-button {
+  background: none;
+  border: none;
+  color: #666666;
+  font-size: 18px;
+  text-align: right;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.forgot-password {
+  color: #111111;
+  font-size: 16px;
+  text-align: right;
+  text-decoration: underline;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  margin-top: 18px;
+  width: 304px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.signin-button {
+  border-radius: 32px;
+  background-color: #111111;
+  border: none;
+  width: 100%;
+  padding: 17px 30px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.signup-prompt-bottom {
+  align-self: flex-start;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #666666;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .signin-container {
+    padding-right: 20px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .image-column {
+    width: 100%;
+  }
+
+  .image-content {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px 100px 20px;
+  }
+
+  .main-heading {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .main-description {
+    max-width: 100%;
+  }
+
+  .form-column {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .social-login-container {
+    margin-top: 40px;
+  }
+
+  .social-login-button {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .divider-container {
+    margin-top: 40px;
+    white-space: initial;
+  }
+
+  .login-form {
+    margin-top: 40px;
+  }
+
+  .form-label {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+
+  .signin-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
