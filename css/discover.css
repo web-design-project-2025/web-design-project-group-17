@@ -87,7 +87,7 @@ body {
 }
 
 .search-bar {
-  border-radius: 16px;
+  border-radius: 26px;
   background-color: #f6f6f6;
   border: 1px solid rgba(102, 102, 102, 0.35);
   padding: 8px 16px;
@@ -100,12 +100,23 @@ body {
   align-items: center;
   gap: 8px;
 }
-
-.search-icon {
-  width: 16px;
-  aspect-ratio: 1;
-  object-fit: contain;
-}
+ input{
+  flex: 1;
+  height: 1.5rem;
+  border: 0;
+  outline:0;
+ }
+ button{
+  background: transparent;
+  border: 0;
+  outline: 0;;
+ }
+ button .fa-solid{
+  width: 1rem;
+  color:#282828;
+  font-size: 1.1rem;
+  cursor: pointer;
+ }
 
 .language-selector {
   display: flex;
