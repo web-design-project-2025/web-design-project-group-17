@@ -1,14 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - RE:VIEW</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="profile-page">
+      <header class="main-header">
+        <div class="header-content">
+          <nav class="main-nav">
+            <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="discover.html" class="nav-link">Discover</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="profile.html" class="nav-link active">My Profile</a>
+          </nav>
+          <div class="user-actions">
+            <div class="search-bar">
+              <div class="search-input">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c1cf0c8fd7371789188a6bde3a5d782fb9ce811?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Search icon" class="search-icon" />
+                <span class="search-placeholder">Search</span>
+              </div>
+            </div>
+            <div class="language-selector">
+              <span class="language-text">English (united States)</span>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54a5a93e2acd3a4fdb5efe85082f66e300a569b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Dropdown icon" class="dropdown-icon" />
+            </div>
+            <a href="#" class="btn btn-outline">Log in</a>
+            <a href="#" class="btn btn-primary">Sign up</a>
+          </div>
+        </div>
+      </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-</head>
+      <div class="profile-banner"></div>
 
-<body>
+      <main class="profile-content">
+        <section class="user-profile">
+          <div class="profile-info">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e928721a5e5e26117780b1b50957820d5e0c4e35?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="User profile picture"
+              class="profile-picture"
+            />
+            <h2 class="user-name">Sara Dream</h2>
+            <p class="user-handle">@saraadream</p>
+            <p class="user-bio">
+              🌍 Passionate about global development and meaningful
+              collaboration.
+            </p>
+            <p class="user-bio">
+              📚 &quot;Knowledge speaks, but wisdom listens.&quot; – Jimi
+              Hendrix
+            </p>
+            <p class="user-bio">🍊 I like oranges, but hate orange juice</p>
+          </div>
+          <div class="profile-actions">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f620b5abe498dc6a26817d6a4970255e1101b56b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Settings" class="settings-icon" />
+            <button class="btn-edit">Edit</button>
+          </div>
+        </section>
 
-</body>
+        <section class="favorites-section">
+          <h2 class="section-title">Favourites</h2>
+          <div class="favorites-grid">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b9d8e0d7dceab2697127780c5b3ed45dd910f41?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/780f81bc4dd8e1eb31b00b481012aca3c7f4c0b0?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfa0393eb325cddd27a3f85d86fc9c24444f66ac?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3c8fd21e82767c644e88bc08e284c5b244300b8?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a16946ba010065ae30f7336e582b31c1691ee55?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4232eab448e72eedc0a770ac2eaae0ffb573cd25?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/442f54e58f23ea73af8dcd48d06b639dd4ebfa7f?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Favorite content"
+              class="favorite-item small"
+            />
+          </div>
+        </section>
+      </main>
 
+      <section class="reviews-section">
+        <h2 class="section-title">Your Reviews</h2>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="rating">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+            </div>
+            <div class="review-content">
+              <h3 class="review-title">Could be better</h3>
+              <p class="review-text">
+                In general it was a nice anime, but something was missing for
+                sure
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb75ed9d2cfd0308b66530b218dcacbc0992cf4?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
+              <div class="author-info">
+                <p class="author-name">Sara Dream</p>
+                <p class="review-date">13.04.2025</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="rating">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb9e651f0a8e186857b5ff164f4db1b70b5940ad?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
+            </div>
+            <div class="review-content">
+              <h3 class="review-title">Didn't like it</h3>
+              <p class="review-text">
+                The main characters were not good at all and the plot is not
+                interesting. Would not recommend it to whatch
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1df3828037a8b6e4f55906a6c3be18808002ed01?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
+              <div class="author-info">
+                <p class="author-name">Sara Dream</p>
+                <p class="review-date">25.04.2025</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="rating">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
+            </div>
+            <div class="review-content">
+              <h3 class="review-title">Wow and WOW</h3>
+              <p class="review-text">
+                I'm in love with the main character as well as his team.
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a95eb98e0482b42cbb6da307a8288e3e68e07537?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
+              <div class="author-info">
+                <p class="author-name">Sara Dream</p>
+                <p class="review-date">16.02.2025</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/442f54e58f23ea73af8dcd48d06b639dd4ebfa7f?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Profile badge" class="profile-badge" />
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p class="follow-text">Follow Us</p>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76500189f5d76d46913fa716741dbb089517087?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Social media icons" class="social-icons" />
+          <p class="copyright">
+            RE:VIEW<br />
+            © 2025 Group 17. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
+
+

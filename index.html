@@ -9,31 +9,46 @@
    <script src="js/main.js" defer></script>
 </head>
 
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE:VIEW - Discover</title>
+    <link rel="stylesheet" href="css/discover.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-  <header class="header">
-    <div class="header-container">
-      <div class="header-content">
-        <h1 class="logo">
-          RE
-          <br />
-          :
-          <span class="logo-highlight">VIEW</span>
-        </h1>
-        <nav class="main-nav">
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li>
-              <a href="discover.html" class="nav-link nav-link-active">Discover</a>
-            </li>
-            <li><a href="about.html" class="nav-link">About</a></li>
-            <li><a href="profile.html" class="nav-link">My Profile</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <body>
+    <div class="home-page">
+      <header class="main-header">
+        <div class="header-content">
+          <nav class="main-nav">
+            <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="discover.html" class="nav-link">Discover</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="profile.html" class="nav-link">My Profile</a>
+          </nav>
+          <div class="user-actions">
+            <div class="search-bar">
+              <div class="search-input">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c1cf0c8fd7371789188a6bde3a5d782fb9ce811?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Search icon" class="search-icon" />
+                <span class="search-placeholder">Search</span>
+              </div>
+            </div>
+            <div class="language-selector">
+              <span class="language-text">English (united States)</span>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54a5a93e2acd3a4fdb5efe85082f66e300a569b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Dropdown icon" class="dropdown-icon" />
+            </div>
+            <a href="#" class="btn btn-outline">Log in</a>
+            <a href="#" class="btn btn-primary">Sign up</a>
+          </div>
+        </div>
+      </header>
 
   <main>
 
@@ -56,15 +71,8 @@
           his ultimate goal—saving the life of his mother.</p>
           
           <div class="announcements-actions">
-            <button class="announcements-button">Write Review</button>
-            <svg class="add-to-list" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
-            </svg>
-            <svg class="watchlist" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/>
-            </svg>
-            
-          </div>
+            <a href="anime_details.html" class="announcements-button">Write Review</a>
+            </div>
         </div>
       
     </section>
