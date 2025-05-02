@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Details</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/json.js" defer></script>
+    <link rel="stylesheet" href="css/details-ex.css">
+    <script src="js/detail.js" defer></script>
 </head>
 
 <body>
@@ -33,8 +34,64 @@
         </div>
     </header>
 
+    <!-- <img class="wallpaper" src="" alt=""> -->
+
     <main>
-        <section class="content" id="content"></section>
+        <section class="content" id="content">
+            <section id="title-rating-container" class="title-rating-container">
+
+                <h2 class="anime-title"></h2>
+
+                <section class="rating-container">
+                    <p class="rating-value">4.5 ⭐⭐⭐⭐⭐</p>
+                </section>
+            </section>
+
+            <hr class="divider" />
+
+            <section class="detail-trailer-container">
+                <section class="detail-container">
+                    <section class="detail-categories">
+                        <p id="episodes" class="detail-title">Episodes:</p>
+                        <p id="dates" class="detail-title">Dates:</p>
+                        <section class="plot">
+                            <p id="plot" class="detail-title">Plot:</p>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="trailer-container">
+                    <iframe id="trailer_url" class="trailer" src="#" frameborder="0"></iframe>
+                </section>
+            </section>
+
+            <hr class="divider" />
+
+            <section class="information">
+                <h3 class="info-title">Characters</h3>
+                <section class="characters-container">
+                    <figure class="character-element">
+                        <img id="img" class="character-img" src="" alt="">
+                        <figcaption>
+                            <p id="name"></p>
+                            <p id="role"></p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <h3 class="info-title">Reviews</h3>
+                <section class="reviews-container">
+
+                    <section id="review-post" class="review-post">
+                        <img class="profile-picture" src="" alt="">
+                        <p class="user"></p>
+                        <p class="review-date"></p>
+                        <h3 class="review-title"></h3>
+                        <p class="review-text"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
     </main>
 
     <footer class="footer">

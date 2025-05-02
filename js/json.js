@@ -1,27 +1,27 @@
-async function loadCarouselData() {
-	const carouselDataResponse = await fetch("data/anime.json");
-	const carouselDataResponseJSON = await carouselDataResponse.json();
+// async function loadCarouselData() {
+// 	const carouselDataResponse = await fetch("data/anime.json");
+// 	const carouselDataResponseJSON = await carouselDataResponse.json();
 
-    carouselDataResponseJSON.animes.forEach(anime => console.log(anime.title, anime.cover));
-}
+//     carouselDataResponseJSON.animes.forEach(anime => console.log(anime.title, anime.cover));
+// }
 
-loadCarouselData();
+// loadCarouselData();
 
-//js for loading data from JSON files
+// //js for loading data from JSON files
 
-let animes = [];
-const contentElement = document.getElementById("content");
+// let animes = [];
+// const contentElement = document.getElementById("content");
 
-async function loadData() {
-    const animeDetailsResponse = await fetch("data/anime.json");
-    const animeJSON = await animeDetailsResponse.json();
-    animes = animeJSON.animes;
+// async function loadData() {
+//     const animeDetailsResponse = await fetch("data/anime.json");
+//     const animeOldJSON = await animeDetailsResponse.json();
+//     animes = animeOldJSON.animes;
     
-    console.log(animeJSON);
-    // renderContent();
-}
+//     console.log(animeOldJSON);
+//     // renderContent();
+// }
 
-loadData();
+// loadData();
 
 // function createAnimeDetails(anime) {
 //     const animeDetailsElement = document.createElement("section");

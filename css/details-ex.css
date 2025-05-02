@@ -9,6 +9,11 @@ main {
     border-radius: 2%;
 }
 
+.wallpaper {
+    min-width: 100%;
+}
+
+
 /* TOP SECTION: TITLE + RATING */
 
 .title-rating-container {
@@ -41,7 +46,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 10vw;
+    gap: 3vw;
 }
 
 .detail-container {
@@ -52,6 +57,7 @@ main {
 
 .detail-categories {
     display: flex;
+    flex-direction: column;
     gap: 1vh;
 }
 
@@ -77,9 +83,10 @@ main {
 .info-title {
     color: rgba(47, 12, 90, 1);
     margin-left: 4vw;
+    margin-top: 7vh;
 }
 
-/* CHARACTERS */
+/* CHARACTERS SECTION */
 
 .characters-container {
     margin-top: 2vh;
@@ -102,14 +109,28 @@ main {
 
 
 
-/* REVIEWS */
+/* REVIEWS SECTION */
 
 .reviews-container {
     margin-top: 3vh;
     margin-left: 4vw;
     margin-right: 4vw;
-    background-color: #DDD8E2;
+    background-color: #ffffff;
     border-radius: 3dvh;
+    border: 2px solid #DDD8E2;
     display: flex;
-    padding: 10vh;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.review-post {
+    margin: 2vw;
+    padding: 3vh;
+    border-radius: 3dvh;
+    border: 2px solid #DDD8E2;
+}
+
+.profile-picture {
+    border-radius: 50dvh;
+    max-width: 3vw;
 }
