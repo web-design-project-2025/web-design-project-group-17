@@ -52,11 +52,19 @@
             <section class="detail-trailer-container">
                 <section class="detail-container">
                     <section class="detail-categories">
-                        <p id="episodes" class="detail-title">Episodes:</p>
-                        <p id="dates" class="detail-title">Dates:</p>
-                        <section class="plot">
+
+                        <section id="episodes-container">
+                            <p id="episodes" class="detail-title">Episodes:</p>
+                        </section>
+
+                        <section id="dates-container">
+                            <p id="dates" class="detail-title">Dates:</p>
+                        </section>
+
+                        <section id="plot-container" class="plot">
                             <p id="plot" class="detail-title">Plot:</p>
                         </section>
+
                     </section>
                 </section>
 
@@ -69,7 +77,7 @@
 
             <section class="information">
                 <h3 class="info-title">Characters</h3>
-                <section class="characters-container">
+                <section id="character-container" class="character-container">
                     <figure class="character-element">
                         <img id="img" class="character-img" src="" alt="">
                         <figcaption>
@@ -80,9 +88,8 @@
                 </section>
 
                 <h3 class="info-title">Reviews</h3>
-                <section class="reviews-container">
-
-                    <section id="review-post" class="review-post">
+                <section id="review-container" class="review-container">
+                    <section class="review-post">
                         <img class="profile-picture" src="" alt="">
                         <p class="user"></p>
                         <p class="review-date"></p>

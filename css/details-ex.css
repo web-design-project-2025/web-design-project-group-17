@@ -88,7 +88,7 @@ main {
 
 /* CHARACTERS SECTION */
 
-.characters-container {
+.character-container {
     margin-top: 2vh;
     margin-left: 4vw;
     margin-right: 4vw;
@@ -111,7 +111,7 @@ main {
 
 /* REVIEWS SECTION */
 
-.reviews-container {
+.review-container {
     margin-top: 3vh;
     margin-left: 4vw;
     margin-right: 4vw;

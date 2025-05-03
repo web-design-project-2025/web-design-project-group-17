@@ -13,11 +13,11 @@ async function loadListData() {
 loadListData();
 
 function renderAnimeList() {
-    // animeList.innerHTML = "";
+    animeList.innerHTML = "";
 
     animes.forEach(anime => {
         let linkEl = document.createElement("a");
-        linkEl.href = `detail.html?id=${anime.id}`;
+        linkEl.href = `details2.html?id=${anime.id}`;
 
         let cardEl = document.createElement("section");
         cardEl.classList.add("anime-card");
@@ -50,9 +50,9 @@ function renderAnimeList() {
         let reviewButtonEl = document.createElement("a");
         reviewButtonEl.classList.add("review-button");
         reviewButtonEl.innerText = "Write Review";
+        reviewButtonEl.href = `review.html?id=${anime.id}`;
         cardEl.appendChild(reviewButtonEl);
 
         animeList.appendChild(linkEl);
     })
 }
-
