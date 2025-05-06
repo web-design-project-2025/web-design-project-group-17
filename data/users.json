@@ -1,0 +1,55 @@
+{
+    "users": [
+        {
+            "username": "ShadowCritic",
+            "user_id": 1,
+            "profile_image": ""
+        },
+
+        {
+            "username": "kunaiKid",
+            "user_id": 2,
+            "profile_image": ""
+        },
+        {
+            "username": "mindTitan",
+            "user_id": 3,
+            "profile_image": ""
+        },
+        {
+            "username": "GoingMerry",
+            "user_id": 4,
+            "profile_image": ""
+        },
+        {
+            "username": "jumpServeJin",
+            "user_id": 5,
+            "profile_image": ""
+        },
+        {
+            "username": "softLogic",
+            "user_id": 6,
+            "profile_image": ""
+        },
+        {
+            "username": "gearRush",
+            "user_id": 7,
+            "profile_image": ""
+        },
+        {
+            "username": "FlameHashira",
+            "user_id": 8,
+            "profile_image": ""
+        },
+        {
+            "username": "cursedeyes",
+            "user_id": 9,
+            "profile_image": ""
+        },
+        {
+            "username": "AshesAndOdds",
+            "user_id": 10,
+            "profile_image": ""
+        }
+    ]
+}

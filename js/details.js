@@ -1,5 +1,8 @@
 let animes = [];
 let characters = [];
+let users = [];
+let reviews = [];
+
 
 // ANIME DETAIL SECTION
 const topSectionEl = document.getElementById("title-rating-container");
@@ -17,32 +20,50 @@ const characterContainerEl = document.getElementById("character-container");
 // REVIEW SECTION
 const reviewContainerEl = document.getElementById("review-container");
 
-//Hamstergram + ChatGPT > help with transfer of data through URL and also tie the rest of the code together
+//Hamstergram + ChatGPT > help with transfer of data through URL, sorting through different json files, and also tie the rest of the code together
 function getAnimeIdFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("id");
 }
 
-async function loadAnimeData() {
-    //load Anime information from local JSON file
-    const animeResponse = await fetch("data/anime.json");
+async function loadData
+() {
+    //load Anime data from local JSON file
+    const animeResponse = await fetch("data/animes.json");
     const animeJSON = await animeResponse.json();
     animes = animeJSON.animes;
 
-    //load Character information from local JSON file
+    //load Character data from local JSON file
     const characterResponse = await fetch("data/characters.json");
     const characterJSON = await characterResponse.json();
-    characters = characterJSON;
+    characters = characterJSON.characters;
+
+    //load User data from local JSON file
+    const userResponse = await fetch("data/users.json");
+    const userJSON = await userResponse.json();
+    users = userJSON.users;
+
+    //load Review data from local JSON file
+    const reviewResponse = await fetch("data/reviews.json");
+    const reviewJSON = await reviewResponse.json();
+    reviews = reviewJSON.reviews;
+
+    console.log(animeJSON);
+    console.log(characterJSON);
+    console.log(userJSON);
+    console.log(reviewJSON);
 
     renderContent();
 }
 
-function getCharacterByID(id) {
-    return characters.find((character) => character.anime_id === id);
+// get user_id to connect reviews to the right user
+function getUserById(id) {
+    return users.find((user) => user.user_id === id);
 }
 
+// Create HTML Elements of <<<<<ANIME INFO>>>>>
 function createAnimeDetails(anime) {
-    // Create HTML Elements of <<<<<ANIME INFO>>>>>
+
     const titleElement = document.createElement("h2");
     titleElement.classList.add("anime-title");
     titleElement.innerText = anime.title;
@@ -61,12 +82,73 @@ function createAnimeDetails(anime) {
     plotContainer.appendChild(plotEl);
 }
 
-function createCharacterSection(character) {
-    // Create HTML Elements of <<<<<CHARACTER INFO>>>>>
+// Create HTML Elements of <<<<<CHARACTER INFO>>>>>
+function createCharacterDetails(characterList) {
+
+    characterList.forEach(character => {
+        const charFigureEl = document.createElement("figure");
+        charFigureEl.classList.add("character-element");
+        characterContainerEl.appendChild(charFigureEl);
+
+        const charImgEl = document.createElement("img");
+        charImgEl.src = `${character.img}`;
+        charImgEl.classList.add("character-img");
+        charFigureEl.appendChild(charImgEl);
+
+        const charFigcaptionEL = document.createElement("figcaption");
+        // charFigcaptionEL.innerText = `$character.name`;
+        charFigureEl.appendChild(charFigcaptionEL)
+
+        const nameEl = document.createElement("p");
+        nameEl.innerText = `${character.name}`;
+        charFigcaptionEL.appendChild(nameEl);
+
+        const roleEl = document.createElement("p");
+        roleEl.innerText = `${character.role}`;
+        charFigcaptionEL.appendChild(roleEl);
+    });
+}
+
+// Create HTML Elements of <<<<<REVIEWS>>>>>
+// using both user&review.json
+function createReviewDetails(review, user) {
+    const reviewPostEl = document.createElement("section");
+    reviewPostEl.classList.add("review-post");
+    // reviewContainerEl.appendChild(reviewPostEl);
+
+    //from user.json
+    const profilePictureEl = document.createElement("img");
+    profilePictureEl.src = `${user.profile_image}`;
+    profilePictureEl.classList.add("profile-picture");
+    reviewPostEl.appendChild(profilePictureEl);
+
+    //from user.json
+    const usernameEl = document.createElement("p");
+    usernameEl.innerText = `${user.username}`;
+    usernameEl.classList.add("user");
+    reviewPostEl.appendChild(usernameEl);
+
+    const dateEl = document.createElement("p");
+    dateEl.innerText = `${review.date}`;
+    dateEl.classList.add("review-date");
+    reviewPostEl.appendChild(dateEl);
+
+    const titleEl = document.createElement("h3");
+    titleEl.innerText = `${review.title}`;
+    titleEl.classList.add("review-title");
+    reviewPostEl.appendChild(titleEl);
+
+    const textEl = document.createElement("p");
+    textEl.innerText = `${review.text}`;
+    textEl.classList.add("review-text");
+    reviewPostEl.appendChild(textEl);
+
+    return reviewPostEl;
 }
 
 function renderContent() {
     topSectionEl.innerHTML = "";
+    // this innertext is static text on the website
     episodesTitleEl.innerHTML = "Episodes:";
     datesTitleEl.innerHTML = "Dates:";
     plotTitleEl.innerHTML = "Plot:";
@@ -74,17 +156,23 @@ function renderContent() {
     reviewContainerEl.innerHTML = "";
     // trailerContainerEl.innerHTML = "";
 
-
+    // Getting the correct anime to load
     const animeId = parseInt(getAnimeIdFromURL());
     const anime = animes.find(a => a.id === animeId);
 
-    // for (let character of characters) {
-    //     const character = getCharacterByID(anime.anime_id);
-    //     const characterSection = createCharacterSection(character);
-    //     characterContainerEl.appendChild(characterSection);
-    // }
+    // Getting the matching characters to the anime
+    const matchingCharacters = characters.filter(c => c.anime_id === animeId);
+
+    // Getting the matching reviews to the anime
+    const matchingReviews = reviews.filter(r => r.anime_id === animeId);
 
     createAnimeDetails(anime);
+    createCharacterDetails(matchingCharacters);
+    for (let review of matchingReviews) {
+        const user = getUserById(review.user_id);
+        const reviewElement = createReviewDetails(review, user);
+        reviewContainerEl.appendChild(reviewElement);
+    }
 }
 
-loadAnimeData();
+loadData();
