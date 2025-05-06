@@ -32,13 +32,16 @@ async function loadAnimeData() {
     //load Character information from local JSON file
     const characterResponse = await fetch("data/characters.json");
     const characterJSON = await characterResponse.json();
-    characters = characterJSON;
+    characters = characterJSON.characters;
+
+    console.log(animeJSON);
+    console.log(characterJSON);
 
     renderContent();
 }
 
 function getCharacterByID(id) {
-    return characters.find((character) => character.anime_id === id);
+    return animes.find((anime) => anime.id === id);
 }
 
 function createAnimeDetails(anime) {
@@ -61,8 +64,32 @@ function createAnimeDetails(anime) {
     plotContainer.appendChild(plotEl);
 }
 
-function createCharacterSection(character) {
+function createCharacterDetails(characterList) {
     // Create HTML Elements of <<<<<CHARACTER INFO>>>>>
+
+    characterList.forEach(character => {
+        const charFigureEl = document.createElement("figure");
+        charFigureEl.classList.add("character-element");
+        characterContainerEl.appendChild(charFigureEl);
+
+        const charImgEl = document.createElement("img");
+        charImgEl.src = `${character.img}`;
+        charImgEl.classList.add("character-img");
+        charFigureEl.appendChild(charImgEl);
+
+        const charFigcaptionEL = document.createElement("figcaption");
+        // charFigcaptionEL.innerText = `$character.name`;
+        charFigureEl.appendChild(charFigcaptionEL)
+
+        const nameEl = document.createElement("p");
+        nameEl.innerText = `${character.name}`;
+        charFigcaptionEL.appendChild(nameEl);
+
+        const roleEl = document.createElement("p");
+        roleEl.innerText = `${character.role}`;
+        charFigcaptionEL.appendChild(roleEl);
+    });
+    
 }
 
 function renderContent() {
@@ -74,17 +101,15 @@ function renderContent() {
     reviewContainerEl.innerHTML = "";
     // trailerContainerEl.innerHTML = "";
 
-
+    // Getting the correct anime to load
     const animeId = parseInt(getAnimeIdFromURL());
     const anime = animes.find(a => a.id === animeId);
 
-    // for (let character of characters) {
-    //     const character = getCharacterByID(anime.anime_id);
-    //     const characterSection = createCharacterSection(character);
-    //     characterContainerEl.appendChild(characterSection);
-    // }
+    // Getting the matching characters to the anime, to load
+    const matchingCharacters = characters.filter(c => c.anime_id === animeId);
 
     createAnimeDetails(anime);
+    createCharacterDetails(matchingCharacters);
 }
 
 loadAnimeData();
