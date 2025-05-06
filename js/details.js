@@ -19,39 +19,42 @@ const characterContainerEl = document.getElementById("character-container");
 // REVIEW SECTION
 const reviewContainerEl = document.getElementById("review-container");
 
-//Hamstergram + ChatGPT > help with transfer of data through URL, sorting through different json files, and also tie the rest of the code together
+//Hamstergram + ChatGPT > help with transfer of data through URL, sorting through different json files, error handling, and also tie the rest of the code together
 function getAnimeIdFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("id");
 }
 
 async function loadData () {
-    //load Anime data from local JSON file
-    const animeResponse = await fetch("data/animes.json");
-    const animeJSON = await animeResponse.json();
-    animes = animeJSON.animes;
+    try {
+        //load Anime data from local JSON file
+        const animeResponse = await fetch("data/animes.json");
+        const animeJSON = await animeResponse.json();
+        animes = animeJSON.animes;
 
-    //load Character data from local JSON file
-    const characterResponse = await fetch("data/characters.json");
-    const characterJSON = await characterResponse.json();
-    characters = characterJSON.characters;
+        //load Character data from local JSON file
+        const characterResponse = await fetch("data/characters.json");
+        const characterJSON = await characterResponse.json();
+        characters = characterJSON.characters;
 
-    //load User data from local JSON file
-    const userResponse = await fetch("data/users.json");
-    const userJSON = await userResponse.json();
-    users = userJSON.users;
+        //load User data from local JSON file
+        const userResponse = await fetch("data/users.json");
+        const userJSON = await userResponse.json();
+        users = userJSON.users;
 
-    //load Review data from local JSON file
-    const reviewResponse = await fetch("data/reviews.json");
-    const reviewJSON = await reviewResponse.json();
-    reviews = reviewJSON.reviews;
+        //load Review data from local JSON file
+        const reviewResponse = await fetch("data/reviews.json");
+        const reviewJSON = await reviewResponse.json();
+        reviews = reviewJSON.reviews;
 
-    console.log(animeJSON);
-    console.log(characterJSON);
-    console.log(userJSON);
-    console.log(reviewJSON);
+        console.log(animeJSON);
 
-    renderContent();
+        renderContent();
+    
+    } catch (error) {
+    console.error("Error loading JSON data:", error);
+    document.body.innerHTML = `<p>Failed to load content. Please try again later.</p>`;
+    }
 }
 
 // get user_id to connect reviews to the right user
@@ -145,6 +148,22 @@ function createReviewDetails(review, user) {
 }
 
 function renderContent() {
+    // Getting the correct anime to load
+    const animeId = parseInt(getAnimeIdFromURL());
+    const anime = animes.find(a => a.id === animeId);
+
+    // Straight from ChatGPT
+    if (!anime) {
+        topSectionEl.innerHTML = `<p>Anime not found.</p>`;
+        return;
+    }
+
+    // Getting the matching characters to the anime
+    const matchingCharacters = characters.filter(c => c.anime_id === animeId);
+
+    // Getting the matching reviews to the anime
+    const matchingReviews = reviews.filter(r => r.anime_id === animeId);    
+
     topSectionEl.innerHTML = "";
     // this innertext is static text on the website
     episodesTitleEl.innerHTML = "Episodes:";
@@ -154,15 +173,7 @@ function renderContent() {
     reviewContainerEl.innerHTML = "";
     // trailerContainerEl.innerHTML = "";
 
-    // Getting the correct anime to load
-    const animeId = parseInt(getAnimeIdFromURL());
-    const anime = animes.find(a => a.id === animeId);
 
-    // Getting the matching characters to the anime
-    const matchingCharacters = characters.filter(c => c.anime_id === animeId);
-
-    // Getting the matching reviews to the anime
-    const matchingReviews = reviews.filter(r => r.anime_id === animeId);
 
     createAnimeDetails(anime);
     createCharacterDetails(matchingCharacters);
