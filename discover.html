@@ -1,222 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RE:VIEW - Discover</title>
-    <link rel="stylesheet" href="css/discover.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a11b149cad.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <div class="discover-page">
-      <header class="main-header">
-        <div class="header-content">
-          <nav class="main-nav">
-            <h1 class="logo">RE<br />:<span>VIEW</span></h1>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="discover.html" class="nav-link active">Discover</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="profile.html" class="nav-link">My Profile</a>
-          </nav>
-          <div class="user-actions">
-            <!-- SEARCH BAR -->
-            <div class="search-bar">
-              <div class="search-input">
-                <input type="text" id="input-box" placeholder="Search Anime"
-                autocomplete="off">
-                <button> <i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-              <!-- <div class="result-box">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RE:VIEW - Discover</title>
+  <link rel="stylesheet" href="css/discover.css" />
+  <script src="js/discover.js" defer></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a11b149cad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="discover-page">
+    <header class="main-header">
+      <div class="header-content">
+        <nav class="main-nav">
+          <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="discover.html" class="nav-link active">Discover</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="profile.html" class="nav-link">My Profile</a>
+        </nav>
+        <div class="user-actions">
+          <!-- SEARCH BAR -->
+          <div class="search-bar">
+            <div class="search-input">
+              <input type="text" id="input-box" placeholder="Search Anime" autocomplete="off">
+              <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- <div class="result-box">
                 <ul>
                   <li></li>
                 </ul>
               </div> -->
-            </div>
-            <div class="language-selector">
-              <span class="language-text">English (united States)</span>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54a5a93e2acd3a4fdb5efe85082f66e300a569b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Dropdown icon" class="dropdown-icon" />
-            </div>
-            <a href="#" class="btn btn-outline">Log in</a>
-            <a href="#" class="btn btn-primary">Sign up</a>
           </div>
+          <div class="language-selector">
+            <span class="language-text">English (united States)</span>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54a5a93e2acd3a4fdb5efe85082f66e300a569b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Dropdown icon" class="dropdown-icon" />
+          </div>
+          <a href="#" class="btn btn-outline">Log in</a>
+          <a href="#" class="btn btn-primary">Sign up</a>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="content">
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">Wind Breaker</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              From an early age, Haruka Sakura was made an outcast due to his
-              unconventional appearance and lack of social skills. However...
-            </p>
+    <main class="content">
+      <section id="anime-list"></section>
+      <section class="anime-card">
+        <div class="anime-info">
+          <div class="anime-header">
+            <h3 class="anime-title">This is in the HTML to keep as reference for fixing CSS</h3>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Rating icon" class="rating-icon" />
           </div>
-          <img src="img/covers/wind breaker.jpg" alt="Wind Breaker anime cover" class="anime-cover" />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">
-                Shoshimin:<br />How to Become Ordinary
-              </h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Jougorou Kobato has a habit of inserting himself into other
-              people's problems. After realizing his detective skills are
-              neither wanted nor appreciated, he makes an agreement with his shy
-              friend Yuki Osanai to become ordinary together...
-            </p>
-          </div>
-          <img src="img/covers/shoshimin.jpg" alt="Shoshimin anime cover" class="anime-cover" />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">Attack on Titan</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Centuries ago, mankind was slaughtered to near extinction by
-              monstrous humanoid creatures called Titans, forcing humans to hide
-              in fear behind enormous concentric walls...
-            </p>
-          </div>
-          <img
-            src="img/covers/attack-on-titan.jpg"
-            alt="Attack on Titan anime cover"
-            class="anime-cover"
-          />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">Jujutsu Kaisen</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Idly indulging in baseless paranormal activities with the Occult
-              Club, high schooler Yuuji Itadori spends his days at either the
-              clubroom or the hospital, where he visits his bedridden
-              grandfather. However...
-            </p>
-          </div>
-          <img
-            src="img/covers/jujutsu kaisen.jpg"
-            alt="Jujutsu Kaisen anime cover"
-            class="anime-cover"
-          />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">Fire Force</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Gloria Private Academy is a school where promising young people
-              gather in all fields of entertainment, including music, art, and
-              sports. In the music department, those who match the "talent" of
-              great musicians are transplanted with a "gift" into their bodies
-              and are called by the name of that musician...
-            </p>
-          </div>
-          <img
-            src="img/covers/fireforce-cover-1.jpg"
-            alt="Classic Stars anime cover"
-            class="anime-cover"
-          />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">HAIKYU!!</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Ever since having witnessed the "Little Giant" and his astonishing
-              skills on the volleyball court, Shouyou Hinata has been bewitched
-              by the dynamic nature of the sport. Even though his attempt to
-              make his debut as a volleyball regular during a middle school
-              tournament went up in flames, he longs to prove that his
-              less-than-impressive height ceases to be a hindrance in the face
-              of his sheer will and perseverance...
-            </p>
-          </div>
-          <img src="img/covers/haikyu-cover-1.jpg" alt="Haikyu anime cover" class="anime-cover" />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">Demon Slayer: Kimetsu no Yaiba</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Ever since the death of his father, the burden of supporting the
-              family has fallen upon Tanjirou Kamado's shoulders. Though living
-              impoverished on a remote mountain, the Kamado family are able to
-              enjoy a relatively peaceful and happy life...
-            </p>
-          </div>
-          <img
-            src="img/covers/demonslayer-cover-1.jpg"
-            alt="Demon Slayer anime cover"
-            class="anime-cover"
-          />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-
-        <section class="anime-card">
-          <div class="anime-info">
-            <div class="anime-header">
-              <h3 class="anime-title">One Piece</h3>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/214e0230f32b548b7355645c49af876ee4a5aff2?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Rating icon" class="rating-icon" />
-            </div>
-            <p class="anime-description">
-              Barely surviving in a barrel after passing through a terrible
-              whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship
-              under attack by fearsome pirates. Despite being a naive-looking
-              teenager, he is not to be underestimated. Unmatched in battle,
-              Luffy is a pirate himself who resolutely pursues the coveted One
-              Piece treasure and the King of the Pirates title that comes with
-              it...
-            </p>
-          </div>
-          <img src="img/covers/one-piece-cover-1.jpg" alt="One Piece anime cover" class="anime-cover" />
-          <a href="#" class="review-button">Write Review</a>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="footer-content">
-          <h4 class="footer-heading">Follow Us</h4>
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdc15e76431a85d2c1f108e2156ee5b60e7308b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Social media icons" class="social-icons" />
-          <p class="copyright">
-            RE:VIEW
-            <br />
-            © 2025 Group 17. All rights reserved.
+          <p class="anime-description">
+            From an early age, Haruka Sakura was made an outcast due to his
+            unconventional appearance and lack of social skills. However...
           </p>
         </div>
-      </footer>
-    </div>
-  </body>
+        <img src="img/covers/wind breaker.jpg" alt="Wind Breaker anime cover" class="anime-cover" />
+        <a href="#" class="review-button">Write Review</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h4 class="footer-heading">Follow Us</h4>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdc15e76431a85d2c1f108e2156ee5b60e7308b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+          alt="Social media icons" class="social-icons" />
+        <p class="copyright">
+          RE:VIEW
+          <br />
+          © 2025 Group 17. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
