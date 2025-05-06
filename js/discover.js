@@ -17,7 +17,7 @@ function renderAnimeList() {
 
     animes.forEach(anime => {
         let linkEl = document.createElement("a");
-        linkEl.href = `details2.html?id=${anime.id}`;
+        linkEl.href = `details.html?id=${anime.id}`;
 
         let cardEl = document.createElement("section");
         cardEl.classList.add("anime-card");
