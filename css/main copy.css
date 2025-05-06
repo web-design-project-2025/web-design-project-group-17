@@ -1,0 +1,380 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  body {
+    background-color: #ffffff;
+    font-family:
+      "Montserrat",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    color: #000000;
+  }
+
+
+
+
+/* Header styles */
+.main-header {
+  background-color: #fff;
+  padding: 34px 41px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 42px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.logo {
+  font-size: 24px;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #2f0c5a;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #666;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-icon {
+  width: 16px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #333;
+  padding-left: 8px;
+}
+
+.dropdown-icon {
+  width: 24px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 26px;
+  text-decoration: none;
+  text-align: center;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  width: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline {
+  border: 1px solid #2f0c5a;
+  color: #2f0c5a;
+}
+
+.btn-primary {
+  background-color: #2f0c5a;
+  border: 1px solid #2f0c5a;
+  color: #fff;
+}
+
+/*Announcements*/
+
+.container{
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  background-color:rgb(58, 2, 70);
+
+}
+
+.announcements{
+  
+  position: relative;
+  background-image:url('img/wallpapers/solo-leveling.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.solo-leveling-announcement{
+
+  max-width: 500px;
+  background: rgba(253, 252, 252, 0.9); /* Optional: better text visibility */
+  font-weight: 500;
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+.solo-leveling-announcement h1 {
+
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.solo-leveling-announcement p {
+
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  color: black;
+
+}
+
+.rating{
+
+  color: #f5b50a;
+
+}
+
+.announcements-actions{
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+
+.announcements-button{
+
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 40%;
+
+}
+
+.announcements-button:hover {
+
+  opacity: 0.4;
+  background-color: black;
+
+}
+
+.add-to-list{
+  margin-right: 10%;
+  
+}
+
+.add-to-list:hover{
+
+  background-color: #540b6478;
+  border-radius: 100%;
+  cursor: pointer;
+
+}
+
+.watchlist:hover{
+  
+  background-color: #540b6478;
+  border-radius: 100%;
+  cursor: pointer;
+
+
+}
+
+
+
+.anime-image img {
+  width: 100%;
+}
+
+
+/* carousel structure */
+
+.header-in-section{
+  margin: 2rem 10% 1rem;
+}
+.carousel-container {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #3704457a;
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 33.333%;
+  padding: 2rem 1rem 0rem;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.carousel-slide p {
+  color: #1d022c;
+  font-size: 1.2rem;
+  margin:1rem auto;
+  font-weight: 500;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.carousel-btn img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%)
+  
+}
+
+/* WEATHER */
+
+.app{
+  width: 10rem;
+  height: 16rem;
+  background-image: linear-gradient(135deg, #ffffff, #e2bcff, #e3bcff);
+  display: block;
+  margin:auto;
+  margin-top: 1rem;
+  border-radius: 10rem;
+  text-align: center;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.titlebar{
+  line-height: 1.5rem;
+  color:  #2f0c5a;
+  margin-top: -2rem;
+}
+
+.titlebar h4{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 1rem;
+}
+
+.titlebar p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.titlebar .description {
+  text-transform: uppercase;
+}
+
+.temperature{
+  background: linear-gradient(135deg, #9c4bf3, #b084e5, #a460e8);
+  border-radius: 10rem;
+  width: 9rem;
+  height: 9rem;
+  text-align: center;
+  display: block;
+  margin: auto;
+  box-shadow: 0 10px 40px #701aad;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.temperature img{
+  margin-bottom: -1.5rem;
+}
+
+.temperature h2{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
