@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Profile - RE:VIEW</title>
-    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <script src="./js/myfavs.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -68,19 +69,14 @@
 
         <section class="favorites-section">
           <h2 class="section-title">Favourites</h2>
-          <div class="favorites-grid">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b9d8e0d7dceab2697127780c5b3ed45dd910f41?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/780f81bc4dd8e1eb31b00b481012aca3c7f4c0b0?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfa0393eb325cddd27a3f85d86fc9c24444f66ac?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3c8fd21e82767c644e88bc08e284c5b244300b8?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a16946ba010065ae30f7336e582b31c1691ee55?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4232eab448e72eedc0a770ac2eaae0ffb573cd25?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Favorite content" class="favorite-item" />
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/442f54e58f23ea73af8dcd48d06b639dd4ebfa7f?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
-              alt="Favorite content"
-              class="favorite-item small"
-            />
+          <div class="back-link">
+            <a href="./index.html">← Back to All Anime</a>
           </div>
+          
+          <div id="favorites-container" class="favorites-grid">
+              <!-- Favorite anime will be loaded here -->
+          </div>
+
         </section>
       </main>
 

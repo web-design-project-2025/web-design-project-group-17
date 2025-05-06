@@ -2,18 +2,419 @@
     "characters": [
         {
             "name": "Sung JinWoo",
-            "image": "img/src",
-            "role": ""
+            "role": "Main",
+            "img": "img/src",
+            "anime_id": 1
         },
         {
-            "name": "Kang JeongHo",
-            "image": "img",
-            "role": ""
+            "name": "Cha HaeIn",
+            "role": "Supporting" ,
+            "img": "img",
+            "anime_id": 1
         },
         {
-            "character_name": "",
-            "character_role": "",
-            "character_img": ""
+            "name": "Igris",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 1
+        },
+        {
+            "name": "Go GunHee",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 1
+        },
+        {
+            "name": "Yoo JinHo",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 1
+        },
+        {
+            "name": "Sung JinAh",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 1
+        },
+        {
+            "name": "Lee Joohee",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 1
+        },
+        {
+            "name": "Naruto Uzumaki",
+            "role": "Main",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Sasuke Uchiha",
+            "role": "Main",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Sakura Haruno",
+            "role": "Main",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Kakashi Hatake",
+            "role": "Main",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Itachi Uchiha",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Jiraiya",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Hinata Hyunga",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 2
+        },
+        {
+            "name": "Eren Jaeger",
+            "role": "Main",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Mikasa Ackerman",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Armin Arlert",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Levi",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Erwin Smith",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Hange Zoë",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Sasha Blouse",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 3
+        },
+        {
+            "name": "Monkey D. Luffy",
+            "role": "Main",
+            "img": "", "anime_id":
+            4 },
+        {
+            "name": "Roronoa Zoro",
+            "role": "Main",
+            "img": "",
+            "anime_id": 4
+        },
+        {
+            "name": "Sanji",
+            "role": "Main",
+            "img": "",
+            "anime_id": 4
+        },
+        {
+            "name": "Robin",
+            "role": "Main",
+            "img": "", "anime_id": 4 },
+        {
+            "name": "Tony Tony Chopper",
+            "role": "Main",
+            "img": "",
+            "anime_id": 4
+        },
+        {
+            "name": "Nami",
+            "role": "Main",
+            "img": "",
+            "anime_id": 4
+        },
+        {
+            "name": "Usopp",
+            "role": "Main",
+            "img": "",
+            "anime_id": 4
+        },
+        {
+            "name": "Shoyo Hinata",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Tobio Kageyama",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Kei Tsukishima",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Tadashi Yamaguchi",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Daichi Sawamura",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Koshi Sugawara",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5
+        },
+        {
+            "name": "Kiyoko Shimizu",
+            "role": "Main",
+            "img": "",
+            "anime_id": 5 },
+        {
+            "name": "Doujima Kengo",
+            "role": "Main",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Kobato Jougorou",
+            "role": "Main",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Osanai Yuki",
+            "role": "Main",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Doujima Chisato",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Hayashi",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Hiya Yuuto",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Nakamaru Tokiko",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 6
+        },
+        {
+            "name": "Haruka Sakura",
+            "role": "Main",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Akihiko Nirei",
+            "role": "Main",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Hayato Suou",
+            "role": "Main",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Kyotaro Sugishita",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Hajime Umemiya",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Touma Hiiragi",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Ren Kaji",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 7
+        },
+        {
+            "name": "Kamado Tanjirou",
+            "role": "Main",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Nezuko",
+            "role": "Main",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Tomioka Giyuu",
+            "role": "Main",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Agatsuma Zenitsu",
+            "role": "Main",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Hashibira Inosuke",
+            "role": "Main",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Sakonji Urokodaki",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Sabito",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 8
+        },
+        {
+            "name": "Itadori Yuuji",
+            "role": "Main",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Fushiguro Megumi",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Gojou Satoru",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Kugisaki Nobara",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Ryoumen Sukuna",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Nanami Kento",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Okkotsu Yuuta",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 9
+        },
+        {
+            "name": "Kusakabe Shinra",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Boyle Arthur",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Kotatsu Tamaki",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Iris",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Oze Maki",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Oubi Akitaru",
+            "role": "Main",
+            "img": "",
+            "anime_id": 10
+        },
+        {
+            "name": "Shinmon Benimaru",
+            "role": "Supporting",
+            "img": "",
+            "anime_id": 10
         }
         ]
 }

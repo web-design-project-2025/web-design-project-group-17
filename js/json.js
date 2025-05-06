@@ -1,15 +1,27 @@
+// async function loadCarouselData() {
+// 	const carouselDataResponse = await fetch("data/anime.json");
+// 	const carouselDataResponseJSON = await carouselDataResponse.json();
+
+//     carouselDataResponseJSON.animes.forEach(anime => console.log(anime.title, anime.cover));
+// }
+
+// loadCarouselData();
+
 // //js for loading data from JSON files
+
 // let animes = [];
 // const contentElement = document.getElementById("content");
 
 // async function loadData() {
 //     const animeDetailsResponse = await fetch("data/anime.json");
-//     const animeJSON = await animeDetailsResponse.json();
-//     animes = animeJSON.animes;
+//     const animeOldJSON = await animeDetailsResponse.json();
+//     animes = animeOldJSON.animes;
     
-//     console.log(animeJSON);
-//     renderContent();
+//     console.log(animeOldJSON);
+//     // renderContent();
 // }
+
+// loadData();
 
 // function createAnimeDetails(anime) {
 //     const animeDetailsElement = document.createElement("section");
@@ -32,7 +44,7 @@
 //     });
 // }
 
-// loadData();
+
 
 
 
