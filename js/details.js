@@ -3,7 +3,6 @@ let characters = [];
 let users = [];
 let reviews = [];
 
-
 // ANIME DETAIL SECTION
 const topSectionEl = document.getElementById("title-rating-container");
 const episodesContainerEL = document.getElementById("episodes-container");
@@ -167,10 +166,22 @@ function renderContent() {
 
     createAnimeDetails(anime);
     createCharacterDetails(matchingCharacters);
+
     for (let review of matchingReviews) {
         const user = getUserById(review.user_id);
         const reviewElement = createReviewDetails(review, user);
         reviewContainerEl.appendChild(reviewElement);
+    }
+
+    if (anime.trailer_url) {
+        const iframeEl = document.createElement("iframe");
+        iframeEl.src = anime.trailer_url;
+        iframeEl.classList.add("trailer");
+        iframeEl.setAttribute("frameborder", "0");
+        iframeEl.setAttribute("allowfullscreen", "true");
+        trailerContainerEl.appendChild(iframeEl);
+    }   else {
+        trailerContainerEl.innerHTML = `<p>No trailer available.</p>`;
     }
 }
 
