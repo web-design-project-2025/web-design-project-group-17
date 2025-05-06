@@ -26,8 +26,7 @@ function getAnimeIdFromURL() {
     return params.get("id");
 }
 
-async function loadData
-() {
+async function loadData () {
     //load Anime data from local JSON file
     const animeResponse = await fetch("data/animes.json");
     const animeJSON = await animeResponse.json();
