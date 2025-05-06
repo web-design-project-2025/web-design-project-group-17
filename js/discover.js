@@ -2,7 +2,7 @@ let animes = [];
 const animeList = document.getElementById("anime-list");
 
 async function loadListData() {
-	const listResponse = await fetch("data/anime.json");
+	const listResponse = await fetch("data/animes.json");
 	const listJSON = await listResponse.json();
     animes = listJSON.animes;
 

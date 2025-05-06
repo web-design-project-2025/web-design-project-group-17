@@ -1,10 +1,214 @@
 {
     "reviews": [
         {
-            "review_title": "",
-            "rewiev_text": "",
-            "review_username": "",
-            "review_date": ""
+            "anime_id": 2,
+            "user_id": 1,
+            "title": "A Classic, But Full of Filler",
+            "text": "Naruto will always be special to me, but rewatching it made me realize how much filler bogs down the story. The emotional arcs hit hard—like Naruto and Sasuke's rivalry or Jiraiya's fate—but then you're stuck in 20-episode side quests about ramen or random village missions. Still, the main plot delivers when it counts, and the character growth is one of the best in shonen anime.",
+            "date": "2025-04-20"
+        },
+        {
+            "anime_id": 5,
+            "user_id": 1,
+            "title": "Makes Volleyball Feel Epic",
+            "text": "I never thought I'd get emotional watching high school volleyball, but here we are. Haikyuu!! nails the pacing, the teamwork, and the thrill of the game. Each player gets their moment to shine, and the animation during matches is so well done it feels like a real broadcast. Hinata's growth is inspiring, though some arcs feel a bit formulaic. Still, the energy and spirit are unmatched.",
+            "date": "2025-04-26"
+        },
+        {
+            "anime_id": 8,
+            "user_id": 1,
+            "title": "Gorgeous but Familiar",
+            "text": "Visually, Demon Slayer is a masterpiece. The animation is breathtaking, especially in Season 2's Entertainment District arc. Every battle feels cinematic. The story itself is more traditional shonen—good vs evil with a pure-hearted protagonist. That's not a bad thing, but it doesn't break much new ground. Still, the emotional moments land, especially with Tanjiro and Nezuko. It's a beautiful blend of style and sincerity, even if it plays it safe.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 1,
+            "user_id": 2,
+            "title": "A Darker, Sharper Turn for Jin-Woo",
+            "text": "Season 2 takes everything I loved about Solo Leveling and dials it up. The stakes are higher, and Jin-Woo's cold, calculated demeanor has become more intense. The animation is top-tier, especially during boss fights, and the soundtrack keeps pace with the tension. Still, I wish they gave more time to side characters who are often just glossed over. It's clearly meant for fans who already know the webtoon well.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 4,
+            "user_id": 2,
+            "title": "A World You Can Live In",
+            "text": "One Piece is less an anime and more an entire universe. Yes, it's ridiculously long—but that's also its strength. You grow up with the Straw Hats, and each island brings new cultures, philosophies, and lore. The world-building is unmatched. Some arcs drag (looking at you, Dressrosa), and the pacing can suffer, but emotionally? It's gold. Luffy's unwavering loyalty and the theme of found family hit every time.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 9,
+            "user_id": 2,
+            "title": "Brilliant Action, Grim Direction",
+            "text": "Jujutsu Kaisen pulls no punches—literally and emotionally. The animation during battles is jaw-dropping, and characters like Gojo and Sukuna steal every scene. But Season 2 hits hard with emotional losses and a darker shift in tone. If you came in for fun curses and cool fights, you might leave feeling kind of hollow. That said, i's bold storytelling, and I respect that. It just leaves you emotionally wrecked.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 3,
+            "user_id": 3,
+            "title": "Philosophical Horror at Its Finest",
+            "text": "Attack on Titan is unlike anything else. The final season blew my mind. It's grim, political, and full of moral ambiguity. I found myself switching sides constantly because the writing makes you question who's right. Some scenes are haunting—not just visually but emotionally. That said, the shift in tone between seasons might not appeal to everyone. It goes from monster survival to full-on war drama, which I personally loved.",
+            "date": "2025-04-21"
+        },
+        {
+            "anime_id": 6,
+            "user_id": 3,
+            "title": "Quietly Profound",
+            "text": "This is a slow-burn, character-driven story that won't be for everyone—but if you like introspection and emotional subtlety, Shoshimin hits hard. It explores the desire to fade into the background while quietly peeling back the pain that drives that wish. It's not flashy, but that's the point. The dialogue is thoughtful, and the emotions feel real. Definitely an underrated gem, though not action-packed.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 10,
+            "user_id": 3,
+            "title": "Cool Concept, Weird Execution",
+            "text": "Fire Force has some of the coolest fire-based powers I've seen, and the fight choreography is slick. The premise—firefighting teams fighting infernals—is creative, but the tone flip-flops too much. It goes from intense life-or-death battles to awkward fanservice humor in a heartbeat. The world-building is intriguing, but I felt like it never fully delivered on its promise. Enjoyable, but flawed.",
+            "date": "2025-04-25"
+        },
+        {
+            "anime_id": 1,
+            "user_id": 4,
+            "title": "Visuals Carry the Show",
+            "text": "The animation and fight choreography are incredible—some of the best I've seen in recent anime. However, the pacing still feels rushed, and some character development is lacking. If you're in it for spectacle, it's great. But don't expect depth.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 7,
+            "user_id": 4,
+            "title": "Style Over Substance?",
+            "text": "Wind Breaker is flashy, fast-paced, and visually appealing—but sometimes it feels like that's all it is. The characters are cool, and the fights are intense, but I struggled to connect with the story beyond surface level. It's definitely entertaining and has potential, especially if it leans into character depth later. Right now, though, it feels more like a stylish ride than an emotionally grounded one.",
+            "date": "2025-04-26"
+        },
+        {
+            "anime_id": 5,
+            "user_id": 4,
+            "title": "The Energy is Infectious",
+            "text": "Even if you don't like volleyball, Haikyuu!! makes you care. The animation, music, and characters' passion are unmatched. It's wholesome, intense, and just plain fun.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 8,
+            "user_id": 5,
+            "title": "A Visual Masterpiece",
+            "text": "Every episode feels like a movie. The animation and music elevate even the most basic scenes. It's emotionally intense and beautifully crafted. Easily a top-tier shonen.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 3,
+            "user_id": 5,
+            "title": "A Masterpiece in Political Storytelling",
+            "text": "What started as a survival horror evolved into a complex narrative about freedom, ideology, and humanity's dark side. The twists are insane. It's not just action—it's philosophical.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 6,
+            "user_id": 5,
+            "title": "Quiet but Thought-Provoking",
+            "text": "This anime surprised me. It's not flashy, but the writing is sharp and introspective. It explores what it means to “fit in” and the costs of detachment. A hidden gem.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 2,
+            "user_id": 6,
+            "title": "Childhood Classic, But Overstays Its Welcome",
+            "text": "Naruto shaped a generation of anime fans, but honestly, the filler episodes are exhausting. The core story is heartfelt, and the worldbuilding is great, but it would've been better with tighter editing.",
+            "date": "2025-04-26"
+        },
+        {
+            "anime_id": 10,
+            "user_id": 6,
+            "title": "Underrated Gem",
+            "text": " Fire Force has a weirdly cool world and surprisingly emotional moments. The fire animation and unique powers make it stand out. It deserves more love.",
+            "date": ""
+        },
+        {
+            "anime_id": 4,
+            "user_id": 6,
+            "title": "Legendary, But Intimidating",
+            "text": "I get why people love One Piece—the characters and emotional moments are top-tier. But with over 1000 episodes, it's tough to keep up. It's a rewarding journey if you're in for the long haul.",
+            "date": "2025-04-26"
+        },
+        {
+            "anime_id": 9,
+            "user_id": 7,
+            "title": "Shonen Done Right",
+            "text": "Amazing choreography, strong ensemble cast, and dark emotional beats. Gojo and Sukuna are iconic. It balances humor, horror, and action perfectly.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 7,
+            "user_id": 7,
+            "title": "Street Fights With Heart",
+            "text": " I went in expecting dumb action, but the characters have surprising depth. The animation is stylish, and the fights are meaningful. It's like Tokyo Revengers without the time travel.",
+            "date": "2025-04-26"
+        },
+        {
+            "anime_id": 1,
+            "user_id": 7,
+            "title": "Better Than Season 1",
+            "text": "Season 2 finally gives Sung Jin-Woo more layers as a character. While not perfect, the story feels more cohesive this time around, and the stakes are higher. Can't wait to see how they close out the arc.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 5,
+            "user_id": 8,
+            "title": "Predictable, But Comforting",
+            "text": "You kind of always know how the matches will end, but it's still satisfying to watch. Not the deepest anime, but it's uplifting and full of great character dynamics.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 2,
+            "user_id": 8,
+            "title": "Timeless Story of Growth",
+            "text": "Watching Naruto grow from a rejected child to a true hero never gets old. The themes of perseverance and friendship hit hard, especially during the Pain arc. Still my top comfort anime.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 6,
+            "user_id": 8,
+            "title": "Too Slow to Catch Interest",
+            "text": "I appreciate the themes, but it's just too slow for me. The characters are too restrained and the pacing feels off. It's deep—but not engaging enough to hold my attention.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 3,
+            "user_id": 9,
+            "title": "Final Season Feels Too Drawn Out",
+            "text": " I loved the earlier seasons, but the final season feels like it's dragging. There's a lot of talking, and it's hard to care about every political faction. Still stunning, just slower now.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 4,
+            "user_id": 9,
+            "title": "Oda is a Genius",
+            "text": "The worldbuilding, callbacks, and long-term storytelling are unmatched. Every arc connects. Luffy is an inspiration. No other anime has made me cry and laugh like this. Worth every episode.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 8,
+            "user_id": 9,
+            "title": "Pretty, But Repetitive",
+            "text": "While the animation is stunning, the plot loops: fight demon, cry, repeat. I wish it had more character development outside of Tanjiro and Nezuko.",
+            "date": "2025-04-27"
+        },
+        {
+            "anime_id": 10,
+            "user_id": 10,
+            "title": "Cool Idea, Weird Tone",
+            "text": "ometimes Fire Force can't decide what it wants to be. One minute it's serious, the next it's slapstick fanservice. Feels inconsistent. Great concept, okay execution.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 9,
+            "user_id": 10,
+            "title": "Losing Steam in Season 2",
+            "text": "I loved the first season, but Season 2 felt chaotic. Too many characters introduced quickly, and pacing was inconsistent. Still fun, but it needs to refocus.",
+            "date": "2025-04-28"
+        },
+        {
+            "anime_id": 7,
+            "user_id": 10,
+            "title": "Stylish but nothing to it",
+            "text": "Wind Breaker looks good and has a cool vibe, but the story feels derivative. Characters are okay, but nothing feels new. It's entertaining, but not memorable.",
+            "date": "2025-04-28"
         }
     ]
 }
