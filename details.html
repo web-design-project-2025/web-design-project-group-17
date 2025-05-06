@@ -11,108 +11,126 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <h1 class="logo">
-                    RE
-                    <br />
-                    :
-                    <span class="logo-highlight">VIEW</span>
-                </h1>
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li>
-                            <a href="discover.html" class="nav-link nav-link-active">Discover</a>
-                        </li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
-                        <li><a href="profile.html" class="nav-link">My Profile</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
 
-    <!-- <img class="wallpaper" src="" alt=""> -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RE:VIEW - Discover</title>
+        <link rel="stylesheet" href="css/discover.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+    </head>
 
-    <main>
-        <section class="content" id="content">
-            <section id="title-rating-container" class="title-rating-container">
+    <body>
+        <div class="home-page">
+            <header class="main-header">
+                <div class="header-content">
+                    <nav class="main-nav">
+                        <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="discover.html" class="nav-link">Discover</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="profile.html" class="nav-link">My Profile</a>
+                    </nav>
+                    <div class="user-actions">
+                        <div class="search-bar">
+                            <div class="search-input">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c1cf0c8fd7371789188a6bde3a5d782fb9ce811?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+                                    alt="Search icon" class="search-icon" />
+                                <span class="search-placeholder">Search</span>
+                            </div>
+                        </div>
+                        <div class="language-selector">
+                            <span class="language-text">English (united States)</span>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f54a5a93e2acd3a4fdb5efe85082f66e300a569b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+                                alt="Dropdown icon" class="dropdown-icon" />
+                        </div>
+                        <a href="#" class="btn btn-outline">Log in</a>
+                        <a href="#" class="btn btn-primary">Sign up</a>
+                    </div>
+                </div>
+            </header>
 
-                <h2 class="anime-title"></h2>
+            <!-- <img class="wallpaper" src="" alt=""> -->
 
-                <section class="rating-container">
-                    <p class="rating-value">4.5 ⭐⭐⭐⭐⭐</p>
-                </section>
-            </section>
+            <main>
+                <section class="content" id="content">
+                    <section id="title-rating-container" class="title-rating-container">
 
-            <hr class="divider" />
+                        <h2 class="anime-title"></h2>
 
-            <section class="detail-trailer-container">
-                <section class="detail-container">
-                    <section class="detail-categories">
+                        <section class="rating-container">
+                            <p class="rating-value">4.5 ⭐⭐⭐⭐⭐</p>
+                        </section>
+                    </section>
 
-                        <section id="episodes-container">
-                            <p id="episodes" class="detail-title">Episodes:</p>
+                    <hr class="divider" />
+
+                    <section class="detail-trailer-container">
+                        <section class="detail-container">
+                            <section class="detail-categories">
+
+                                <section id="episodes-container">
+                                    <p id="episodes" class="detail-title">Episodes:</p>
+                                </section>
+
+                                <section id="dates-container">
+                                    <p id="dates" class="detail-title">Dates:</p>
+                                </section>
+
+                                <section id="plot-container" class="plot">
+                                    <p id="plot" class="detail-title">Plot:</p>
+                                </section>
+
+                            </section>
                         </section>
 
-                        <section id="dates-container">
-                            <p id="dates" class="detail-title">Dates:</p>
+                        <section class="trailer-container">
+                            <iframe id="trailer_url" class="trailer" src="#" frameborder="0"></iframe>
+                        </section>
+                    </section>
+
+                    <hr class="divider" />
+
+                    <section class="information">
+                        <h3 class="info-title">Characters</h3>
+                        <section id="character-container" class="character-container">
+                            <figure class="character-element">
+                                <img id="img" class="character-img" src="" alt="">
+                                <figcaption>
+                                    <p id="name"></p>
+                                    <p id="role"></p>
+                                </figcaption>
+                            </figure>
                         </section>
 
-                        <section id="plot-container" class="plot">
-                            <p id="plot" class="detail-title">Plot:</p>
+                        <h3 class="info-title">Reviews</h3>
+                        <section id="review-container" class="review-container">
+                            <section class="review-post">
+                                <img class="profile-picture" src="" alt="">
+                                <p class="user"></p>
+                                <p class="review-date"></p>
+                                <h3 class="review-title"></h3>
+                                <p class="review-text"></p>
+                            </section>
                         </section>
-
                     </section>
                 </section>
+            </main>
 
-                <section class="trailer-container">
-                    <iframe id="trailer_url" class="trailer" src="#" frameborder="0"></iframe>
-                </section>
-            </section>
-
-            <hr class="divider" />
-
-            <section class="information">
-                <h3 class="info-title">Characters</h3>
-                <section id="character-container" class="character-container">
-                    <figure class="character-element">
-                        <img id="img" class="character-img" src="" alt="">
-                        <figcaption>
-                            <p id="name"></p>
-                            <p id="role"></p>
-                        </figcaption>
-                    </figure>
-                </section>
-
-                <h3 class="info-title">Reviews</h3>
-                <section id="review-container" class="review-container">
-                    <section class="review-post">
-                        <img class="profile-picture" src="" alt="">
-                        <p class="user"></p>
-                        <p class="review-date"></p>
-                        <h3 class="review-title"></h3>
-                        <p class="review-text"></p>
-                    </section>
-                </section>
-            </section>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <h4 class="footer-heading">Follow Us</h4>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdc15e76431a85d2c1f108e2156ee5b60e7308b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
-                alt="Social media icons" class="social-icons" />
-            <p class="copyright">
-                RE:VIEW
-                <br />
-                © 2025 Group 17. All rights reserved.
-            </p>
-        </div>
-    </footer>
-</body>
+            <footer class="footer">
+                <div class="footer-content">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdc15e76431a85d2c1f108e2156ee5b60e7308b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+                        alt="Social media icons" class="social-icons" />
+                    <p class="copyright">
+                        RE:VIEW
+                        <br />
+                        © 2025 Group 17. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+    </body>
 
 </html>
