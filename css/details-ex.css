@@ -1,0 +1,136 @@
+body {
+    background-color: #DDD8E2;
+}
+main {
+    background-color: white;
+    margin: 7vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    border-radius: 2%;
+}
+
+.wallpaper {
+    min-width: 100%;
+}
+
+
+/* TOP SECTION: TITLE + RATING */
+
+.title-rating-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-title {
+    margin-left: 7vw;
+}
+
+.rating-value {
+    font-weight: bold;
+    margin-left: 7vw;
+    margin-top: 1vh;
+    color: rgb(102, 19, 203);
+}
+
+.divider {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+/* DETAIL SECTION */
+
+.detail-trailer-container {
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3vw;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.detail-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.detail-title {
+    font-weight: bold;
+    /* color: rgba(47, 12, 90, 1); */
+    color: rgb(102, 19, 203);;
+    margin-bottom: 1vh;
+}
+
+.plot {
+    display: flex;
+    flex-direction: column;
+}
+
+.trailer {
+    /* make a size in this */
+    width: 50vw;
+    height: 30vw;
+}
+
+/* Character & Review titles */
+.info-title {
+    color: rgba(47, 12, 90, 1);
+    margin-left: 4vw;
+    margin-top: 7vh;
+}
+
+/* CHARACTERS SECTION */
+
+.character-container {
+    margin-top: 2vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: flex;
+    gap: 3vw;
+}
+
+.character-element {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-img {
+    width: 15vh;
+}
+
+
+
+/* REVIEWS SECTION */
+
+.review-container {
+    margin-top: 3vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    background-color: #ffffff;
+    border-radius: 3dvh;
+    border: 2px solid #DDD8E2;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+.review-post {
+    margin: 2vw;
+    padding: 3vh;
+    border-radius: 3dvh;
+    border: 2px solid #DDD8E2;
+}
+
+.profile-picture {
+    border-radius: 50dvh;
+    max-width: 3vw;
+}
