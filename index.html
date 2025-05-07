@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js" defer></script>
+  <script src="./js/main.js" defer></script>
 </head>
 
 <!doctype html>
@@ -56,29 +56,101 @@
 
     <main>
 
-      <section class="announcements container">
-        <div class="solo-leveling-announcement">
-          <h1>Solo Leveling Season 2: Arise from the shadow</h1>
-          <div class="rating"></div>
-          <p>Sung Jin-Woo, dubbed the weakest hunter of all mankind,
-            grows stronger by the day with the supernatural powers he
-            has gained. However, keeping his skills hidden becomes more
-            difficult as dungeon-related incidents pile up around him.</p>
+      <section class="slideshow-container" aria-label="Anime Announcement Slider">
 
-          <p> When Jin-Woo and a few other low-ranked hunters are the only
-            survivors of a dungeon that turns out to be a bigger challenge
-            than initially expected, he draws attention once again, and hunter
-            guilds take an increased interest in him. Meanwhile, a strange hunter
-            who has been lost for ten years returns with a dire warning about
-            an upcoming catastrophic event. As the calamity looms closer, Jin-Woo
-            must continue leveling up to make sure nothing stops him from reaching
-            his ultimate goal—saving the life of his mother.</p>
-
-          <div class="announcements-actions">
-            <a href="anime_details.html" class="announcements-button">Write Review</a>
-          </div>
+        <!-- Hidden radios for manual control -->
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+      
+        <!-- Slides wrapper -->
+        <div class="slides">
+          <!-- Slide 1 -->
+          <section class="slide">
+            <img src="./img/wallpapers/sololeveling-----x.jpg" alt="Solo Leveling background" class="slide-background" />
+            <div class="announcement-card">
+              <h1>Solo Leveling Season 2: Arise from the Shadow</h1>
+              <div class="rating">★★★★☆</div>
+              <p>
+                Sung Jin-Woo, dubbed the weakest hunter of all mankind, grows stronger by the day with the supernatural powers he has gained. However, keeping his skills hidden becomes more difficult as dungeon-related incidents pile up around him.
+              </p>
+      
+              <p>
+                When Jin-Woo and a few other low-ranked hunters are the only survivors of a dungeon that turns out to be a bigger challenge than expected, he draws attention once again...
+              </p>
+              <div class="actions">
+                <a href="anime_details.html" class="btn">Write Review</a>
+                <button class="icon-btn">♡</button>
+              </div>
+            </div>
+          </section>
+          <!-- Slide 2 -->
+          <section class="slide">
+            <img src="./img/wallpapers/jjk-wallpaper.jpg" alt="Jujutsu Kaisen background" class="slide-background" />
+            <div class="announcement-card">
+              <h1>Jujutsu Kaisen Season 3: Shibuya Aftermath</h1>
+              <div class="rating">★★★★★</div>
+              <p>
+                After the fierce battle in Shibuya, the balance of the Jujutsu world begins to shift. Yuji and the others must now face political consequences while uncovering deeper secrets of cursed energy.
+              </p>
+              <p>
+                With allies scattered and enemies rising, survival demands more than strength—it requires trust.
+              </p>
+              <div class="actions">
+                <a href="jujutsu_details.html" class="btn">Write Review</a>
+                <button class="icon-btn">♡</button>
+              </div>
+            </div>
+          </section>
+          <!-- Slide 3 -->
+          <section class="slide">
+            <img src="./img/wallpapers/AOT.jpg" alt="Attack on Titan background" class="slide-background" />
+            <div class="announcement-card">
+              <h1>Attack on Titan: Final Requiem</h1>
+              <div class="rating">★★★★★</div>
+              <p>
+                As Eren’s master plan unfolds, former allies must make their final stand. The fate of humanity rests on the shoulders of divided comrades.
+              </p>
+              <p>
+                Will the cycle of revenge ever end—or is freedom just another form of destruction?
+              </p>
+              <div class="actions">
+                <a href="aot_details.html" class="btn">Write Review</a>
+                <button class="icon-btn">♡</button>
+              </div>
+            </div>
+          </section>
+          <!-- Slide 4 -->
+          <section class="slide">
+            <img src="./img/wallpapers/one-piece-1.1.avif" alt="One Piece background" class="slide-background" />
+            <div class="announcement-card">
+              <h1>One Piece: Egghead Island Arc</h1>
+              <div class="rating">★★★★★</div>
+              <p>
+                Luffy and crew reach the futuristic Egghead Island, uncovering Vegapunk’s secrets and stirring conflict with powerful world forces.
+              </p>
+      
+              <p>
+                With the truth about the Void Century at stake, the adventure takes a new turn!
+              </p>
+              
+              <div class="actions">
+                <a href="onepiece_details.html" class="btn">Write Review</a>
+                <button class="icon-btn">♡</button>
+              </div>
+            </div>
+          </section>
         </div>
-
+      
+        <!-- Manual navigation dots -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      
       </section>
 
       <!-- WEATHER-->
@@ -90,7 +162,7 @@
         <a href="./profile.html">← Go to My Favs</a>
       </div>
 
-      <section class="carousel-section">
+      <section class="carousel-section" data-category="most-popular">
         <h2 class="header-in-section">Most Popular</h2>
         <div class="carousel-container">
           <button class="carousel-btn left">
@@ -107,7 +179,52 @@
         </div>
       </section>
 
+      <section class="carousel-section" data-category="new-episodes">
+        <h2 class="header-in-section">New Episodes</h2>
+        <div class="carousel-container">
+          <button class="carousel-btn left">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="Left arrow">
+          </button>
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track">
+              <!-- Anime covers info -->
+            </div>
+          </div>
+          <button class="carousel-btn right">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="Right arrow">
+          </button>
+        </div>
+      </section>
+
+      <section class="carousel-section" data-category="iconic-trios">
+        <h2 class="header-in-section">Iconic trios</h2>
+        <div class="carousel-container">
+          <button class="carousel-btn left">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="Left arrow">
+          </button>
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track">
+              <!-- Anime covers info -->
+            </div>
+          </div>
+          <button class="carousel-btn right">
+            <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="Right arrow">
+          </button>
+        </div>
+      </section>
+
     </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p class="follow-text">Follow Us</p>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76500189f5d76d46913fa716741dbb089517087?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Social media icons" class="social-icons" />
+        <p class="copyright">
+          RE:VIEW<br />
+          © 2025 Group 17. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
 
 </body>
