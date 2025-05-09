@@ -117,9 +117,11 @@ main {
     margin-top: 7vh;
 }
 
+
+
+
+
 /* CHARACTERS SECTION */
-
-
 
 .character-container {
     margin-top: 2vh;
@@ -146,10 +148,50 @@ main {
 
 /* REVIEW FORM */
 
-.review-content {
-    border-style: solid;
-    border-color: #f0f0f0;
+.review-form {
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
+
+.label-title {
+    font-size: large;
+}
+
+.review-input-title {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 1vh;
+}
+
+.label-review {
+    font-size: large;
+}
+
+.review-input-content {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 1vh;
+}
+
+.review-submit-button {
+  border-radius: 10px;
+  background-color: #2f0c5a;
+  padding: 2vh;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  width: 6vw;
+}
+
+
 
 
 
@@ -172,6 +214,13 @@ main {
     padding: 3vh;
     border-radius: 3dvh;
     border: 2px solid #DDD8E2;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
 }
 
 .profile-picture {
