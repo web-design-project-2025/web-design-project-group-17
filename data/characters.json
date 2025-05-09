@@ -3,43 +3,43 @@
         {
             "name": "Sung JinWoo",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/solo-leveling_SungJinwoo.png",
             "anime_id": 1
         },
         {
             "name": "Cha HaeIn",
             "role": "Supporting" ,
-            "img": "",
+            "img": "img/characters/solo-leveling_ChaHaein.png",
             "anime_id": 1
         },
         {
             "name": "Igris",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/solo-leveling_Igris.png",
             "anime_id": 1
         },
         {
             "name": "Go GunHee",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/solo-leveling_GoGunhee.png",
             "anime_id": 1
         },
         {
             "name": "Yoo JinHo",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/solo-leveling_YooJinho.png",
             "anime_id": 1
         },
         {
             "name": "Sung JinAh",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/solo-leveling_SungJinah.png",
             "anime_id": 1
         },
         {
             "name": "Lee Joohee",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/solo-leveling_LeeJoohee.png",
             "anime_id": 1
         },
         {
@@ -87,43 +87,43 @@
         {
             "name": "Eren Jaeger",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/attack-on-titan_ErenJaeger.png",
             "anime_id": 3
         },
         {
             "name": "Mikasa Ackerman",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_MikasaAckerman.png",
             "anime_id": 3
         },
         {
             "name": "Armin Arlert",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_ArminArlert.png",
             "anime_id": 3
         },
         {
             "name": "Levi",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_Levi.png",
             "anime_id": 3
         },
         {
             "name": "Erwin Smith",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_ErwinSmith.png",
             "anime_id": 3
         },
         {
             "name": "Hange Zoë",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_HangeZoe.png",
             "anime_id": 3
         },
         {
             "name": "Sasha Blouse",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/attack-on-titan_SashaBlouse.png",
             "anime_id": 3
         },
         {

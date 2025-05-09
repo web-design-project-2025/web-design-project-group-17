@@ -3,7 +3,10 @@ body {
 }
 main {
     background-color: white;
-    margin: 7vw;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     border-radius: 2%;
@@ -33,29 +36,57 @@ main {
 }
 
 .divider {
+        /* background:url(../images/dc_divider1.png) no-repeat scroll center transparent; */
+    max-width: 100%;
     margin-top: 10vh;
     margin-bottom: 10vh;
     margin-left: 4vw;
     margin-right: 4vw;
+    width: 80vw;
 }
 
 /* DETAIL SECTION */
 
-.detail-trailer-container {
-    margin: 5vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3vw;
+@media screen and (min-width: 1500px) {
+    .detail-trailer-container {
+        margin: 5vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3vw;
+    }
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .detail-categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
 }
+
+@media screen and (max-width: 1500px) {
+    .detail-trailer-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .detail-categories {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        /* max-width: 40%; */
+    }
+}
+    
 
 .detail-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-}
-
-.detail-categories {
     display: flex;
     flex-direction: column;
     gap: 1vh;
@@ -88,11 +119,15 @@ main {
 
 /* CHARACTERS SECTION */
 
+
+
 .character-container {
     margin-top: 2vh;
     margin-left: 4vw;
     margin-right: 4vw;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 3vw;
 }
 
@@ -105,6 +140,15 @@ main {
 
 .character-img {
     width: 15vh;
+}
+
+
+
+/* REVIEW FORM */
+
+.review-content {
+    border-style: solid;
+    border-color: #f0f0f0;
 }
 
 

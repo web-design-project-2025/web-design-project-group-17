@@ -17,41 +17,42 @@ function renderAnimeList() {
 
     animes.forEach(anime => {
         let linkEl = document.createElement("a");
+        linkEl.classList.add("anime-card");
         linkEl.href = `details.html?id=${anime.id}`;
 
-        let cardEl = document.createElement("section");
-        cardEl.classList.add("anime-card");
-        linkEl.appendChild(cardEl);
+        // let cardEl = document.createElement("section");
+        // cardEl.classList.add("anime-card");
+        // linkEl.appendChild(cardEl);
+
+        let coverEl = document.createElement("img");
+        coverEl.classList.add("anime-cover");
+        coverEl.src = anime.cover;
+        coverEl.alt = anime.alt;
+        linkEl.appendChild(coverEl);
 
         let infoEl = document.createElement("section");
-        infoEl.classList.add("anime-infoEl");
-        cardEl.appendChild(infoEl);
+        infoEl.classList.add("anime-info");
+        linkEl.appendChild(infoEl);
 
-        let animeHeaderEl = document.createElement("section");
-        animeHeaderEl.classList.add("anime-header");
-        infoEl.appendChild(animeHeaderEl);
+        // let animeHeaderEl = document.createElement("section");
+        // animeHeaderEl.classList.add("anime-header");
+        // infoEl.appendChild(animeHeaderEl);
 
         let titleEl = document.createElement("h3");
-        titleEl.classList.add("anime-titleEl");
+        titleEl.classList.add("anime-title");
         titleEl.innerText = anime.title;
-        animeHeaderEl.appendChild(titleEl);
+        infoEl.appendChild(titleEl);
 
         let plotEl = document.createElement("p");
         plotEl.classList.add("anime-description")
         plotEl.innerText = anime.plot;
         infoEl.appendChild(plotEl);
 
-        let coverEl = document.createElement("img");
-        coverEl.classList.add("anime-cover");
-        coverEl.src = anime.cover;
-        coverEl.alt = anime.alt;
-        cardEl.appendChild(coverEl);
-
         let reviewButtonEl = document.createElement("a");
         reviewButtonEl.classList.add("review-button");
         reviewButtonEl.innerText = "Write Review";
         reviewButtonEl.href = `review.html?id=${anime.id}`;
-        cardEl.appendChild(reviewButtonEl);
+        infoEl.appendChild(reviewButtonEl);
 
         animeList.appendChild(linkEl);
     })
