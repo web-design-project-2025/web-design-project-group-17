@@ -3,6 +3,17 @@ let characters = [];
 let users = [];
 let reviews = [];
 
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+// This arrangement can be altered based on how we want the date's format to appear.
+let currentDate = `${year}-${month}-${day}`;
+console.log(currentDate); // "17-6-2022"
+
+
 // ANIME DETAIL SECTION
 const topSectionEl = document.getElementById("title-rating-container");
 const episodesContainerEL = document.getElementById("episodes-container");
@@ -212,7 +223,7 @@ function createReviewForm(animeId) {
                 "user_id": user.user_id,
                 "title": review_turtle.value,
                 "text": review_content.value,
-                "date": Date.now()
+                "date": currentDate
             }
             localStorage.setItem("user_review", JSON.stringify(newReview))
         }

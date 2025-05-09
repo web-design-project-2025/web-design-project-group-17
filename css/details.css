@@ -47,7 +47,7 @@ main {
 
 /* DETAIL SECTION */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1280px) {
     .detail-trailer-container {
         margin: 5vw;
         display: grid;
@@ -67,7 +67,7 @@ main {
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1280px) {
     .detail-trailer-container {
         display: flex;
         flex-direction: column-reverse;
@@ -85,7 +85,6 @@ main {
     }
 }
     
-
 .detail-container {
     display: flex;
     flex-direction: column;
