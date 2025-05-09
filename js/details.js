@@ -3,6 +3,17 @@ let characters = [];
 let users = [];
 let reviews = [];
 
+const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+
+// This arrangement can be altered based on how we want the date's format to appear.
+let currentDate = `${year}-${month}-${day}`;
+console.log(currentDate); // "17-6-2022"
+
+
 // ANIME DETAIL SECTION
 const topSectionEl = document.getElementById("title-rating-container");
 const episodesContainerEL = document.getElementById("episodes-container");
@@ -128,17 +139,21 @@ function createReviewDetails(review, user) {
     reviewPostEl.classList.add("review-post");
     // reviewContainerEl.appendChild(reviewPostEl);
 
+    const reviewHeaderEl = document.createElement("section");
+    reviewHeaderEl.classList.add("review-header");
+    reviewPostEl.appendChild(reviewHeaderEl);
+
     //from user.json
     const profilePictureEl = document.createElement("img");
     profilePictureEl.src = `${user.profile_image}`;
     profilePictureEl.classList.add("profile-picture");
-    reviewPostEl.appendChild(profilePictureEl);
+    reviewHeaderEl.appendChild(profilePictureEl);
 
     //from user.json
     const usernameEl = document.createElement("p");
     usernameEl.classList.add("user");
     usernameEl.innerText = `${user.username}`;
-    reviewPostEl.appendChild(usernameEl);
+    reviewHeaderEl.appendChild(usernameEl);
 
     const dateEl = document.createElement("p");
     dateEl.innerText = `${review.date}`;
@@ -166,6 +181,7 @@ function createReviewForm(animeId) {
 
     const titleLabelEl = document.createElement("label");
     titleLabelEl.setAttribute("for", "title");
+    titleLabelEl.classList.add("label-title");
     titleLabelEl.innerText = "Review Title:";
     formEl.appendChild(titleLabelEl);
 
@@ -173,21 +189,27 @@ function createReviewForm(animeId) {
     titleInputEl.type = "text";
     titleInputEl.id = "review-title";
     titleInputEl.name = "title";
+    titleInputEl.placeholder = "Write your title here";
+    titleInputEl.classList.add("review-input-title");
     formEl.appendChild(titleInputEl);
 
     const reviewLabelEl = document.createElement("label");
     reviewLabelEl.setAttribute("for", "review");
     reviewLabelEl.innerText = "Review Text:";
+    reviewLabelEl.classList.add("label-review");
     formEl.appendChild(reviewLabelEl);
 
-    const reviewInputEl = document.createElement("input");
-    reviewInputEl.type = "text";
+    const reviewInputEl = document.createElement("textarea");
+    // reviewInputEl.type = "text";
     reviewInputEl.id = "review-content";
     reviewInputEl.name = "review";
+    reviewInputEl.placeholder = "Write your review here";
+    reviewInputEl.classList.add("review-input-content");
     formEl.appendChild(reviewInputEl);
 
     const submitBtn = document.createElement("button");
     submitBtn.type = "button";
+    submitBtn.classList.add("review-submit-button")
     submitBtn.addEventListener('click', () => {
         const review_turtle = document.getElementById("review-title")
         const review_content = document.getElementById("review-content")
@@ -201,11 +223,16 @@ function createReviewForm(animeId) {
                 "user_id": user.user_id,
                 "title": review_turtle.value,
                 "text": review_content.value,
-                "date": Date.now()
+                "date": currentDate
             }
             localStorage.setItem("user_review", JSON.stringify(newReview))
         }
         window.location.href = `details.html?id=${animeId}`;
+
+    // const dividerEl = document.createElement("hr");
+    // dividerEl.classList.add("divider");
+    // formEl.appendChild(dividerEl);
+
     })
     submitBtn.innerText = "Submit Review";
     formEl.appendChild(submitBtn);
