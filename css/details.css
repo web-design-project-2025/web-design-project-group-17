@@ -144,6 +144,15 @@ main {
 
 
 
+/* REVIEW FORM */
+
+.review-content {
+    border-style: solid;
+    border-color: #f0f0f0;
+}
+
+
+
 /* REVIEWS SECTION */
 
 .review-container {
