@@ -8,8 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const username = nameInput.value.trim();
 
     if (username) {
-      localStorage.setItem('username', username); // Save name
-      window.location.href = 'profile.html'; // Go to profile
+        const newUser = {
+            "username": username,
+            "user_id": 999999999999999999,
+            "profile_image": "https://cdn.builder.io/api/v1/image/assets/TEMP/e928721a5e5e26117780b1b50957820d5e0c4e35?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a",
+        }
+        localStorage.setItem("user", JSON.stringify(newUser))
+
+        window.location.href = 'profile.html'; // Go to profile
     } else {
       alert('Please enter your name.');
     }
