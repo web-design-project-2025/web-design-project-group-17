@@ -1,0 +1,111 @@
+
+body {
+  background-color: #ffffff;
+  font-family:
+    "Montserrat",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #000000;
+}
+
+
+
+/* ANIME LIST */
+
+/* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
+/* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
+
+.anime-card {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  gap: 2vw;
+  border-radius: 5%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+
+  &:hover {
+    animation-name: expand
+    /* animation-timing-function */
+}
+}
+
+@keyframes expand {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+  }
+  /* transform: scale(1.2); */
+
+.anime-cover {
+  max-width: 100%;
+  max-height: 40vh;
+}
+
+.anime-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  margin-right: 2vw;
+}
+
+/* text "cropping": https://www.youtube.com/watch?v=b6iVByCOx8A */
+.anime-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-button {
+  margin-top: 15%;
+  border-radius: 10px;
+  background-color: #2f0c5a;
+  padding: 2vh;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  /* position: relative; */
+  /* top: -20px; */
+  /* margin-left: 40%; */
+  transition: background-color 0.5s;
+  width: 6vw;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+  .anime-list {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+      display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .anime-list {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8vw;
+  }
+}
