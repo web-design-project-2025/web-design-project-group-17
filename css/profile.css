@@ -12,7 +12,8 @@ body {
     Roboto,
     Helvetica,
     sans-serif;
-  background-color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .profile-page {
@@ -21,6 +22,56 @@ body {
   overflow: hidden;
   width: 100%;
 }
+
+/*for the dark and light mode*/
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --modal-bg: #f0f0f0;
+}
+
+.dark-mode {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --modal-bg: #333333;
+}
+
+/*settings pop-up*/
+
+.settings-title{
+  margin-right: 40%;
+}
+
+.top-pop-up-line{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--modal-bg);
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+
+.close-button {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 
 /* Header styles */
 .main-header {
@@ -222,6 +273,7 @@ body {
   width: 33px;
   aspect-ratio: 1;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .btn-edit {

@@ -63,7 +63,55 @@
             <p class="user-bio">🍊 I like oranges, but hate orange juice</p>
           </div>
           <div class="profile-actions">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f620b5abe498dc6a26817d6a4970255e1101b56b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Settings" class="settings-icon" />
+
+          <!-- Trigger image -->
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f620b5abe498dc6a26817d6a4970255e1101b56b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" 
+            alt="Settings Icon" class="settings-icon" onclick="openModal()" />
+
+          <!-- Modal -->
+            <div id="imageModal" class="modal">
+              <div class="modal-content">
+                <span class="close-button" onclick="closeModal()" role="button" tabindex="0" aria-label="Close modal">&times;</span>
+
+                <section class="top-pop-up-line">
+                  <h2 class="settings-title">Settings</h2>
+
+                  <!-- Dark Mode Button -->
+                  <svg id="dark-button" role="button" tabindex="0" aria-label="Activate dark mode" xmlns="http://www.w3.org/2000/svg"
+                      width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 
+                    4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 
+                    0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
+                  </svg>
+
+                  <!-- Light Mode Button -->
+                  <svg id="light-button" role="button" tabindex="0" aria-label="Activate light mode" xmlns="http://www.w3.org/2000/svg"
+                      width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 
+                    1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 
+                    1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 
+                    0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 
+                    1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 
+                    19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z" clip-rule="evenodd"/>
+                  </svg>
+                </section>
+
+                <br>
+
+                <p>Your registered email: <span id="emailDisplayText"></span></p>
+
+                <br>
+
+                <div id="emailEditSection" style="display: none;">
+                  <input type="email" id="emailEditInput" />
+                  <button onclick="saveEmail()">Save</button>
+                </div>
+
+                <button onclick="enableEmailEdit()">Change Email</button>
+              </div>
+            </div>
+
+            <!-- Edit button -->
             <button class="btn-edit">Edit</button>
           </div>
         </section>
