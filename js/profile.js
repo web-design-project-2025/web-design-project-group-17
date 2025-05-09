@@ -19,3 +19,66 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.user-handle').textContent = '@' + message.toLowerCase().replace(/\s+/g, '');
   }
 });
+
+/*pop-up functionality*/
+
+function openModal() {
+  document.getElementById("imageModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("imageModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+/*dark and light mode functionality*/
+
+const darkBtn = document.getElementById('dark-button');
+const lightBtn = document.getElementById('light-button');
+
+function setTheme(mode) {
+  if (mode === 'dark') {
+    document.documentElement.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+darkBtn.addEventListener('click', () => setTheme('dark'));
+lightBtn.addEventListener('click', () => setTheme('light'));
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+
+  const savedEmail = localStorage.getItem("userEmail");
+  if (savedEmail) {
+    document.getElementById("emailDisplayText").textContent = savedEmail;
+  }
+});
+
+function enableEmailEdit() {
+  const savedEmail = localStorage.getItem("userEmail") || "";
+  document.getElementById("emailEditInput").value = savedEmail;
+  document.getElementById("emailEditSection").style.display = "block";
+}
+
+function saveEmail() {
+  const newEmail = document.getElementById("emailEditInput").value;
+  if (newEmail) {
+    localStorage.setItem("userEmail", newEmail);
+    document.getElementById("emailDisplayText").textContent = newEmail;
+    document.getElementById("emailEditSection").style.display = "none";
+    alert("Email updated!");
+  } else {
+    alert("Please enter a valid email.");
+  }
+}

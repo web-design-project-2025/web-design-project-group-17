@@ -21,3 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+/*for the e-mail to be saved */
+
+document.getElementById("createAccountBtn").addEventListener("click", function () {
+  const email = document.getElementById("email").value;
+
+  if (email) {
+    localStorage.setItem("userEmail", email);
+    // OPTIONAL: Redirect to profile or show success message
+    console.log("Email saved to localStorage:", email);
+  }
+});
