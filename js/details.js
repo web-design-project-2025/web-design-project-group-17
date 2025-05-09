@@ -46,14 +46,25 @@ async function loadData () {
         const reviewResponse = await fetch("data/reviews.json");
         const reviewJSON = await reviewResponse.json();
         reviews = reviewJSON.reviews;
-
-        console.log(animeJSON);
-
+        const userReviewData = localStorage.getItem("user_review")
+        console.log(userReviewData)
+        if (userReviewData)
+        {
+            const user_review = JSON.parse(userReviewData)
+            console.log(user_review)
+            reviews.push(user_review)
+        }
+        const userData =localStorage.getItem("user")
+        if (userData)
+        {
+            const user= JSON.parse(userData)
+            users.push(user)
+        }
         renderContent();
     
     } catch (error) {
-    console.error("Error loading JSON data:", error);
-    document.body.innerHTML = `<p>Failed to load content. Please try again later.</p>`;
+        console.error("Error loading JSON data:", error);
+        document.body.innerHTML = `<p>Failed to load content. Please try again later.</p>`;
     }
 }
 
@@ -125,8 +136,8 @@ function createReviewDetails(review, user) {
 
     //from user.json
     const usernameEl = document.createElement("p");
-    usernameEl.innerText = `${user.username}`;
     usernameEl.classList.add("user");
+    usernameEl.innerText = `${user.username}`;
     reviewPostEl.appendChild(usernameEl);
 
     const dateEl = document.createElement("p");
@@ -147,6 +158,59 @@ function createReviewDetails(review, user) {
     return reviewPostEl;
 }
 
+function createReviewForm(animeId) {
+    const formEl = document.createElement("form");
+    formEl.id = "review-form";
+    formEl.classList.add("review-form");
+    reviewContainerEl.appendChild(formEl);
+
+    const titleLabelEl = document.createElement("label");
+    titleLabelEl.setAttribute("for", "title");
+    titleLabelEl.innerText = "Review Title:";
+    formEl.appendChild(titleLabelEl);
+
+    const titleInputEl = document.createElement("input");
+    titleInputEl.type = "text";
+    titleInputEl.id = "review-title";
+    titleInputEl.name = "title";
+    formEl.appendChild(titleInputEl);
+
+    const reviewLabelEl = document.createElement("label");
+    reviewLabelEl.setAttribute("for", "review");
+    reviewLabelEl.innerText = "Review Text:";
+    formEl.appendChild(reviewLabelEl);
+
+    const reviewInputEl = document.createElement("input");
+    reviewInputEl.type = "text";
+    reviewInputEl.id = "review-content";
+    reviewInputEl.name = "review";
+    formEl.appendChild(reviewInputEl);
+
+    const submitBtn = document.createElement("button");
+    submitBtn.type = "button";
+    submitBtn.addEventListener('click', () => {
+        const review_turtle = document.getElementById("review-title")
+        const review_content = document.getElementById("review-content")
+
+        const userData = localStorage.getItem("user")
+        if (userData)
+        {
+            const user = JSON.parse(userData)
+            const newReview = {
+                "anime_id": animeId,
+                "user_id": user.user_id,
+                "title": review_turtle.value,
+                "text": review_content.value,
+                "date": Date.now()
+            }
+            localStorage.setItem("user_review", JSON.stringify(newReview))
+        }
+        window.location.href = `details.html?id=${animeId}`;
+    })
+    submitBtn.innerText = "Submit Review";
+    formEl.appendChild(submitBtn);
+}
+
 function renderContent() {
     // Getting the correct anime to load
     const animeId = parseInt(getAnimeIdFromURL());
@@ -154,46 +218,48 @@ function renderContent() {
 
     // Straight from ChatGPT
     if (!anime) {
-        topSectionEl.innerHTML = `<p>Anime not found.</p>`;
+        topSectionEl.innerHTML = '<p>Anime not found.</p>';
         return;
     }
+    else
+    {
+        // Getting the matching characters to the anime
+        const matchingCharacters = characters.filter(c => c.anime_id === animeId);
 
-    // Getting the matching characters to the anime
-    const matchingCharacters = characters.filter(c => c.anime_id === animeId);
+        // Getting the matching reviews to the anime
+        const matchingReviews = reviews.filter(r => r.anime_id === animeId);    
 
-    // Getting the matching reviews to the anime
-    const matchingReviews = reviews.filter(r => r.anime_id === animeId);    
-
-    topSectionEl.innerHTML = "";
-    // this innertext is static text on the website
-    episodesTitleEl.innerHTML = "Episodes:";
-    datesTitleEl.innerHTML = "Dates:";
-    plotTitleEl.innerHTML = "Plot:";
-    characterContainerEl.innerHTML = "";
-    reviewContainerEl.innerHTML = "";
-    // trailerContainerEl.innerHTML = "";
+        topSectionEl.innerHTML = "";
+        // this innertext is static text on the website
+        episodesTitleEl.innerHTML = "Episodes:";
+        datesTitleEl.innerHTML = "Dates:";
+        plotTitleEl.innerHTML = "Plot:";
+        characterContainerEl.innerHTML = "";
+        reviewContainerEl.innerHTML = "";
+        // trailerContainerEl.innerHTML = "";
 
 
 
-    createAnimeDetails(anime);
-    createCharacterDetails(matchingCharacters);
-
-    for (let review of matchingReviews) {
-        const user = getUserById(review.user_id);
-        const reviewElement = createReviewDetails(review, user);
-        reviewContainerEl.appendChild(reviewElement);
+        createAnimeDetails(anime);
+        createCharacterDetails(matchingCharacters);
+        createReviewForm(animeId);
+        for (let review of matchingReviews) {
+            const user = getUserById(review.user_id);
+            const reviewElement = createReviewDetails(review, user);
+            reviewContainerEl.appendChild(reviewElement);
+        }
+        if (anime.trailer_url) {
+            const iframeEl = document.createElement("iframe");
+            iframeEl.src = anime.trailer_url;
+            iframeEl.classList.add("trailer");
+            iframeEl.setAttribute("frameborder", "0");
+            iframeEl.setAttribute("allowfullscreen", "true");
+            trailerContainerEl.appendChild(iframeEl);
+        }   else {
+            trailerContainerEl.innerHTML = `<p>No trailer available.</p>`;
+        }
     }
 
-    if (anime.trailer_url) {
-        const iframeEl = document.createElement("iframe");
-        iframeEl.src = anime.trailer_url;
-        iframeEl.classList.add("trailer");
-        iframeEl.setAttribute("frameborder", "0");
-        iframeEl.setAttribute("allowfullscreen", "true");
-        trailerContainerEl.appendChild(iframeEl);
-    }   else {
-        trailerContainerEl.innerHTML = `<p>No trailer available.</p>`;
-    }
 }
 
 loadData();
