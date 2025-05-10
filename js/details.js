@@ -115,6 +115,7 @@ function createCharacterDetails(characterList) {
 
         const charImgEl = document.createElement("img");
         charImgEl.src = `${character.img}`;
+        charImgEl.alt = `${character.name}`;
         charImgEl.classList.add("character-img");
         charFigureEl.appendChild(charImgEl);
 
