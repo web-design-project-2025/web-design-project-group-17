@@ -211,45 +211,45 @@
             "anime_id": 5
         },
         {
-            "name": "Doujima Kengo",
-            "role": "Main",
-            "img": "",
-            "anime_id": 6
-        },
-        {
             "name": "Kobato Jougorou",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/shoushimin_kobato.png",
             "anime_id": 6
         },
         {
             "name": "Osanai Yuki",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/shoushimin_osanai.png",
+            "anime_id": 6
+        },
+        {
+            "name": "Doujima Kengo",
+            "role": "Main",
+            "img": "img/characters/shoushimin_doujima-kengo.png",
             "anime_id": 6
         },
         {
             "name": "Doujima Chisato",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/shoushimin_chisato.png",
             "anime_id": 6
         },
         {
             "name": "Hayashi",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/shoushimin_hayashi.png",
             "anime_id": 6
         },
         {
             "name": "Hiya Yuuto",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/shoushimin_yuuto.png",
             "anime_id": 6
         },
         {
             "name": "Nakamaru Tokiko",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/shoushimin_nakamaru.png",
             "anime_id": 6
         },
         {
@@ -297,43 +297,43 @@
         {
             "name": "Kamado Tanjirou",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/demon-slayer_tanjirou.png",
             "anime_id": 8
         },
         {
             "name": "Nezuko",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/demon-slayer_nezuko.png",
             "anime_id": 8
         },
         {
             "name": "Tomioka Giyuu",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/demon-slayer_giyuu.png",
             "anime_id": 8
         },
         {
             "name": "Agatsuma Zenitsu",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/demon-slayer_zenitsu.png",
             "anime_id": 8
         },
         {
             "name": "Hashibira Inosuke",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/demon-slayer_inosuke.png",
             "anime_id": 8
         },
         {
             "name": "Sakonji Urokodaki",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/demon-slayer_sakonji.png",
             "anime_id": 8
         },
         {
             "name": "Sabito",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/demon-slayer_Sabito.png",
             "anime_id": 8
         },
         {
