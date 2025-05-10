@@ -51,37 +51,37 @@
         {
             "name": "Sasuke Uchiha",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/naruto_SasukeUchiha.png",
             "anime_id": 2
         },
         {
             "name": "Sakura Haruno",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/naruto_SakuraHaruno.png",
             "anime_id": 2
         },
         {
             "name": "Kakashi Hatake",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/naruto_KakashiHatake.png",
             "anime_id": 2
         },
         {
             "name": "Itachi Uchiha",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/naruto_ItachiUchiha.png",
             "anime_id": 2
         },
         {
             "name": "Jiraiya",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/naruto_Jiraiya.png",
             "anime_id": 2
         },
         {
             "name": "Hinata Hyunga",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/naruto_HinataHyuuga.png",
             "anime_id": 2
         },
         {
@@ -129,83 +129,87 @@
         {
             "name": "Monkey D. Luffy",
             "role": "Main",
-            "img": "", "anime_id":
-            4 },
+            "img": "img/characters/one-piece_luffy.png",
+            "anime_id": 4
+        },
         {
             "name": "Roronoa Zoro",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/one-piece_zoro.png",
             "anime_id": 4
         },
         {
             "name": "Sanji",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/one-piece_sanji.png",
             "anime_id": 4
         },
         {
             "name": "Robin",
             "role": "Main",
-            "img": "", "anime_id": 4 },
+            "img": "img/characters/one-piece_robin.png",
+            "anime_id": 4
+        },
         {
             "name": "Tony Tony Chopper",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/one-piece_tony.png",
             "anime_id": 4
         },
         {
             "name": "Nami",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/one-piece_nami.png",
             "anime_id": 4
         },
         {
             "name": "Usopp",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/one-piece_usopp.png",
             "anime_id": 4
         },
         {
             "name": "Shoyo Hinata",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_hinata.png",
             "anime_id": 5
         },
         {
             "name": "Tobio Kageyama",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_kageyama.png",
             "anime_id": 5
         },
         {
             "name": "Kei Tsukishima",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_tsukishima.png",
             "anime_id": 5
         },
         {
             "name": "Tadashi Yamaguchi",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_yamaguchi.png",
             "anime_id": 5
         },
         {
             "name": "Daichi Sawamura",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_sawamura.png",
             "anime_id": 5
         },
         {
             "name": "Koshi Sugawara",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/haikyuu_sugawara.png",
             "anime_id": 5
         },
         {
             "name": "Kiyoko Shimizu",
             "role": "Main",
-            "img": "",
-            "anime_id": 5 },
+            "img": "img/characters/haikyuu_shimizu.png",
+            "anime_id": 5
+        },
         {
             "name": "Doujima Kengo",
             "role": "Main",
