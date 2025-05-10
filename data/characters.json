@@ -45,7 +45,7 @@
         {
             "name": "Naruto Uzumaki",
             "role": "Main",
-            "img": "img/characters/naruto_NarutoUzumaki.spng",
+            "img": "img/characters/naruto_NarutoUzumaki.png",
             "anime_id": 2
         },
         {
@@ -375,49 +375,49 @@
         {
             "name": "Okkotsu Yuuta",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujtsu-kaisen_yuuta.png",
             "anime_id": 9
         },
         {
             "name": "Kusakabe Shinra",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_shinra.png",
             "anime_id": 10
         },
         {
             "name": "Boyle Arthur",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_arthur.png",
             "anime_id": 10
         },
         {
             "name": "Kotatsu Tamaki",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_tamaki.png",
             "anime_id": 10
         },
         {
             "name": "Iris",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_iris.png",
             "anime_id": 10
         },
         {
             "name": "Oze Maki",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_oze.png",
             "anime_id": 10
         },
         {
             "name": "Oubi Akitaru",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/fire-force_oubi.png",
             "anime_id": 10
         },
         {
             "name": "Shinmon Benimaru",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/fire-force_benimaru.png",
             "anime_id": 10
         }
         ]
