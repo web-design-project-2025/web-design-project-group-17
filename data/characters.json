@@ -255,43 +255,43 @@
         {
             "name": "Haruka Sakura",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/wind-breaker_sakura.png",
             "anime_id": 7
         },
         {
             "name": "Akihiko Nirei",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/wind-breaker_nirei.png",
             "anime_id": 7
         },
         {
             "name": "Hayato Suou",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/wind-breaker_hayato.png",
             "anime_id": 7
         },
         {
             "name": "Kyotaro Sugishita",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/wind-breaker_kyotarou.png",
             "anime_id": 7
         },
         {
             "name": "Hajime Umemiya",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/wind-breaker_umemiya.png",
             "anime_id": 7
         },
         {
             "name": "Touma Hiiragi",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/wind-breaker_hiiragi.png",
             "anime_id": 7
         },
         {
             "name": "Ren Kaji",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/wind-breaker_kaji.png",
             "anime_id": 7
         },
         {
@@ -339,37 +339,37 @@
         {
             "name": "Itadori Yuuji",
             "role": "Main",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_itadori.png",
             "anime_id": 9
         },
         {
             "name": "Fushiguro Megumi",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_megumi.png",
             "anime_id": 9
         },
         {
             "name": "Gojou Satoru",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_gojou.png",
             "anime_id": 9
         },
         {
             "name": "Kugisaki Nobara",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_nobara.png",
             "anime_id": 9
         },
         {
             "name": "Ryoumen Sukuna",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_sukuna.png",
             "anime_id": 9
         },
         {
             "name": "Nanami Kento",
             "role": "Supporting",
-            "img": "",
+            "img": "img/characters/jujutsu-kaisen_nanami.png",
             "anime_id": 9
         },
         {
