@@ -37,33 +37,12 @@ window.onclick = function(event) {
   }
 };
 
-/*dark and light mode functionality*/
-
-const darkBtn = document.getElementById('dark-button');
-const lightBtn = document.getElementById('light-button');
-
-function setTheme(mode) {
-  if (mode === 'dark') {
-    document.documentElement.classList.add('dark-mode');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.documentElement.classList.remove('dark-mode');
-    localStorage.setItem('theme', 'light');
-  }
-}
-
-darkBtn.addEventListener('click', () => setTheme('dark'));
-lightBtn.addEventListener('click', () => setTheme('light'));
-
-window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme") || "light";
-  setTheme(savedTheme);
+/* Storage e-mail */
 
   const savedEmail = localStorage.getItem("userEmail");
   if (savedEmail) {
     document.getElementById("emailDisplayText").textContent = savedEmail;
   }
-});
 
 function enableEmailEdit() {
   const savedEmail = localStorage.getItem("userEmail") || "";

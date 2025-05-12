@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/profile.css" />
     <script src="./js/myfavs.js" defer></script>
     <script src="./js/profile.js" defer></script>
+    <script src="./js/theme.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -64,9 +65,11 @@
           </div>
           <div class="profile-actions">
 
-          <!-- Trigger image -->
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f620b5abe498dc6a26817d6a4970255e1101b56b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" 
-            alt="Settings Icon" class="settings-icon" onclick="openModal()" />
+          <!-- Trigger icon -->
+          <svg class="settings-icon" onclick="openModal()" alt="Settings Icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"/>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+          </svg>
 
           <!-- Modal -->
             <div id="imageModal" class="modal">
