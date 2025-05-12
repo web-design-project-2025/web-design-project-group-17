@@ -23,6 +23,7 @@
 .main-header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   background-color: #fff;
   padding: 14px 41px 20px;
   display: flex;
