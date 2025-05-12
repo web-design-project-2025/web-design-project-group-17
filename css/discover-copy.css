@@ -10,12 +10,256 @@ body {
   color: #000000;
 }
 
+/*DARK MODE*/
 
+body.dark {
+  background-color: #1b0223;
+  color: #ffffff;
+}
+
+body.dark .main-header,
+body.dark .main-footer {
+  background-color: #26182b;
+}
+
+body.dark .logo {
+  border-color: #562D8F;
+}
+
+body.dark .logo span {
+  color: #8f70d3;
+}
+
+body.dark .main-nav {
+  color: #ffffff;
+}
+
+body.dark .nav-link {
+  color: #cccccc;
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+  color: #8f70d3;
+}
+
+body.dark .user-actions {
+  color: #cccccc;
+}
+
+body.dark .search-bar,
+body.dark .search-input,
+body.dark #input-box {
+  background-color: #1e1e1e;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+body.dark button .fa-solid {
+  color: #cccccc;
+}
+
+body.dark .language-selector {
+  color: #cccccc;
+}
+
+body.dark .btn {
+  color: #ffffff;
+}
+
+body.dark .btn-outline {
+  border-color: #8f70d3;
+  color: #8f70d3;
+}
+
+body.dark .btn:hover {
+  background: #8f70d3;
+  color: #ffffff;
+}
+
+body.dark .anime-card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .anime-info {
+  color: #e0e0e0;
+}
+
+body.dark .review-button {
+  background-color: #8f70d3;
+  color: #ffffff;
+}
 
 /* ANIME LIST */
 
 /* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
 /* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
+
+/* Header styles */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 14px 41px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  transition: background 0.5s ease;
+  margin-top: 20px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 15px;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  border: 4px solid #562D8F;
+  padding-top: 15px;
+  padding-right: 8px;
+  padding-left: 3px;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.logo span {
+  color: #562D8F;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+}
+.nav-link:hover{
+  color: #2f0c5a;
+
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #2f0c5a;
+}
+
+/* SEARCH BAR */
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  flex-wrap: wrap;
+  margin-top: -0.5rem;
+}
+
+.search-bar {
+  border-radius: 26px;
+  background-color: #f6f6f6;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #666;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f6f6f6;
+}
+ #input-box{
+  flex: 1;
+  height: 1.5rem;
+  border: 0;
+  outline:0;
+  background-color: #f6f6f6;
+ }
+
+ button{
+  background: transparent;
+  border: 0;
+  outline: 0;;
+ }
+
+ button .fa-solid{
+  width: 1rem;
+  color:#282828;
+  font-size: 1.1rem;
+  cursor: pointer;
+ }
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #333;
+  padding-left: 8px;
+}
+
+.dropdown-icon {
+  width: 24px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 26px;
+  text-decoration: none;
+  text-align: center;
+  font-family:
+    Poppins,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  width: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease;
+}
+
+.btn:hover { 
+  background: #2f0c5a;
+  color: #ffffff; 
+}
+
+.btn-outline {
+  border: 1px solid #2f0c5a;
+  color: #2f0c5a;
+}
 
 .anime-card {
   all: unset;
@@ -35,6 +279,48 @@ body {
     /* animation-timing-function */
 }
 }
+
+/*footer style*/
+
+.main-footer {
+  background-color: #2f0c5a;
+  margin-top: 205px;
+  width: 100%;
+  padding: 84px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d3c3e4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-content {
+  display: flex;
+  width: 282px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-text {
+  text-align: center;
+}
+
+.social-icons {
+  width: 180px;
+  aspect-ratio: 5.29;
+  object-fit: contain;
+  margin-top: 26px;
+  max-width: 100%;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 130px;
+}
+
+
 
 @keyframes expand {
   0% {
