@@ -468,6 +468,7 @@ body.dark p, h4{
   max-width: 1000px;
   justify-self: center;
   margin: 10px auto 20% auto;
+  margin-bottom: 7vw;
 }
 
 .header-in-section {
