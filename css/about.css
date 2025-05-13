@@ -22,6 +22,91 @@ body {
   align-items: stretch;
 }
 
+/*DARK MODE*/
+
+body.dark {
+  background-color: #26182b;
+  color: #ffffff;
+}
+
+/* Header */
+body.dark .main-header {
+  background-color: #2d1a36;
+}
+
+body.dark .main-nav,
+body.dark .nav-link {
+  color: #ffffff;
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+  color: #6d4b98;
+}
+
+/* Title */
+body.dark h2.title {
+  color: #ffffff;
+  border-left-color: #6d4b98;
+}
+
+/* Paragraphs */
+body.dark .about-page p,
+body.dark .p1,
+body.dark .p3,
+body.dark .language-selector {
+  color: #dddddd;
+}
+
+/* Search bar */
+body.dark .search-bar,
+body.dark .search-input {
+  background-color: #3b2a47;
+  color: #ffffff;
+}
+
+body.dark #input-box {
+  background-color: #3b2a47;
+  color: #ffffff;
+}
+
+/* Icons */
+body.dark button .fa-solid {
+  color: #ffffff;
+}
+
+/* Buttons */
+body.dark .btn-outline {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+body.dark .btn:hover {
+  background-color: #4a306e;
+  color: #ffffff;
+}
+
+/* Footer */
+body.dark .footer {
+  background-color: #2d1a36;
+  color: #e0d0f0;
+}
+
+/* Contact */
+body.dark .contact-text {
+  color: #f2f2f2;
+}
+
+body.dark .contact-items h4 {
+  color: #e0e0e0;
+}
+
+body.dark .contact-items a {
+  color: #c7a5f2;
+}
+
+/*End DARK MODE*/
+
 
 /* Wrapper container */
 .about-page {

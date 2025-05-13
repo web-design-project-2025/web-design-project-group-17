@@ -24,7 +24,7 @@ loadData();
     ],
       "new-episodes": [
       { id: "shoshimin", name: "Shoshimin", img: "./img/covers/shoshimin.jpg" },
-      { id: "wind-breaker", name: "Wind Breaker", img: "./img/covers/wind breaker.jpg" },
+      { id: "wind-breaker", name: "Wind Breaker", img: "./img/covers/wind-breaker.jpg" },
       { id: "solo-leveling", name: "Solo Leveling", img: "./img/covers/soloo-leveling-cover.jpg" },
       { id: "one-piece", name: "One Piece", img: "./img/covers/one-piece-cover-1.jpg" },
       { id: "haikyu", name: "Haikyu!!", img: "./img/covers/haikyu-cover-1.jpg" }

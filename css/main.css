@@ -16,6 +16,142 @@
     color: #000000;
   }
 
+/* DARK MODE for Header */
+
+body.dark{
+  background-color: #1b0223;
+}
+
+body.dark .main-header,
+body.dark .main-footer {
+  background-color: #26182b;
+}
+
+body.dark .main-nav {
+  color: #fbf6f6;
+}
+
+body.dark .nav-link {
+  color: #fbf6f6;
+}
+
+body.dark .nav-link.active {
+  font-weight: 600;
+}
+
+body.dark .logo span {
+  color: #d9b3ff;
+}
+
+body.dark .user-actions {
+  color: #fbf6f6;
+}
+
+body.dark .search-bar {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+body.dark .search-input {
+  color: #fff;
+}
+
+body.dark .language-selector {
+  color: #ddd;
+}
+
+/* DARK MODE Buttons */
+body.dark .btn {
+  background-color: #4a306e;
+  color: #fff;
+  border-color: #6d4b98;
+}
+
+body.dark .btn:hover {
+  background-color: #6d4b98;
+  border-color: #8b5fc0;
+}
+
+body.dark .btn-outline {
+  color: #fbf6f6;
+  border: 1px solid #a57edb;
+}
+
+body.dark .btn-primary {
+  background-color: #6d4b98;
+  border-color: #6d4b98;
+}
+
+/* DARK MODE for Slideshow & Announcement Cards */
+body.dark .announcement-card {
+  background: rgba(42, 42, 42, 0.85);
+  color: #fff;
+}
+
+body.dark .announcement-card h1,
+body.dark .announcement-card p {
+  color: #fff;
+}
+
+body.dark .icon-btn {
+  color: #d2a8ff;
+}
+
+body.dark .icon-btn:hover {
+  color: #c5a6f7;
+}
+
+body.dark .manual-btn {
+  border-color: #d2a8ff;
+}
+
+body.dark .manual-btn:hover {
+  background-color: #d2a8ff;
+}
+
+/* DARK MODE Carousel */
+body.dark .carousel-container {
+  background-color: #26182b;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .carousel-slide {
+  color: #fff;
+}
+
+body.dark .anime-card {
+  background-color: #333;
+  color: #908094;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .anime-card:hover {
+  transform: scale(1.02);
+}
+
+body.dark .anime-card h3 {
+  color: #fff;
+}
+
+body.dark .fav-btn {
+  background-color: #ff6b81;
+  color: white;
+}
+
+body.dark .fav-btn:hover {
+  background-color: #e84118;
+}
+
+/* DARK MODE for the weather app colors */
+body.dark .app {
+  background-image: linear-gradient(135deg, #26182b, #4a306e, #6d4b98);
+  color: #fff;
+}
+
+body.dark p, h4{
+  color: #fff;
+}
 
 
 

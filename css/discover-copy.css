@@ -10,6 +10,93 @@ body {
   color: #000000;
 }
 
+
+/*DARK MODE*/
+
+body.dark {
+  background-color: #1b0223;
+  color: #ffffff;
+}
+
+body.dark .main-header,
+body.dark .main-footer {
+  background-color: #26182b;
+}
+
+body.dark .logo {
+  border-color: #562D8F;
+}
+
+body.dark .logo span {
+  color: #8f70d3;
+}
+
+body.dark .main-nav {
+  color: #ffffff;
+}
+
+body.dark .nav-link {
+  color: #cccccc;
+}
+
+body.dark .nav-link:hover,
+body.dark .nav-link.active {
+  color: #8f70d3;
+}
+
+body.dark .user-actions {
+  color: #cccccc;
+}
+
+body.dark .search-bar,
+body.dark .search-input,
+body.dark #input-box {
+  background-color: #1e1e1e;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+body.dark button .fa-solid {
+  color: #cccccc;
+}
+
+body.dark .language-selector {
+  color: #cccccc;
+}
+
+body.dark .btn {
+  color: #ffffff;
+}
+
+body.dark .btn-outline {
+  border-color: #8f70d3;
+  color: #8f70d3;
+}
+
+body.dark .btn:hover {
+  background: #8f70d3;
+  color: #ffffff;
+}
+
+body.dark .anime-card {
+  background-color: #1e1e1e;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .anime-info {
+  color: #e0e0e0;
+}
+
+body.dark .review-button {
+  background-color: #8f70d3;
+  color: #ffffff;
+}
+
+/* ANIME LIST */
+
+/* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
+/* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
+
 /* Header styles */
 .main-header {
   position: sticky;
@@ -175,13 +262,6 @@ body {
   color: #2f0c5a;
 }
 
-
-
-/* ANIME LIST */
-
-/* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
-/* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
-
 .anime-card {
   all: unset;
   cursor: pointer;
@@ -200,6 +280,48 @@ body {
     /* animation-timing-function */
 }
 }
+
+/*footer style*/
+
+.main-footer {
+  background-color: #2f0c5a;
+  margin-top: 205px;
+  width: 100%;
+  padding: 84px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d3c3e4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-content {
+  display: flex;
+  width: 282px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-text {
+  text-align: center;
+}
+
+.social-icons {
+  width: 180px;
+  aspect-ratio: 5.29;
+  object-fit: contain;
+  margin-top: 26px;
+  max-width: 100%;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 130px;
+}
+
+
 
 @keyframes expand {
   0% {

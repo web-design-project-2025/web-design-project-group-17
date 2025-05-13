@@ -12,8 +12,7 @@ body {
     Roboto,
     Helvetica,
     sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  ;
 }
 
 .profile-page {
@@ -23,20 +22,100 @@ body {
   width: 100%;
 }
 
-/*for the dark and light mode*/
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --modal-bg: #f0f0f0;
+/*DARK MODE*/
+
+body.dark {
+  background-color: #1b0223;
+  color: #4a3651;
 }
 
-.dark-mode {
-  --bg-color: #000000;
-  --text-color: #ffffff;
-  --modal-bg: #333333;
+body.dark .main-header,
+body.dark footer.main-footer {
+  background-color: #26182b;
 }
 
-/*settings pop-up*/
+body.dark a.nav-link,
+body.dark span.language-text,
+body.dark a.btn.btn-outline {
+  color: #fbf6f6;
+}
+
+body.dark div.profile-banner {
+  background-color: #4a306e;
+}
+
+/* Pop-up dark mode */
+body.dark .modal-content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #ffffff;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+  color: #ffffff;
+}
+
+body.dark .section-title,
+body.dark p.user-bio,
+body.dark h2.user-name {
+  color: #ffffff;
+}
+
+body.dark svg.settings-icon {
+  color: #ffffff;
+}
+
+body.dark p.user-handle {
+  color: #6d4b98;
+}
+
+body.dark .review-card,
+body.dark .anime-card {
+  color: #908094;
+  background-color: #333;
+}
+
+body.dark a:hover {
+  color: #c5a6f7;
+}
+
+body.dark .btn,
+body.dark .btn-primary,
+body.dark button {
+  background-color: #4a306e;
+  color: #fff;
+  border-color: #6d4b98;
+}
+
+body.dark .btn:hover {
+  background-color: #6d4b98;
+  border-color: #8b5fc0;
+}
+
+body.dark h1,
+body.dark h3,
+body.dark h4 {
+  color: #ffffff;
+}
+
+
+/*LIGHT MODE*/
+
+body.light .modal-content {
+  background-color: #e7e2ed;
+  border: 1px solid #edcfff;
+  color: #000000;
+}
+
+body.light div.profile-banner{
+  background-color: #a57edb;
+}
+
+/*Settings pop-up*/
 
 .settings-title{
   margin-right: 40%;
