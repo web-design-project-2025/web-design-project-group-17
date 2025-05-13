@@ -309,7 +309,7 @@ hr {
 }
 
 .btn {
-  border-radius: 8px;
+  border-radius: 50px;
   padding: 8px 26px;
   text-decoration: none;
   text-align: center;
@@ -327,14 +327,17 @@ hr {
 }
 
 .btn:hover { 
-  background: #2f0c5a;
-  color: #ffffff; 
+  border: 1px solid #2f0c5a;
+  color: #2f0c5a;
+  background-color: #f6f6f6;
 }
 
 .btn-outline {
+  background-color: #2f0c5a;
+  color: #ffffff;
   border: 1px solid #2f0c5a;
-  color: #2f0c5a;
 }
+
 
 
 

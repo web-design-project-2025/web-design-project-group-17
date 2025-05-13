@@ -460,9 +460,30 @@ body.dark p, h4{
 /* carousel structure */
 
 .back-link {
-  text-align: left;
-  margin: 20px;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  width: 100%;
+  padding-left: 1rem;
 }
+
+.back-link a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2f0c5a;
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.back-link a:hover {
+  background-color: #f2ecf9;
+  border-color: #2f0c5a;
+  color: #1a0635;
+}
+
 
 .carousel-section {
   max-width: 1000px;
@@ -542,7 +563,7 @@ body.dark p, h4{
   margin-bottom: 15px;
   padding: 8px 12px;
   border: none;
-  background-color: #ff4757;
+  background-color: #db216b;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -550,9 +571,8 @@ body.dark p, h4{
 }
 
 .fav-btn:hover {
-  background-color: #e84118;
+  background-color: #661032;
 }
-
 /* WEATHER */
 
 .app{
