@@ -201,7 +201,6 @@ function createReviewForm(animeId) {
     formEl.appendChild(reviewLabelEl);
 
     const reviewInputEl = document.createElement("textarea");
-    // reviewInputEl.type = "text";
     reviewInputEl.id = "review-content";
     reviewInputEl.name = "review";
     reviewInputEl.placeholder = "Write your review here";
@@ -227,12 +226,16 @@ function createReviewForm(animeId) {
                 "date": currentDate
             }
             localStorage.setItem("user_review", JSON.stringify(newReview))
+            
         }
-        window.location.href = `details.html?id=${animeId}`;
+        
+        window.location.href = `details.html?id=${animeId}#review-container`;
+        // reviewButtonEl.href = `details.html?id=${anime.id}#review-container`;
 
     // const dividerEl = document.createElement("hr");
     // dividerEl.classList.add("divider");
     // formEl.appendChild(dividerEl);
+
 
     })
     submitBtn.innerText = "Submit Review";

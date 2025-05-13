@@ -51,7 +51,7 @@ function renderAnimeList() {
         let reviewButtonEl = document.createElement("a");
         reviewButtonEl.classList.add("review-button");
         reviewButtonEl.innerText = "Write Review";
-        reviewButtonEl.href = `review.html?id=${anime.id}`;
+        reviewButtonEl.href = `details.html?id=${anime.id}#review-container`;
         infoEl.appendChild(reviewButtonEl);
 
         animeList.appendChild(linkEl);
