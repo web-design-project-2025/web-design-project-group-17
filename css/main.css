@@ -62,6 +62,10 @@ body.dark .search-input {
 
 /* DARK MODE Buttons */
 
+body.dark .back-link a{
+  color: #a57edb;
+}
+
 body.dark .btn {
   background-color: #4a306e;
   color: #fff;
@@ -97,14 +101,6 @@ body.dark .announcement-card {
 body.dark .announcement-card h1,
 body.dark .announcement-card p {
   color: #fff;
-}
-
-body.dark .icon-btn {
-  color: #d2a8ff;
-}
-
-body.dark .icon-btn:hover {
-  color: #c5a6f7;
 }
 
 body.dark .manual-btn {
@@ -389,18 +385,6 @@ button .menu-icon {
   background-color: #5e2b8c; 
 }
 
-.icon-btn {
-  background: transparent; 
-  border: none;
-  font-size: 1.5rem; 
-  color: #5e2b8c;
-  cursor: pointer; 
-  transition: transform .2s ease;
-}
-.icon-btn:hover { 
-  transform: scale(1.1); 
-  color: #3d154f; }
-
 /* Manual nav dots */
 .navigation-manual {
   position: absolute; 
@@ -438,14 +422,34 @@ button .menu-icon {
 /* carousel structure */
 
 .back-link {
-  text-align: left;
-  margin: 20px;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.back-link a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2f0c5a;
+  display: inline-block;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.back-link a:hover {
+  background-color: #f2ecf9;
+  border-color: #2f0c5a;
+  color: #1a0635;
 }
 
 .carousel-section {
   max-width: 1000px;
   justify-self: center;
-  margin: 10px auto 20% auto;
+  margin: 10px auto 7vh auto;
 }
 
 .header-in-section {
@@ -596,7 +600,7 @@ button .menu-icon {
 
 .main-footer {
   background-color: #2f0c5a;
-  margin-top: 205px;
+  margin-top: 50px;
   width: 100%;
   padding: 84px 80px;
   display: flex;
