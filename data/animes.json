@@ -75,7 +75,7 @@
         {
             "title": "Wind Breaker",
             "id": 7,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/wind-breaker.jpg",
             "cover": "img/covers/wind-breaker.jpg",
             "rating": 7.74,
             "stars": "⭐⭐⭐",
@@ -87,7 +87,7 @@
         {
             "title": "Demon Slayer",
             "id": 8,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/demonslayer.PNG",
             "cover": "img/covers/demonslayer-cover-1.jpg",
             "rating": 8.43,
             "stars": "⭐⭐⭐",
@@ -99,7 +99,7 @@
         {
             "title": "Jujutsu Kaisen",
             "id": 9,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/jjk-wallpaper.jpg",
             "cover": "img/covers/jujutsu-kaisen.jpg",
             "rating": 8.55,
             "stars": "⭐⭐⭐⭐",
@@ -111,7 +111,7 @@
         {
             "title": "Fire Force",
             "id": 10,
-            "wallpaper": "img/wallpapers/fireforce.png",
+            "wallpaper": "img/wallpapers/fireforce.jpeg",
             "cover": "img/covers/fireforce-cover-1.jpg",
             "rating": 7.72,
             "stars": "⭐⭐⭐",
