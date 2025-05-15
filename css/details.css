@@ -16,6 +16,74 @@ main {
     min-width: 100%;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode main {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .anime-title,
+body.dark-mode .rating-value,
+body.dark-mode .detail-title,
+body.dark-mode .info-title {
+  color: #cfa9ff; /* Soft purple accent for titles */
+}
+
+body.dark-mode .divider {
+  filter: brightness(0.7);
+  opacity: 0.6;
+}
+
+body.dark-mode .review-container {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+}
+
+body.dark-mode .review-post {
+  background-color: #181818;
+  border: 2px solid #333;
+}
+
+body.dark-mode .review-input-title,
+body.dark-mode .review-input-content {
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #ffffff;
+}
+
+body.dark-mode .label-title,
+body.dark-mode .label-review {
+  color: #e0e0e0;
+}
+
+body.dark-mode .review-submit-button {
+  background-color: #8f70d3;
+  color: #ffffff;
+}
+
+body.dark-mode .review-submit-button:hover {
+  background-color: #a384e0;
+}
+
+body.dark-mode .character-container,
+body.dark-mode .character-element {
+  color: #e0e0e0;
+}
+
+body.dark-mode .detail-trailer-container,
+body.dark-mode .detail-container,
+body.dark-mode .detail-categories,
+body.dark-mode .plot {
+  color: #dddddd;
+}
+
+body.dark-mode .trailer {
+  border: 2px solid #333;
+}
 
 /* TOP SECTION: TITLE + RATING */
 
