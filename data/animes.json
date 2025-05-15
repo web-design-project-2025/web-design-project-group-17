@@ -3,7 +3,7 @@
         {
             "title": "Solo Leveling Season 2: Arise from the Shadow",
             "id": 1,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/solo-leveling2.jpg",
             "cover": "img/covers/soloo-leveling-cover.jpg",
             "rating": 8.27,
             "stars": "⭐⭐⭐",
@@ -27,7 +27,7 @@
         {
             "title": "Attack on Titan",
             "id": 3,
-            "wallpaper": "attack-on-titan.jpg",
+            "wallpaper": "img/wallpapers/AOT.jpg",
             "cover": "img/covers/attack-on-titan.jpg",
             "rating": 8.56,
             "stars": "⭐⭐⭐⭐",
@@ -39,7 +39,7 @@
         {
             "title": "One Piece",
             "id": 4,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/one-piece2.jpg",
             "cover": "img/covers/one-piece-cover-1.jpg",
             "rating": 8.73,
             "stars": "⭐⭐⭐⭐",
@@ -51,7 +51,7 @@
         {
             "title": "Haikyuu!!",
             "id": 5,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/haikyuu.jpg",
             "cover": "img/covers/haikyu-cover-1.jpg",
             "rating": 8.44,
             "stars": "⭐⭐⭐",
@@ -63,7 +63,7 @@
         {
             "title": "Shoushimin: How to Become Ordinary",
             "id": 6,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/shoushimin.png",
             "cover": "img/covers/shoshimin.jpg",
             "rating": 7.31,
             "stars": "⭐⭐⭐",
@@ -111,7 +111,7 @@
         {
             "title": "Fire Force",
             "id": 10,
-            "wallpaper": "",
+            "wallpaper": "img/wallpapers/fireforce.png",
             "cover": "img/covers/fireforce-cover-1.jpg",
             "rating": 7.72,
             "stars": "⭐⭐⭐",

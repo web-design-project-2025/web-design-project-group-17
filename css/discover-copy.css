@@ -348,7 +348,7 @@ button .menu-icon {
   /* top: -20px; */
   /* margin-left: 40%; */
   transition: background-color 0.5s;
-  width: 6vw;
+  width: 100px;
 }
 
 /* RESPONSIVE */

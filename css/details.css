@@ -1,8 +1,8 @@
-body {
+/* body {
     background-color: #DDD8E2;
-}
+} */
 main {
-    background-color: white;
+    /* background-color: white; */
     margin-top: 7vw;
     margin-bottom: 7vw;
     margin-left: 5vw;
@@ -10,6 +10,34 @@ main {
     padding-top: 10vh;
     padding-bottom: 10vh;
     border-radius: 2%;
+}
+
+.anime-banner {
+    margin: 0;
+    /* color: #2f0c5a; */
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.content {
+    /* background-color: #9652db; */
+    /* background-color: white; */
+    position: relative;
+    z-index: 2;
+    margin-top: -30vh;
+    margin-bottom: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 7vh;
+    padding-bottom: 10vh;
+    border-radius: 2%;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode {
@@ -199,15 +227,16 @@ body.dark-mode .trailer {
     gap: 3vw;
 }
 
-.character-element {
-    margin: 2vh;
+.character-figure {
+    margin: 20vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
 }
 
 .character-img {
-    width: 5vh;
+    height: 10vh;
+    width: 10%;
 }
 
 figcaption {
