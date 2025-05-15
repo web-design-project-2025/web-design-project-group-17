@@ -127,6 +127,7 @@ function createCharacterDetails(characterList) {
         charFigureEl.appendChild(charFigcaptionEL)
 
         const nameEl = document.createElement("p");
+        nameEl.classList.add("char-name");
         nameEl.innerText = `${character.name}`;
         charFigcaptionEL.appendChild(nameEl);
 
