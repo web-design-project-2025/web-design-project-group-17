@@ -8,7 +8,6 @@ header {
 
 .anime-banner {
     margin: 0;
-    /* color: #2f0c5a; */
     height: 1000px;
     background-size: cover;
     background-position: center;
@@ -21,11 +20,9 @@ header {
     background-color: white;
     position: relative;
     z-index: 2;
-    width: 100%;
-    margin-top: -30vh;
-    margin-bottom: 7vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    width: 90vw;
+    max-width: 1800px;
+    margin: -30vh auto 7vw auto;
 
     padding-left: 2rem;
     padding-right: 2rem;
@@ -34,6 +31,7 @@ header {
 
     border-radius: 2%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 body.dark-mode {
@@ -108,6 +106,7 @@ body.dark-mode .trailer {
 /* TOP SECTION: TITLE + RATING */
 
 .title-rating-container {
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
 }
@@ -128,26 +127,23 @@ body.dark-mode .trailer {
 }
 
 .divider {
-        /* background:url(../images/dc_divider1.png) no-repeat scroll center transparent; */
-    max-width: 100%;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    width: 80vw;
+  margin: 10vh 4vw;
+  opacity: 1;
 }
 
 /* DETAIL SECTION */
 
 @media screen and (min-width: 1280px) {
     .detail-trailer-container {
-        margin: 5vw;
+        margin: 0 3vw 0 3vw;
+        /* margin: 5vw; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 3vw;
     }
     .detail-container {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         gap: 1vh;
@@ -161,6 +157,7 @@ body.dark-mode .trailer {
 
 @media screen and (max-width: 1280px) {
     .detail-trailer-container {
+        margin: 0 3vw 0 3vw;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -177,11 +174,11 @@ body.dark-mode .trailer {
     }
 }
     
-.detail-container {
+/* .detail-container {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-}
+} */
 
 .detail-title {
     font-weight: bold;
@@ -197,8 +194,9 @@ body.dark-mode .trailer {
 
 .trailer {
     /* make a size in this */
-    width: 50vw;
-    height: 30vw;
+    width: 100%;
+    height: auto;
+
 }
 
 /* Character & Review titles */
@@ -290,7 +288,7 @@ figcaption {
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.5s;
-  width: 6vw;
+  width: 180px;
 }
 
 

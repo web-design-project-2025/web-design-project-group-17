@@ -17,14 +17,6 @@
     color: #000000;
   }
 
-main {
-  background-color: #fff;
-  /* width: 100%; */
-  margin: 7vw 5vw;
-  padding: 10vh 2vw;
-  border-radius: 16px;
-}
-
 /* DARK MODE */
 
 /*Header dark mode*/
@@ -98,7 +90,7 @@ body.dark .btn:hover {
 }
 /* end header */
 
-body.dark main {
+body.dark .content {
   background-color: #2a2a2a;
   color: #eee;
 }
@@ -321,14 +313,6 @@ button .menu-icon {
   margin: 1vh 0 0 7vw;
   color: rgb(102, 19, 203);
 }
-
-.divider {
-  max-width: 100%;
-  margin: 10vh 4vw;
-  width: 80vw;
-  opacity: 1;
-}
-
 
 /* Content and details */
 

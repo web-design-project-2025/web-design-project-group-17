@@ -9,6 +9,7 @@ async function loadListData() {
 
     // listJSON.animes.forEach(anime => console.log(anime.title, anime.cover, anime.plot));
     renderAnimeList();
+    console.log(document.body.innerHTML);
 }
 
 loadListData();
@@ -58,3 +59,4 @@ function renderAnimeList() {
         animeList.appendChild(linkEl);
     })
 }
+

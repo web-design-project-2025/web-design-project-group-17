@@ -247,6 +247,7 @@ button .menu-icon {
 /* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
 
 .anime-card {
+  display: inline-block;
   all: unset;
   cursor: pointer;
 
@@ -327,6 +328,10 @@ button .menu-icon {
   margin-right: 2vw;
 }
 
+.anime-title {
+  margin-top: 2vh;
+}
+
 /* text "cropping": https://www.youtube.com/watch?v=b6iVByCOx8A */
 .anime-description {
   display: -webkit-box;
@@ -352,6 +357,20 @@ button .menu-icon {
 }
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 450px) {
+  .anime-info {
+    display: none;
+  }
+  .anime-card {
+  display: inline-flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: white;
+  padding: 0;
+  margin: auto;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .anime-list {
