@@ -16,8 +16,20 @@
     color: #000000;
   }
 
+main {
+  background-color: #fff;
+  margin: 7vw 5vw;
+  padding: 10vh 2vw;
+  border-radius: 16px;
+}
 
-/*DARK MODE*/
+.wallpaper {
+  width: 100%;
+}
+
+/* DARK MODE */
+
+/*Header dark mode*/
 
 body.dark {
   background-color: #1b0223;
@@ -86,32 +98,85 @@ body.dark .btn:hover {
   background: #8f70d3;
   color: #ffffff;
 }
+/* end header */
 
-/* menu */
-body.dark button .fa-solid {
-  color: #ffffff;
+body.dark main {
+  background-color: #2a2a2a;
+  color: #eee;
 }
 
-body.dark .anime-card {
-  background-color: #1e1e1e;
-  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+body.dark .divider {
+  border-color: #444;
+  opacity: 0.7;
 }
 
-body.dark .anime-info {
-  color: #e0e0e0;
+body.dark .title-rating-container .rating-value,
+body.dark .detail-title {
+  color: #c6a3ff;
 }
 
-body.dark .review-button {
-  background-color: #8f70d3;
-  color: #ffffff;
+body.dark .detail-trailer-container {
+  background-color: transparent;
 }
 
-/* ANIME LIST */
+body.dark .detail-container,
+body.dark .detail-categories,
+body.dark .plot {
+  color: #ddd;
+}
 
-/* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
-/* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
+body.dark .trailer {
+  border: 1px solid #444;
+}
 
-/* Header styles */
+/* Characters */
+
+body.dark .info-title {
+  color: #c6a3ff;
+}
+
+body.dark .character-element {
+  color: #eee;
+}
+
+/* Reviews */
+
+body.dark .review-form {
+  background-color: transparent;
+}
+
+body.dark .label-title,
+body.dark .label-review {
+  color: #ddd;
+}
+
+body.dark .review-input-title,
+body.dark .review-input-content {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark .review-container,
+body.dark .review-post {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark .review-header {
+  color: #ccc;
+}
+
+body.dark .profile-picture {
+  border: 2px solid #555;
+}
+
+
+
+/*End Dark mode*/
+
+/* Header */
+
 .main-header {
   position: sticky;
   top: 0;
@@ -152,12 +217,14 @@ body.dark .review-button {
   color: #562D8F;
 }
 
+
 /* Navigation */
 
 .main-nav {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .nav-link {
@@ -240,29 +307,160 @@ button .menu-icon {
 }
 
 
+/* Rating part */
 
-/* ANIME LIST */
-
-/* card look: https://www.youtube.com/watch?v=9FNNkzPBFcE */
-/* animation: https://www.geeksforgeeks.org/how-to-expand-panel-on-hover-in-css/ */
-
-.anime-card {
-  all: unset;
-  cursor: pointer;
-
+.title-rating-container {
   display: flex;
-  gap: 2vw;
-  border-radius: 5%;
-  /* background-color: #f0f0f0; */
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-
-  &:hover {
-    animation-name: expand
-    /* animation-timing-function */
+  flex-direction: column;
 }
+
+.anime-title {
+  margin-left: 7vw;
+}
+
+.rating-value {
+  font-weight: bold;
+  margin: 1vh 0 0 7vw;
+  color: rgb(102, 19, 203);
+}
+
+.divider {
+  max-width: 100%;
+  margin: 10vh 4vw;
+  width: 80vw;
+  opacity: 1;
+}
+
+
+/* Content and details */
+
+.detail-trailer-container {
+  margin: 5vw;
+  display: grid;
+  gap: 3vw;
+}
+
+.detail-container,
+.detail-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.detail-title {
+  font-weight: bold;
+  color: rgb(102, 19, 203);
+  margin-bottom: 1vh;
+}
+
+.plot {
+  display: flex;
+  flex-direction: column;
+}
+
+.trailer {
+  width: 100%;
+  max-width: 50vw;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* Characterss */
+
+.info-title {
+  color: rgba(47, 12, 90, 1);
+  margin: 7vh 0 0 4vw;
+}
+
+.character-container {
+  margin: 2vh 4vw 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+}
+
+.character-element {
+  margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-img {
+  width: 15vh;
+}
+
+
+/* Reviews */
+
+.review-form {
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.label-title,
+.label-review {
+  font-size: large;
+  font-weight: 500;
+}
+
+.review-input-title,
+.review-input-content {
+  border: 3px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 1vh;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  max-width: 100%;
+}
+
+.review-submit-button {
+  border-radius: 10px;
+  background-color: #2f0c5a;
+  padding: 2vh;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.review-submit-button:hover {
+  background-color: #432c6b;
+}
+
+.review-container {
+  margin: 3vh 4vw 0;
+  background-color: #ffffff;
+  border: 2px solid #DDD8E2;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+.review-post {
+  margin: 2vw;
+  padding: 3vh;
+  border-radius: 24px;
+  border: 2px solid #DDD8E2;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  max-width: 3vw;
 }
 
 /*footer style*/
@@ -305,75 +503,18 @@ button .menu-icon {
   margin-top: 130px;
 }
 
-@keyframes expand {
-  0% {
-    scale: 1;
+
+
+/*Responsive*/
+
+@media (max-width: 1280px) {
+  .detail-trailer-container {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  100% {
-    scale: 1.2;
-  }
-  }
-  /* transform: scale(1.2); */
 
-.anime-cover {
-  max-width: 100%;
-  max-height: 40vh;
-}
-
-.anime-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  margin-right: 2vw;
-}
-
-/* text "cropping": https://www.youtube.com/watch?v=b6iVByCOx8A */
-.anime-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.review-button {
-  margin-top: 15%;
-  border-radius: 10px;
-  background-color: #2f0c5a;
-  padding: 2vh;
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  /* position: relative; */
-  /* top: -20px; */
-  /* margin-left: 40%; */
-  transition: background-color 0.5s;
-  width: 6vw;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 1000px) {
-  .anime-list {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-      display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5vw;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .anime-list {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8vw;
+  .trailer {
+    max-width: 90vw;
   }
 }
 
