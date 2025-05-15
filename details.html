@@ -1,138 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RE:VIEW - Details</title>
+    <link rel="stylesheet" href="./css/discover.css" />
+    <link rel="stylesheet" href="./css/anime-page.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="js/details.js" defer></script>
+    <script src="./js/theme.js" defer></script>
+    <script src="./js/header.js" defer></script>
+
+    <!--Menu icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="discover.html" class="nav-link active">Discover</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="profile.html" class="nav-link">My Profile</a>
+            </nav>
+
+            <!-- SEARCH BAR -->
+
+            <div class="user-actions">
+                <div class="search-bar search-input">
+                    <input type="text" id="input-box" placeholder="Search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div>
+                <a href="sign-up.html" class="btn btn-outline">Log in</a>
+            </div>
+
+            <div>
+                <button class="menu" id="menu">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </button>
+            </div>
 
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>RE:VIEW - Discover</title>
-        <link rel="stylesheet" href="./css/discover.css" />
-        <link rel="stylesheet" href="./css/anime-page.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
-            rel="stylesheet" />
-        <script src="js/details.js" defer></script>
-        <script src="./js/theme.js" defer></script>
-        <script src="./js/header.js" defer></script>
-
-        <!--Menu icon-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <body>
-        <div class="detailss">
-            <header class="main-header">
-      <div class="header-content">
-        <h1 class="logo">RE<br />:<span>VIEW</span></h1>
-
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="discover.html" class="nav-link active">Discover</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="profile.html" class="nav-link">My Profile</a>
-        </nav>
-
-        <!-- SEARCH BAR -->
-         
-        <div class="user-actions">
-          <div class="search-bar search-input">
-            <input type="text" id="input-box" placeholder="Search">
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
         </div>
-
-        <div>
-          <a href="sign-up.html" class="btn btn-outline">Log in</a>
-        </div>
-
-        <div>
-          <button class="menu" id="menu">
-            <i class="fa-solid fa-bars menu-icon"></i>
-          </button>
-        </div>
-
-                    
-      </div>
     </header>
 
-            <!-- <img class="wallpaper" src="" alt=""> -->
+    <main>
+        <section id="anime-banner" class="anime-banner"></section>
+        <section class="content" id="content">
 
-            <main>
-                <section class="content" id="content">
-                    <section id="title-rating-container" class="title-rating-container">
+            <section id="title-rating-container" class="title-rating-container">
 
-                        <h2 class="anime-title"></h2>
+                <!-- <h2 class="anime-title"></h2> -->
 
-                        <section class="rating-container">
-                            <p class="rating-value">4.5 ⭐⭐⭐⭐⭐</p>
-                        </section>
-                    </section>
+                <!-- <section class="rating-container"></section> -->
+            </section>
 
-                    <hr class="divider" />
+            <hr class="divider" />
 
-                    <section class="detail-trailer-container">
-                        <section class="detail-container">
-                            <section class="detail-categories">
+            <section class="detail-trailer-container">
+                <section class="detail-container">
+                    <section class="detail-categories">
 
-                                <section id="episodes-container">
-                                    <p id="episodes" class="detail-title">Episodes:</p>
-                                </section>
-
-                                <section id="dates-container">
-                                    <p id="dates" class="detail-title">Dates:</p>
-                                </section>
-
-                                <section id="plot-container" class="plot">
-                                    <p id="plot" class="detail-title">Plot:</p>
-                                </section>
-
-                            </section>
+                        <section id="episodes-container">
+                            <p id="episodes" class="detail-title"></p>
                         </section>
 
-                        <section id="trailer-container" class="trailer-container">
-                            <!-- <iframe id="trailer_url" class="trailer" src="" frameborder="0"></iframe> -->
-                        </section>
-                    </section>
-
-                    <hr class="divider" />
-
-                    <section class="information">
-                        <h3 class="info-title">Characters</h3>
-                        <section id="character-container" class="character-container">
-                            <figure class="character-element">
-                                <img id="img" class="character-img" src="" alt="">
-                                <figcaption>
-                                    <p id="name"></p>
-                                    <p id="role"></p>
-                                </figcaption>
-                            </figure>
+                        <section id="dates-container">
+                            <p id="dates" class="detail-title"></p>
                         </section>
 
-                        <h3 class="info-title">Reviews</h3>
-                        <section id="review-container" class="review-container">
-                            <section class="review-post">
-                                <img class="profile-picture" src="" alt="">
-                                <p class="user"></p>
-                                <p class="review-date"></p>
-                                <h3 class="review-title"></h3>
-                                <p class="review-text"></p>
-                            </section>
+                        <section id="plot-container" class="plot">
+                            <p id="plot" class="detail-title"></p>
                         </section>
+
                     </section>
                 </section>
-            </main>
 
-            <footer class="main-footer">
-                <div class="footer-content">
-                    <p class="follow-text">Follow Us</p>
-                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76500189f5d76d46913fa716741dbb089517087?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Social media icons" class="social-icons" />
-                    <p class="copyright">
-                      RE:VIEW<br />
-                      © 2025 Group 17. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+                <section id="trailer-container" class="trailer-container">
+                    <!-- <iframe id="trailer_url" class="trailer" src="" frameborder="0"></iframe> -->
+                </section>
+            </section>
 
-    </body>
+            <hr class="divider" />
+
+            <section class="information">
+                <h3 class="info-title">Characters</h3>
+                <section id="character-container" class="character-container">
+                    <figure class="character-element">
+                        <img id="img" class="character-img" src="" alt="">
+                        <figcaption>
+                            <p id="name"></p>
+                            <p id="role"></p>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <h3 class="info-title">Reviews</h3>
+                <section id="review-container" class="review-container">
+                    <section class="review-post">
+                        <img class="profile-picture" src="" alt="">
+                        <p class="user"></p>
+                        <p class="review-date"></p>
+                        <h3 class="review-title"></h3>
+                        <p class="review-text"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h4 class="footer-heading">Follow Us</h4>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fcdc15e76431a85d2c1f108e2156ee5b60e7308b?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+                alt="Social media icons" class="social-icons" />
+            <p class="copyright">
+                RE:VIEW
+                <br />
+                © 2025 Group 17. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
 
 </html>

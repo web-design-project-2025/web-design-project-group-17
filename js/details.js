@@ -103,6 +103,9 @@ function createAnimeDetails(anime) {
     const plotEl = document.createElement("p");
     plotEl.innerText = `${anime.plot}`;
     plotContainer.appendChild(plotEl);
+
+    const animeBannerEl = document.getElementById("anime-banner");
+    animeBannerEl.style.backgroundImage = `url('${anime.wallpaper}')`;
 }
 
 // Create HTML Elements of <<<<<CHARACTER INFO>>>>>
@@ -110,7 +113,7 @@ function createCharacterDetails(characterList) {
 
     characterList.forEach(character => {
         const charFigureEl = document.createElement("figure");
-        charFigureEl.classList.add("character-element");
+        charFigureEl.classList.add("character-figure");
         characterContainerEl.appendChild(charFigureEl);
 
         const charImgEl = document.createElement("img");
@@ -124,6 +127,7 @@ function createCharacterDetails(characterList) {
         charFigureEl.appendChild(charFigcaptionEL)
 
         const nameEl = document.createElement("p");
+        nameEl.classList.add("char-name");
         nameEl.innerText = `${character.name}`;
         charFigcaptionEL.appendChild(nameEl);
 

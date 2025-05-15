@@ -5,9 +5,11 @@ async function loadListData() {
 	const listResponse = await fetch("data/animes.json");
 	const listJSON = await listResponse.json();
     animes = listJSON.animes;
+    console.log(animes);
 
     // listJSON.animes.forEach(anime => console.log(anime.title, anime.cover, anime.plot));
     renderAnimeList();
+    console.log(document.body.innerHTML);
 }
 
 loadListData();
@@ -57,3 +59,4 @@ function renderAnimeList() {
         animeList.appendChild(linkEl);
     })
 }
+
