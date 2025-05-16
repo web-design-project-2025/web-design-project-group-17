@@ -29,7 +29,7 @@ function renderAnimeList() {
         let coverEl = document.createElement("img");
         coverEl.classList.add("anime-cover");
         coverEl.src = anime.cover;
-        coverEl.alt = anime.alt;
+        coverEl.alt = anime.title + "cover";
         linkEl.appendChild(coverEl);
 
         let infoEl = document.createElement("section");
