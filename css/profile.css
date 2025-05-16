@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.logo-link {
-  text-decoration: none;
-  color: inherit;
-}
 
   body {
     background-color: #ffffff;
@@ -107,9 +103,16 @@ body.dark div.profile-banner {
 
 /* Pop-up dark mode */
 body.dark .modal-content {
-  background-color: #2a2a2a;
-  border: 1px solid #444;
-  color: #ffffff;
+
+  background-color: #8d78af; 
+  border: 1px solid #604177;
+  color: #2c2c2c;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body.dark input,
@@ -151,9 +154,15 @@ body.dark h4 {
 /*LIGHT MODE*/
 
 body.light .modal-content {
-  background-color: #e7e2ed;
-  border: 1px solid #edcfff;
-  color: #000000;
+  background-color: #f3eefb; 
+  border: 1px solid #d9b8f2;
+  color: #2c2c2c;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body.light div.profile-banner{
@@ -175,14 +184,15 @@ body.light div.profile-banner{
 .modal {
   display: none;
   position: fixed;
+  left: 50%;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  z-index: 1000;
+  z-index: 1010;
 }
 
 .modal-content {
   background-color: var(--modal-bg);
-  margin: 10% auto;
+  margin: 20% auto;
   padding: 20px;
   width: 80%;
   max-width: 400px;
@@ -491,7 +501,6 @@ button .menu-icon {
 
 .reviews-section .section-title {
   margin-left: 74px;
-  z-index: 10;
   position: relative;
 }
 
@@ -587,6 +596,7 @@ button .menu-icon {
 
 /* Profile badge */
 .profile-badge {
+  display: none;
   width: 48px;
   aspect-ratio: 1;
   object-fit: contain;
@@ -737,80 +747,51 @@ button .menu-icon {
 }
 
 
-/* Media queries */
-@media (max-width: 991px) {
-  
+/* Responsiveness */
 
-  .profile-banner {
-    max-width: 100%;
+@media screen and (max-width: 1024px) {
+  .header-content,
+  .main-nav,
+  .user-actions,
+  .user-profile,
+  .favorites-grid,
+  .reviews-grid {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .profile-content {
-    max-width: 100%;
-  }
-
-  .user-profile {
-    max-width: 100%;
+    margin-left: 10px;
     margin-right: 10px;
   }
 
-  .profile-info {
-    max-width: 100%;
-  }
-
-  .user-name {
-    margin-top: 40px;
-  }
-
-  .user-bio {
-    max-width: 100%;
-  }
-
-  .btn-edit {
-    padding-left: 20px;
-    padding-right: 20px;
-    white-space: initial;
-  }
-
-  .favorites-section .section-title {
-    margin-top: 40px;
-  }
-
-  .favorites-grid {
-    margin-top: 40px;
+  .profile-actions {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .reviews-section {
-    max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 40px;
-  }
-
-  .reviews-section .section-title {
-    margin-left: 10px;
   }
 
   .reviews-grid {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
   }
 
   .review-card {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .profile-badge {
-    margin-right: 10px;
+    width: 90%;
   }
 
 }
 
-/* Header */
+/* Mobile devices */
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+
   .header-content {
     flex-direction: column;
     align-items: flex-start;
@@ -821,6 +802,7 @@ button .menu-icon {
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+    z-index: 1000;
   }
 
   .main-nav.open {
@@ -854,4 +836,96 @@ button .menu-icon {
     width: 100%;
     text-align: center;
   }
+
+  .logo {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .user-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    width: 160px;
+  }
+  
+  .user-name {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .user-handle,
+  .user-bio {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .favorites-grid {
+    justify-content: center;
+  }
+
+  .favorite-item {
+    width: 130px !important;
+  }
+
+  .reviews-section .section-title {
+    margin-left: 0;
+  }
+
+  .modal-content{
+    margin-top: 70%;
+  }
+
+  .profile-badge {
+    display: none;
+  }
+
+  .main-footer {
+    margin-top: 10vh;
+  }
+
+  .user-profile{
+    max-width: 90%;
+    margin-left: 2vh;
+  }
+}
+
+
+
+/* Small phones (480px and below) */
+@media screen and (max-width: 480px) {
+  .profile-picture {
+    width: 120px;
+  }
+
+  .user-name {
+    font-size: 20px;
+  }
+
+  .btn-edit {
+    font-size: 14px;
+    padding: 8px 20px 12px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .btn {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .settings-title {
+    margin-right: 0;
+    text-align: center;
+  }
+
 }
