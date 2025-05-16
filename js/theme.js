@@ -1,5 +1,7 @@
 /*dark and light mode functionality*/
 
+/*The following code was inspired by https://youtu.be/wodWDIdV9BY and https://youtu.be/_gKEUYarehE */
+
 document.addEventListener("DOMContentLoaded", () => {
   const darkButton = document.getElementById("dark-button");
   const lightButton = document.getElementById("light-button");
