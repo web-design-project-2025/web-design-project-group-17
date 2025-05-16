@@ -1,4 +1,4 @@
-# H1 **RE:VIEW – Anime Review Web**
+#**RE:VIEW – Anime Review Web**
 
 *This is not a fully developed website, but a project where the website is supposed to emulate a real website as well as possible, with our current skills.
 *Images taken from the web, & taken from especially MyAnimeList, and we take no ownership or revenue from this at all, this is for our educational purposes only.
@@ -6,7 +6,7 @@
 RE:VIEW is a minimally designed website, with the purpose of showcasing animes and reviews by yourself and others. 
 Developed by Group 17, as a part of Web Design Project 2025, this platform offers users an engaging and aesthetic interface where users can discover anime through information, user reviews, and keep track of your own favourites.
 
-**FEATURES**
+### **FEATURES**
  - Weather API
  - Responsive design for mobile and desktop
  - Anime Carousels (for better experience discovering anime)
@@ -17,12 +17,12 @@ Developed by Group 17, as a part of Web Design Project 2025, this platform offer
  - Dark vs Ligth mode toggle
  - JSON loading data for interactivity, ex: anime data for the detail page
 
-**TECHNOLOGIES USED**
+### **TECHNOLOGIES USED**
 - HTML: Structuring the webcontent
 - CSS: Styling and layout, and resposiveness, keyframe animations
 - JavaScript: Interactive funcitonalities and DOM manipulaitons (creating elements, loading local JSON files), localStorage
 
-**FOLDER STRUCTURE**
+### **FOLDER STRUCTURE**
 <pre>
   ├── index.html
   ├── css/
