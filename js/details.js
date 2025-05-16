@@ -1,3 +1,6 @@
+// for a lot of pages, but mainly this page:
+// https://chatgpt.com/share/67d40c5d-1ddc-8007-98da-87350dc2d8ed,
+// note: there is another subject discussed in the conversation (only a little bit in the beginning)
 let animes = [];
 let characters = [];
 let users = [];
