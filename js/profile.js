@@ -37,6 +37,8 @@ window.onclick = function(event) {
   }
 };
 
+/* session storage and local storage inspired by https://youtu.be/MOd5cTJ6kaA */
+
 /* Storage e-mail */
 
   const savedEmail = localStorage.getItem("userEmail");

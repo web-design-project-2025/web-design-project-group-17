@@ -11,6 +11,8 @@ async function loadData() {
 
 loadData();
 
+/* The following code was inspired by https://youtu.be/VUtJ7FWCfZA?list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2 */
+
 //Carousel functionality on index html 
 
   document.addEventListener('DOMContentLoaded', () => {
