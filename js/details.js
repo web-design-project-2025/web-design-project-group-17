@@ -214,34 +214,34 @@ function createReviewForm(animeId) {
     const submitBtn = document.createElement("button");
     submitBtn.type = "button";
     submitBtn.classList.add("review-submit-button")
-    submitBtn.addEventListener('click', () => {
-        const review_turtle = document.getElementById("review-title")
-        const review_content = document.getElementById("review-content")
+submitBtn.addEventListener('click', () => {
+    const review_turtle = document.getElementById("review-title");
+    const review_content = document.getElementById("review-content");
 
-        const userData = localStorage.getItem("user")
-        if (userData)
-        {
-            const user = JSON.parse(userData)
-            const newReview = {
-                "anime_id": animeId,
-                "user_id": user.user_id,
-                "title": review_turtle.value,
-                "text": review_content.value,
-                "date": currentDate
-            }
-            localStorage.setItem("user_review", JSON.stringify(newReview))
-            
-        }
-        
+    const userData = localStorage.getItem("user");
+
+    if (!review_turtle.value || !review_content.value) {
+        alert('Please fill in both the title and content.');
+        return;
+    }
+
+    if (userData) {
+        const user = JSON.parse(userData);
+        const newReview = {
+            anime_id: animeId,
+            user_id: user.user_id,
+            title: review_turtle.value,
+            text: review_content.value,
+            date: currentDate
+        };
+
+        localStorage.setItem("user_review", JSON.stringify(newReview));
+        // Redirect after saving
         window.location.href = `details.html?id=${animeId}#review-container`;
-        // reviewButtonEl.href = `details.html?id=${anime.id}#review-container`;
-
-    // const dividerEl = document.createElement("hr");
-    // dividerEl.classList.add("divider");
-    // formEl.appendChild(dividerEl);
-
-
-    })
+    } else {
+        alert('User data is missing. Please log in or register.');
+    }
+});
     submitBtn.innerText = "Submit Review";
     formEl.appendChild(submitBtn);
 }
