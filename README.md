@@ -20,7 +20,7 @@ Developed by Group 17, as a part of Web Design Project 2025, this platform offer
 ### **TECHNOLOGIES USED**
 - HTML: Structuring the webcontent
 - CSS: Styling and layout, and resposiveness, keyframe animations
-- JavaScript: Interactive funcitonalities and DOM manipulaitons (creating elements, loading local JSON files), localStorage
+- JavaScript: Interactive funcitonalities and DOM manipulaitons (creating elements, loading local JSON files), localStorage & sessionStorage
 
 ### **FOLDER STRUCTURE**
 <pre>
@@ -35,3 +35,12 @@ Developed by Group 17, as a part of Web Design Project 2025, this platform offer
   └── img/
       ├── covers/
       └── characters/</pre>
+
+### Getting Started
+- Clone the repo or download the files
+- Open index.html in your browser *(we used live server)*
+- Interact and discover the website
+
+
+####Contributors
+Group 17
