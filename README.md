@@ -1,4 +1,4 @@
-#**RE:VIEW – Anime Review Web**
+# **RE:VIEW – Anime Review Web**
 
 *This is not a fully developed website, but a project where the website is supposed to emulate a real website as well as possible, with our current skills.
 *Images taken from the web, & taken from especially MyAnimeList, and we take no ownership or revenue from this at all, this is for our educational purposes only.
