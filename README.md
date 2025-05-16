@@ -12,3 +12,16 @@ TECHNOLOGIES USED
 - HTML: Structuring the webcontent
 - CSS: Styling and layout, and resposiveness, keyframe animations
 - JavaScript: Interactive funcitonalities and DOM manipulaitons (creating elements, loading local JSON files), localStorage
+
+FOLDER STRUCTURE
+├── index.html
+├── css/
+│   └── main.css
+├── js/
+│   └── main.js
+├── data/
+│   ├── reviews.json
+    └── anime.json
+└── img/
+	├── covers/
+  └── characters/
