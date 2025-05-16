@@ -42,5 +42,5 @@ Developed by Group 17, as a part of Web Design Project 2025, this platform offer
 - Interact and discover the website
 
 
-####Contributors
+#### Contributors:
 Group 17
