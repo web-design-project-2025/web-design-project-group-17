@@ -16,23 +16,13 @@ TECHNOLOGIES USED
 FOLDER STRUCTURE
 
 ├── index.html
-
 ├── css/
-
 │   └── main.css
-
 ├── js/
-
 │   └── main.js
-
 ├── data/
-
 │   ├── reviews.json
-
-    └── anime.json
-    
+│   └── anime.json
 └── img/
-
-	├── covers/
- 
-  └── characters/
+    ├── covers/
+    └── characters/
