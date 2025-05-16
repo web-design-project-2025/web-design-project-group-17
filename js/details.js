@@ -236,7 +236,7 @@ submitBtn.addEventListener('click', () => {
         };
 
         localStorage.setItem("user_review", JSON.stringify(newReview));
-        // Redirect after saving
+        
         window.location.href = `details.html?id=${animeId}#review-container`;
     } else {
         alert('User data is missing. Please log in or register.');
