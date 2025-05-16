@@ -14,14 +14,25 @@ TECHNOLOGIES USED
 - JavaScript: Interactive funcitonalities and DOM manipulaitons (creating elements, loading local JSON files), localStorage
 
 FOLDER STRUCTURE
+
 ├── index.html
+
 ├── css/
+
 │   └── main.css
+
 ├── js/
+
 │   └── main.js
+
 ├── data/
+
 │   ├── reviews.json
+
     └── anime.json
+    
 └── img/
+
 	├── covers/
+ 
   └── characters/
