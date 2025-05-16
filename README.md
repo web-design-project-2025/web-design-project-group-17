@@ -15,7 +15,7 @@ TECHNOLOGIES USED
 
 FOLDER STRUCTURE
 
-<pre> ```text
+<pre>
   ├── index.html
   ├── css/
   │   └── main.css
@@ -26,4 +26,4 @@ FOLDER STRUCTURE
   │   └── anime.json
   └── img/
       ├── covers/
-      └── characters/ ``` </pre>
+      └── characters/</pre>
