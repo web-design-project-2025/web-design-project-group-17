@@ -1,29 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Profile - RE:VIEW</title>
-    <link rel="stylesheet" href="./css/profile.css" />
-    <script src="./js/myfavs.js" defer></script>
-    <script src="./js/profile.js" defer></script>
-    <script src="./js/theme.js" defer></script>
-    <script src="./js/header.js" defer></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile - RE:VIEW</title>
+  <link rel="stylesheet" href="./css/profile.css" />
+  <script src="./js/myfavs.js" defer></script>
+  <script src="./js/profile.js" defer></script>
+  <script src="./js/theme.js" defer></script>
+  <script src="./js/header.js" defer></script>
 
-    <!--Menu icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet" />
 
-  </head>
-  <body>
-    <div class="profile-page">
-      <header class="main-header">
+  <!--Menu icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="profile-page">
+    <header class="main-header">
       <div class="header-content">
-        <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+        <a class="logo-link" href="index.html">
+          <h1 class="logo">RE<br />:<span>VIEW</span></h1>
+        </a>
 
         <nav class="main-nav" id="main-nav">
           <a href="index.html" class="nav-link">Home</a>
@@ -33,11 +36,11 @@
         </nav>
 
         <!-- SEARCH BAR -->
-         
+
         <div class="user-actions">
           <div class="search-bar search-input">
             <input type="text" id="input-box" placeholder="Search">
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
 
@@ -51,193 +54,236 @@
           </button>
         </div>
 
-                    
+
       </div>
     </header>
 
-      <div class="profile-banner"></div>
+    <div class="profile-banner"></div>
 
-      <main class="profile-content">
-        <section class="user-profile">
-          <div class="profile-info">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e928721a5e5e26117780b1b50957820d5e0c4e35?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
-              alt="User profile picture"
-              class="profile-picture"
-            />
-            <h2 class="user-name">Sara Dream</h2>
-            <p class="user-handle">@saraadream</p>
-            <p class="user-bio">
-              🌍 Passionate about global development and meaningful
-              collaboration.
-            </p>
-            <p class="user-bio">
-              📚 &quot;Knowledge speaks, but wisdom listens.&quot; – Jimi
-              Hendrix
-            </p>
-            <p class="user-bio">🍊 I like oranges, but hate orange juice</p>
-          </div>
-          <div class="profile-actions">
+    <main class="profile-content">
+      <section class="user-profile">
+        <div class="profile-info">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e928721a5e5e26117780b1b50957820d5e0c4e35?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+            alt="User profile picture" class="profile-picture" />
+          <h2 class="user-name">Sara Dream</h2>
+          <p class="user-handle">@saraadream</p>
+          <p class="user-bio">
+            🌍 Passionate about global development and meaningful
+            collaboration.
+          </p>
+          <p class="user-bio">
+            📚 &quot;Knowledge speaks, but wisdom listens.&quot; – Jimi
+            Hendrix
+          </p>
+          <p class="user-bio">🍊 I like oranges, but hate orange juice</p>
+        </div>
+        <div class="profile-actions">
 
           <!-- Trigger icon -->
-          <svg class="settings-icon" onclick="openModal()" alt="Settings Icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"/>
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+          <svg class="settings-icon" onclick="openModal()" alt="Settings Icon" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
           </svg>
 
           <!-- Modal -->
-            <div id="imageModal" class="modal">
-              <div class="modal-content">
-                <span class="close-button" onclick="closeModal()" role="button" tabindex="0" aria-label="Close modal">&times;</span>
+          <div id="imageModal" class="modal">
+            <div class="modal-content">
+              <span class="close-button" onclick="closeModal()" role="button" tabindex="0"
+                aria-label="Close modal">&times;</span>
 
-                <section class="top-pop-up-line">
-                  <h2 class="settings-title">Settings</h2>
+              <section class="top-pop-up-line">
+                <h2 class="settings-title">Settings</h2>
 
-                  <!-- Dark Mode Button -->
-                  <svg id="dark-button" role="button" tabindex="0" aria-label="Activate dark mode" xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 
+                <!-- Dark Mode Button -->
+                <svg id="dark-button" role="button" tabindex="0" aria-label="Activate dark mode"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd"
+                    d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 
                     4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 
-                    0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
-                  </svg>
+                    0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                    clip-rule="evenodd" />
+                </svg>
 
-                  <!-- Light Mode Button -->
-                  <svg id="light-button" role="button" tabindex="0" aria-label="Activate light mode" xmlns="http://www.w3.org/2000/svg"
-                      width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 
+                <!-- Light Mode Button -->
+                <svg id="light-button" role="button" tabindex="0" aria-label="Activate light mode"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.343 4.929A1 1 0 0 0 4.93 6.343l1.414 
                     1.414a1 1 0 0 0 1.414-1.414L6.343 4.929Zm12.728 1.414a1 1 0 0 0-1.414-1.414l-1.414 1.414a1 1 0 0 0 
                     1.414 1.414l1.414-1.414ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 
                     0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.757 17.657a1 1 0 1 0-1.414-1.414l-1.414 1.414a1 1 0 1 0 
                     1.414 1.414l1.414-1.414Zm9.9-1.414a1 1 0 0 0-1.414 1.414l1.414 1.414a1 1 0 0 0 1.414-1.414l-1.414-1.414ZM13 
-                    19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z" clip-rule="evenodd"/>
-                  </svg>
-                </section>
+                    19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z" clip-rule="evenodd" />
+                </svg>
+              </section>
 
-                <br>
+              <br>
 
-                <p>Your registered email: <span id="emailDisplayText"></span></p>
+              <p>Your registered email: <span id="emailDisplayText"></span></p>
 
-                <br>
+              <br>
 
-                <div id="emailEditSection" style="display: none;">
-                  <input type="email" id="emailEditInput" />
-                  <button onclick="saveEmail()">Save</button>
-                </div>
-
-                <button onclick="enableEmailEdit()">Change Email</button>
+              <div id="emailEditSection" style="display: none;">
+                <input type="email" id="emailEditInput" />
+                <button onclick="saveEmail()">Save</button>
               </div>
+
+              <button onclick="enableEmailEdit()">Change Email</button>
             </div>
-
-            <!-- Edit button -->
-            <button class="btn-edit">Edit</button>
-          </div>
-        </section>
-
-        <section class="favorites-section">
-          <h2 class="section-title">Favourites</h2>
-          <div class="back-link">
-            <a href="./index.html">← Back to All Anime</a>
-          </div>
-          
-          <div id="favorites-container" class="favorites-grid">
-              <!-- Favorite anime will be loaded here -->
           </div>
 
-        </section>
-      </main>
-
-      <section class="reviews-section">
-        <h2 class="section-title">Your Reviews</h2>
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div class="rating">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-            </div>
-            <div class="review-content">
-              <h3 class="review-title">Could be better</h3>
-              <p class="review-text">
-                In general it was a nice anime, but something was missing for
-                sure
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb75ed9d2cfd0308b66530b218dcacbc0992cf4?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
-              <div class="author-info">
-                <p class="author-name">Sara Dream</p>
-                <p class="review-date">13.04.2025</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="rating">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb9e651f0a8e186857b5ff164f4db1b70b5940ad?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Empty star" class="star" />
-            </div>
-            <div class="review-content">
-              <h3 class="review-title">Didn't like it</h3>
-              <p class="review-text">
-                The main characters were not good at all and the plot is not
-                interesting. Would not recommend it to whatch
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1df3828037a8b6e4f55906a6c3be18808002ed01?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
-              <div class="author-info">
-                <p class="author-name">Sara Dream</p>
-                <p class="review-date">25.04.2025</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div class="rating">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Star" class="star" />
-            </div>
-            <div class="review-content">
-              <h3 class="review-title">Wow and WOW</h3>
-              <p class="review-text">
-                I'm in love with the main character as well as his team.
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a95eb98e0482b42cbb6da307a8288e3e68e07537?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="User avatar" class="author-avatar" />
-              <div class="author-info">
-                <p class="author-name">Sara Dream</p>
-                <p class="review-date">16.02.2025</p>
-              </div>
-            </div>
-          </article>
+          <!-- Edit button -->
+          <button class="btn-edit">Edit</button>
         </div>
       </section>
 
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/442f54e58f23ea73af8dcd48d06b639dd4ebfa7f?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Profile badge" class="profile-badge" />
+      <section class="favorites-section">
+        <h2 class="section-title">Favourites</h2>
+        <div class="back-link">
+          <a href="./index.html">← Back to All Anime</a>
+        </div>
 
-      <!-- FOOTER -->
-        <footer class="main-footer">
+        <div id="favorites-container" class="favorites-grid">
+          <!-- Favorite anime will be loaded here -->
+        </div>
+
+      </section>
+    </main>
+
+    <section class="reviews-section">
+      <h2 class="section-title">Your Reviews</h2>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="rating">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/38d2a1da31bf89b5299af15e08fd1c630504a521?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/60709104f0907fa32fd7daa2f0af46c5e7ab899a?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+          </div>
+          <div class="review-content">
+            <h3 class="review-title">Could be better</h3>
+            <p class="review-text">
+              In general it was a nice anime, but something was missing for
+              sure
+            </p>
+          </div>
+          <div class="review-author">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb75ed9d2cfd0308b66530b218dcacbc0992cf4?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="User avatar" class="author-avatar" />
+            <div class="author-info">
+              <p class="author-name">Sara Dream</p>
+              <p class="review-date">13.04.2025</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="rating">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb9e651f0a8e186857b5ff164f4db1b70b5940ad?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a65483fed135390b28a3ca6717a97c86355e73fe?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Empty star" class="star" />
+          </div>
+          <div class="review-content">
+            <h3 class="review-title">Didn't like it</h3>
+            <p class="review-text">
+              The main characters were not good at all and the plot is not
+              interesting. Would not recommend it to whatch
+            </p>
+          </div>
+          <div class="review-author">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/1df3828037a8b6e4f55906a6c3be18808002ed01?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="User avatar" class="author-avatar" />
+            <div class="author-info">
+              <p class="author-name">Sara Dream</p>
+              <p class="review-date">25.04.2025</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="rating">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/01215c34f600b05d68f82f3b9062bb25122b73db?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="Star" class="star" />
+          </div>
+          <div class="review-content">
+            <h3 class="review-title">Wow and WOW</h3>
+            <p class="review-text">
+              I'm in love with the main character as well as his team.
+            </p>
+          </div>
+          <div class="review-author">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a95eb98e0482b42cbb6da307a8288e3e68e07537?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+              alt="User avatar" class="author-avatar" />
+            <div class="author-info">
+              <p class="author-name">Sara Dream</p>
+              <p class="review-date">16.02.2025</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/442f54e58f23ea73af8dcd48d06b639dd4ebfa7f?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+      alt="Profile badge" class="profile-badge" />
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
       <div class="footer-content">
         <p class="follow-text">Follow Us</p>
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76500189f5d76d46913fa716741dbb089517087?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a" alt="Social media icons" class="social-icons" />
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76500189f5d76d46913fa716741dbb089517087?placeholderIfAbsent=true&apiKey=cef4ce64bbb94ea5bb23dd516ff3ed8a"
+          alt="Social media icons" class="social-icons" />
         <p class="copyright">
           RE:VIEW<br />
           © 2025 Group 17. All rights reserved.
         </p>
       </div>
     </footer>
-    
-    </div>
-  </body>
+
+  </div>
+</body>
+
 </html>
-
-

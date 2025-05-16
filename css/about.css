@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: #ffffff;
   font-family:

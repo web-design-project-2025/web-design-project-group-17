@@ -6,6 +6,11 @@ header {
   z-index: 3;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .anime-banner {
     margin: 0;
     height: 1000px;
